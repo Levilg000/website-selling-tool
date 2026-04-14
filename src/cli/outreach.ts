@@ -51,8 +51,8 @@ function generateEmailHtml(lead: LeadInfo): string {
   }
 
   const intro = hasOldSite
-    ? `ich hab mir Ihre Website mal angeschaut und fand, da geht noch was — vor allem auf dem Handy und bei Google. Deshalb hab ich einfach mal einen Entwurf gemacht, wie das modern aussehen könnte.`
-    : `mir ist aufgefallen, dass man ${lead.name} online gar nicht so richtig findet. Das ist schade, weil ich glaube, dass viele Kunden heutzutage zuerst im Internet suchen. Deshalb hab ich einfach mal einen Entwurf gemacht.`;
+    ? `ich hab mir Ihre Website mal angeschaut und fand, da geht noch was — vor allem auf dem Handy. Deshalb hab ich einfach mal einen Entwurf gemacht, wie das modern aussehen könnte.`
+    : `mir ist aufgefallen, dass man ${lead.name} online noch nicht so richtig findet. Das ist schade, weil viele Kunden heutzutage zuerst im Internet suchen. Deshalb hab ich einfach mal einen Entwurf gemacht.`;
 
   return `<div style="font-family:Arial,sans-serif;max-width:550px;margin:0 auto;color:#333;line-height:1.7;">
 
@@ -71,7 +71,7 @@ function generateEmailHtml(lead: LeadInfo): string {
     <p style="color:#a16207;font-size:13px;margin:0;">Das ist ein Schulprojekt — ich möchte einfach Erfahrung sammeln und brauche Referenzen. Es entstehen für Sie keine Kosten und keine Verpflichtungen. Falls Ihnen der Entwurf gefällt, freue ich mich. Falls nicht, auch kein Problem!</p>
   </div>
 
-  <p style="color:#334155;font-size:14px;">Falls Sie Fragen haben oder etwas geändert haben möchten, melden Sie sich einfach. Ich freue mich über jede Rückmeldung!</p>
+  <p style="color:#334155;font-size:14px;">Falls Sie Fragen haben, melden Sie sich einfach!</p>
 
   <p style="color:#334155;font-size:14px;">
     Viele Grüße<br>
