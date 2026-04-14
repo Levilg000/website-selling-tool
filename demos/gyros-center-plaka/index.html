@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imbiss Plaka — Gyros-Center Lüneburg</title>
+  <meta name="description" content="Imbiss Plaka Gyros-Center. Griechisch essen in Lüneburg. Gyros, Souvlaki, Bifteki — frisch vom Grill.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --warm: #c2410c; --cream: #fefce8; --sand: #f5f0e1; --terracotta: #9a3412; --olive: #4d7c0f; --dark: #292524; --text: #57534e; --muted: #a8a29e; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Lato', sans-serif; color: var(--text); background: var(--cream); }
+    a { color: inherit; text-decoration: none; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 99;
+      background: rgba(254,252,232,0.9); backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e7e1cd;
+      padding: 0.75rem 2.5rem; display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 900; color: var(--terracotta); }
+    nav ul { list-style: none; display: flex; gap: 2rem; }
+    nav a { font-size: 0.85rem; font-weight: 700; color: var(--dark); text-transform: uppercase; letter-spacing: 1px; }
+    nav a:hover { color: var(--warm); }
+    .nav-order { background: var(--warm); color: white !important; padding: 0.5rem 1.25rem; border-radius: 6px; }
+
+    /* HERO — warm, inviting */
+    .hero {
+      padding: 10rem 2rem 5rem; text-align: center; position: relative;
+      background: var(--sand);
+    }
+    .hero-icon { font-size: 4rem; margin-bottom: 1.5rem; }
+    .hero h1 {
+      font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 900; color: var(--dark); line-height: 1.1;
+    }
+    .hero h1 span { color: var(--warm); }
+    .hero-line { width: 80px; height: 3px; background: var(--warm); margin: 1.5rem auto; }
+    .hero p { font-size: 1.15rem; color: var(--muted); max-width: 500px; margin: 0 auto 2rem; font-weight: 300; }
+    .hero-btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: var(--warm); color: white; padding: 1rem 2.5rem; border-radius: 6px;
+      font-weight: 700; font-size: 1.05rem; transition: all 0.2s;
+    }
+    .hero-btn:hover { background: var(--terracotta); transform: translateY(-2px); }
+
+    /* BANNER */
+    .banner {
+      background: var(--terracotta); color: var(--cream); text-align: center;
+      padding: 1.25rem; font-size: 0.95rem; font-weight: 700; letter-spacing: 1px;
+    }
+    .banner span { opacity: 0.5; margin: 0 1rem; }
+
+    /* MENU */
+    section { padding: 5rem 2rem; }
+    .container { max-width: 900px; margin: 0 auto; }
+    .section-head { text-align: center; margin-bottom: 3rem; }
+    .section-head h2 { font-family: 'Playfair Display', serif; font-size: 2.25rem; color: var(--dark); }
+    .section-head p { color: var(--muted); margin-top: 0.5rem; }
+
+    .menu-category { margin-bottom: 3rem; }
+    .menu-category h3 {
+      font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--terracotta);
+      padding-bottom: 0.75rem; border-bottom: 2px solid var(--warm); margin-bottom: 1.25rem;
+    }
+    .menu-row {
+      display: flex; justify-content: space-between; align-items: baseline;
+      padding: 0.75rem 0; border-bottom: 1px dotted #d6d3d1;
+    }
+    .menu-name { font-weight: 700; color: var(--dark); font-size: 1.05rem; }
+    .menu-desc { font-size: 0.85rem; color: var(--muted); font-weight: 300; margin-top: 0.15rem; }
+    .menu-price { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--warm); white-space: nowrap; }
+
+    .menu-note { text-align: center; color: var(--muted); font-size: 0.85rem; font-style: italic; margin-top: 2rem; }
+
+    /* CTA */
+    .cta-warm {
+      background: var(--dark); color: var(--cream); text-align: center; padding: 5rem 2rem;
+    }
+    .cta-warm h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 0.75rem; }
+    .cta-warm p { color: var(--muted); margin-bottom: 2rem; font-size: 1.1rem; font-weight: 300; }
+    .cta-warm a {
+      display: inline-block; background: var(--warm); color: white; padding: 1rem 3rem;
+      border-radius: 6px; font-weight: 700; font-size: 1.1rem; transition: all 0.2s;
+    }
+    .cta-warm a:hover { background: #ea580c; }
+
+    /* CONTACT */
+    .contact-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
+    .contact-col { text-align: center; padding: 2rem; background: var(--sand); border-radius: 12px; }
+    .contact-col-icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .contact-col h4 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--dark); margin-bottom: 0.5rem; }
+    .contact-col p { font-size: 0.9rem; color: var(--muted); }
+    .contact-col a { color: var(--warm); font-weight: 700; }
+
+    footer {
+      background: var(--dark); color: #78716c; text-align: center; padding: 2rem;
+      font-size: 0.8rem; font-weight: 300;
+    }
+
+    @media (max-width: 768px) {
+      nav ul { display: none; }
+      .hero h1 { font-size: 2.25rem; }
+      .contact-cols { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">PLAKA</div>
+  <ul>
+    <li><a href="#karte">Speisekarte</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+  <a href="tel:0413181603" class="nav-order">Bestellen</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-icon">&#127958;</div>
+  <h1>Griechisch essen<br>in <span>Lüneburg</span></h1>
+  <div class="hero-line"></div>
+  <p>Gyros, Souvlaki, Bifteki — frisch vom Grill, mit Liebe zubereitet. Seit Jahren euer Gyros-Center.</p>
+  <a href="tel:0413181603" class="hero-btn">&#128222; Vorbestellen</a>
+</section>
+
+<div class="banner">
+  Frisch vom Grill <span>&#x2022;</span> Zum Mitnehmen <span>&#x2022;</span> Vor Ort genießen <span>&#x2022;</span> Mittags & Abends
+</div>
+
+<section id="karte">
+  <div class="container">
+    <div class="section-head">
+      <h2>Unsere Speisekarte</h2>
+      <p>Die Klassiker — einfach, ehrlich, lecker.</p>
+    </div>
+
+    <div class="menu-category">
+      <h3>Vom Grill</h3>
+      <div class="menu-row"><div><div class="menu-name">Gyros Teller</div><div class="menu-desc">mit Reis, Salat und Tsatsiki</div></div><div class="menu-price">9,50 &euro;</div></div>
+      <div class="menu-row"><div><div class="menu-name">Souvlaki Spieße</div><div class="menu-desc">2 Spieße mit Pommes und Salat</div></div><div class="menu-price">10,50 &euro;</div></div>
+      <div class="menu-row"><div><div class="menu-name">Bifteki</div><div class="menu-desc">gefüllte Frikadelle mit Feta, Pommes, Salat</div></div><div class="menu-price">10,50 &euro;</div></div>
+      <div class="menu-row"><div><div class="menu-name">Gemischter Grillteller</div><div class="menu-desc">Gyros, Souvlaki, Bifteki — für den großen Hunger</div></div><div class="menu-price">13,50 &euro;</div></div>
+      <div class="menu-row"><div><div class="menu-name">Gyros in der Pita</div><div class="menu-desc">mit Tsatsiki, Tomaten, Zwiebeln</div></div><div class="menu-price">6,50 &euro;</div></div>
+    </div>
+
+    <div class="menu-category">
+      <h3>Snacks & Salate</h3>
+      <div class="menu-row"><div><div class="menu-name">Pommes Frites</div></div><div class="menu-price">3,50 &euro;</div></div>
+      <div class="menu-row"><div><div class="menu-name">Bauernsalat</div><div class="menu-desc">Tomaten, Gurken, Oliven, Feta, Zwiebeln</div></div><div class="menu-price">7,50 &euro;</div></div>
+      <div class="menu-row"><div><div class="menu-name">Tsatsiki mit Brot</div></div><div class="menu-price">4,50 &euro;</div></div>
+      <div class="menu-row"><div><div class="menu-name">Falafel Teller</div><div class="menu-desc">mit Hummus, Salat und Pita</div></div><div class="menu-price">8,50 &euro;</div></div>
+      <div class="menu-row"><div><div class="menu-name">Kinder-Teller</div><div class="menu-desc">kleine Portion mit Pommes</div></div><div class="menu-price">5,50 &euro;</div></div>
+    </div>
+
+    <p class="menu-note">Preise beispielhaft — aktuelle Karte vor Ort. Alle Gerichte auch zum Mitnehmen.</p>
+  </div>
+</section>
+
+<section class="cta-warm">
+  <h2>Hunger?</h2>
+  <p>Ruf an und bestell vor — wir machen's fertig.</p>
+  <a href="tel:0413181603">04131 / 81603</a>
+</section>
+
+<section id="kontakt">
+  <div class="container">
+    <div class="section-head"><h2>Komm vorbei</h2></div>
+    <div class="contact-cols">
+      <div class="contact-col"><div class="contact-col-icon">&#128205;</div><h4>Adresse</h4><p>Lüneburg</p></div>
+      <div class="contact-col"><div class="contact-col-icon">&#128222;</div><h4>Telefon</h4><p><a href="tel:0413181603">04131 / 81603</a></p></div>
+      <div class="contact-col"><div class="contact-col-icon">&#128336;</div><h4>Öffnungszeiten</h4><p>Mo – Sa: 11 – 22 Uhr<br>So: 12 – 22 Uhr</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>&copy; 2026 Imbiss Plaka Gyros-Center — Lüneburg</footer>
+
+</body>
+</html>

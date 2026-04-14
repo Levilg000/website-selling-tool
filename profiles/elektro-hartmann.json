@@ -1,0 +1,35 @@
+{
+  "name": "Elektro Hartmann",
+  "address": "Dieselstraße 3, 21365 Adendorf, Deutschland",
+  "city": "Adendorf",
+  "phone": "04131 18490",
+  "email": null,
+  "website": "http://www.hartmann-elektro.de/",
+  "placeId": "ChIJM_uuiFrnsUcRn0a6QljkrQk",
+  "rating": 5,
+  "reviewCount": 8,
+  "types": [
+    "electrician",
+    "supplier",
+    "service",
+    "point_of_interest",
+    "establishment"
+  ],
+  "category": "elektriker",
+  "description": null,
+  "openingHours": [
+    "Montag: 07:30–16:00 Uhr",
+    "Dienstag: 07:30–16:00 Uhr",
+    "Mittwoch: 07:30–16:00 Uhr",
+    "Donnerstag: 07:30–16:00 Uhr",
+    "Freitag: 07:30–13:00 Uhr",
+    "Samstag: Geschlossen",
+    "Sonntag: Geschlossen"
+  ],
+  "oldSiteTexts": [
+    "The requested URL was not found on this server."
+  ],
+  "oldSiteServices": [],
+  "socialMediaContext": null,
+  "researchedAt": "2026-04-14T18:34:45.495Z"
+}

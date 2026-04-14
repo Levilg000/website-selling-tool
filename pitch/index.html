@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website-Business — Projektvorstellung</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --blue: #2563eb; --dark: #0f172a; --text: #334155; --muted: #64748b; --border: #e2e8f0; --bg: #f8fafc; --green: #16a34a; --red: #dc2626; --amber: #d97706; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: var(--text); line-height: 1.7; background: white; }
+    a { color: var(--blue); }
+
+    /* COVER */
+    .cover {
+      min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center; padding: 4rem 2rem;
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #2563eb 100%); color: white;
+    }
+    .cover-badge { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 4px; opacity: 0.6; margin-bottom: 2rem; }
+    .cover h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; letter-spacing: -1px; margin-bottom: 1rem; }
+    .cover h1 span { color: #fbbf24; }
+    .cover p { font-size: 1.2rem; opacity: 0.8; max-width: 600px; }
+    .cover-meta { margin-top: 3rem; font-size: 0.85rem; opacity: 0.5; }
+
+    /* SECTIONS */
+    .section { padding: 5rem 2rem; max-width: 900px; margin: 0 auto; }
+    .section-dark { background: var(--dark); color: white; max-width: 100%; padding: 5rem 2rem; }
+    .section-dark .inner { max-width: 900px; margin: 0 auto; }
+    .section-alt { background: var(--bg); max-width: 100%; padding: 5rem 2rem; }
+    .section-alt .inner { max-width: 900px; margin: 0 auto; }
+    .section-tag { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; color: var(--blue); margin-bottom: 0.75rem; }
+    .section h2 { font-size: 2rem; font-weight: 800; color: var(--dark); margin-bottom: 1.5rem; letter-spacing: -0.5px; }
+    .section-dark h2 { color: white; }
+    .section-alt h2 { color: var(--dark); }
+    .section p { margin-bottom: 1rem; }
+
+    /* CARDS */
+    .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin: 2rem 0; }
+    .card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 1.75rem; }
+    .card-dark { background: #1e293b; border-color: #334155; }
+    .card-num { font-size: 2.5rem; font-weight: 800; color: var(--blue); line-height: 1; }
+    .card-dark .card-num { color: #fbbf24; }
+    .card h3 { font-size: 1rem; font-weight: 700; margin: 0.75rem 0 0.25rem; color: var(--dark); }
+    .card-dark h3 { color: white; }
+    .card p { font-size: 0.9rem; color: var(--muted); margin: 0; }
+
+    /* TABLE */
+    table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem; }
+    th { text-align: left; padding: 0.75rem 1rem; background: var(--bg); font-weight: 600; color: var(--dark); border-bottom: 2px solid var(--border); }
+    td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); }
+    .badge { display: inline-block; padding: 0.15rem 0.6rem; border-radius: 50px; font-size: 0.75rem; font-weight: 700; }
+    .badge-green { background: #dcfce7; color: var(--green); }
+    .badge-red { background: #fef2f2; color: var(--red); }
+    .badge-amber { background: #fffbeb; color: var(--amber); }
+
+    /* COMPARISON */
+    .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0; }
+    .compare-box { border-radius: 12px; padding: 2rem; }
+    .compare-old { background: #fef2f2; border: 2px solid #fecaca; }
+    .compare-new { background: #f0fdf4; border: 2px solid #bbf7d0; }
+    .compare-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1rem; }
+    .compare-old .compare-label { color: var(--red); }
+    .compare-new .compare-label { color: var(--green); }
+    .compare-box ul { list-style: none; }
+    .compare-box li { padding: 0.3rem 0; font-size: 0.9rem; }
+    .compare-box li::before { margin-right: 0.5rem; }
+    .compare-old li::before { content: '✗'; color: var(--red); font-weight: 700; }
+    .compare-new li::before { content: '✓'; color: var(--green); font-weight: 700; }
+
+    /* FLOW */
+    .flow { display: flex; gap: 0.5rem; align-items: stretch; margin: 2rem 0; flex-wrap: wrap; }
+    .flow-step { flex: 1; min-width: 150px; background: #1e293b; border-radius: 12px; padding: 1.5rem; text-align: center; }
+    .flow-step-num { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 3px; color: #fbbf24; margin-bottom: 0.5rem; }
+    .flow-step h4 { font-size: 1rem; color: white; margin-bottom: 0.25rem; }
+    .flow-step p { font-size: 0.8rem; color: #94a3b8; }
+    .flow-arrow { display: flex; align-items: center; color: #475569; font-size: 1.5rem; }
+
+    /* MONEY */
+    .money-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0; }
+    .money-box { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 2rem; }
+    .money-box h3 { font-size: 1.1rem; font-weight: 700; color: var(--dark); margin-bottom: 1rem; }
+    .money-row { display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+    .money-row:last-child { border: none; font-weight: 700; color: var(--dark); font-size: 1rem; }
+    .money-highlight { background: linear-gradient(135deg, #f0fdf4, #dcfce7); border-color: #bbf7d0; }
+
+    /* LEGAL */
+    .legal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0; }
+    .legal-card { background: white; border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
+    .legal-card h4 { font-weight: 700; color: var(--dark); margin-bottom: 0.5rem; }
+    .legal-card p { font-size: 0.9rem; color: var(--muted); }
+    .legal-yes { border-left: 4px solid var(--green); }
+    .legal-no { border-left: 4px solid var(--border); }
+
+    /* QUOTE */
+    .quote-box {
+      background: var(--bg); border-left: 4px solid var(--blue); padding: 1.5rem 2rem;
+      margin: 2rem 0; border-radius: 0 12px 12px 0;
+    }
+    .quote-box p { font-size: 1.05rem; font-style: italic; color: var(--dark); margin: 0; }
+
+    /* DEMO LINKS */
+    .demo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin: 2rem 0; }
+    .demo-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; transition: all 0.2s; }
+    .demo-card:hover { border-color: var(--blue); box-shadow: 0 4px 20px rgba(37,99,235,0.08); }
+    .demo-card h4 { font-weight: 700; color: var(--dark); }
+    .demo-card .demo-type { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+    .demo-card .demo-style { font-size: 0.8rem; color: var(--blue); font-weight: 600; }
+
+    footer { text-align: center; padding: 3rem 2rem; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border); }
+
+    @media (max-width: 768px) {
+      .card-grid { grid-template-columns: 1fr; }
+      .compare, .money-grid, .legal-grid, .demo-grid { grid-template-columns: 1fr; }
+      .flow { flex-direction: column; }
+      .flow-arrow { transform: rotate(90deg); justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- COVER -->
+<section class="cover">
+  <div class="cover-badge">Projektvorstellung</div>
+  <h1>Websites bauen.<br><span>Lokal verkaufen.</span></h1>
+  <p>Ein semi-automatisches Tool das lokale Firmen ohne Website findet, personalisierte Demo-Websites baut und diese an die Firmen verkauft.</p>
+  <div class="cover-meta">Levi &middot; April 2026</div>
+</section>
+
+<!-- DIE IDEE -->
+<div class="section">
+  <div class="section-tag">Die Idee</div>
+  <h2>Das Problem & die Lösung</h2>
+  <p>Tausende Kleinunternehmen in Deutschland haben <strong>keine Website</strong> oder eine die aus den 2000ern stammt. Friseure, Handwerker, Imbisse — sie wissen, dass sie online sichtbar sein sollten, aber haben weder Zeit noch Geld für eine Agentur.</p>
+
+  <div class="quote-box">
+    <p>Ich baue mit Hilfe von KI personalisierte Websites in wenigen Minuten und verkaufe sie für 300–900 EUR an lokale Firmen. Meine Kosten: 0 EUR.</p>
+  </div>
+
+  <p>Das Besondere: Ich zeige dem Kunden eine <strong>fertige Demo-Website mit seinen echten Daten</strong> — Name, Adresse, Öffnungszeiten, Leistungen. Das ist kein kalter Anruf mit leerem Versprechen, sondern ein fertiges Produkt zum Anfassen.</p>
+</div>
+
+<!-- ZAHLEN -->
+<div class="section-dark">
+  <div class="inner">
+    <div class="section-tag" style="color:#fbbf24;">Erster Testlauf — Lüneburg</div>
+    <h2>Was das Tool in 30 Minuten gefunden hat</h2>
+    <div class="card-grid">
+      <div class="card card-dark"><div class="card-num">415</div><h3>Firmen gefunden</h3><p>In Lüneburg und Umgebung, alle Branchen</p></div>
+      <div class="card card-dark"><div class="card-num">68</div><h3>Ohne Website</h3><p>Komplett offline — die heißesten Leads</p></div>
+      <div class="card card-dark"><div class="card-num">290</div><h3>Emails gesammelt</h3><p>Automatisch von Websites und Verzeichnissen</p></div>
+    </div>
+    <div class="card-grid">
+      <div class="card card-dark"><div class="card-num">84</div><h3>HOT Leads</h3><p>Hoher Score — beste Verkaufschancen</p></div>
+      <div class="card card-dark"><div class="card-num">5</div><h3>Demo-Websites</h3><p>Bereits gebaut, jede im eigenen Design</p></div>
+      <div class="card card-dark"><div class="card-num">0 €</div><h3>Kosten bisher</h3><p>Alles mit kostenlosen APIs und Tools</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- WIE ES FUNKTIONIERT -->
+<div class="section">
+  <div class="section-tag">Wie es funktioniert</div>
+  <h2>Der semi-automatische Flow</h2>
+  <p>Das System kombiniert automatische Datensammlung mit KI-gestützter Website-Erstellung. Von der Firma-Suche bis zum fertigen Demo-Link vergehen circa 5 Minuten.</p>
+
+  <div class="flow">
+    <div class="flow-step">
+      <div class="flow-step-num">Schritt 1</div>
+      <h4>Research</h4>
+      <p>Tool sucht Firma auf Google, scraped alte Website, findet Email + Öffnungszeiten</p>
+    </div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-step">
+      <div class="flow-step-num">Schritt 2</div>
+      <h4>Website bauen</h4>
+      <p>KI generiert individuelle Website mit echten Firmendaten. Jede einzigartig.</p>
+    </div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-step">
+      <div class="flow-step-num">Schritt 3</div>
+      <h4>Deployen</h4>
+      <p>Website geht auf firma.vercel.app online. Kostenlos, sofort live.</p>
+    </div>
+    <div class="flow-arrow">&rarr;</div>
+    <div class="flow-step">
+      <div class="flow-step-num">Schritt 4</div>
+      <h4>Kontakt</h4>
+      <p>Firma anrufen oder mailen mit fertigem Demo-Link.</p>
+    </div>
+  </div>
+</div>
+
+<!-- VORHER / NACHHER -->
+<div class="section-alt">
+  <div class="inner">
+    <div class="section-tag">Vorher / Nachher</div>
+    <h2>Beispiel: Elektro Hartmann, Adendorf</h2>
+    <p>Ein Elektrofachbetrieb mit 5.0 Google-Bewertung und einer Website aus dem Jahr <strong>2009</strong>. HTML-Framesets, kein HTTPS, nicht mobil-fähig, kaputte Umlaute.</p>
+
+    <div class="compare">
+      <div class="compare-box compare-old">
+        <div class="compare-label">Vorher — <a href="http://www.hartmann-elektro.de/" target="_blank" style="color: var(--red);">hartmann-elektro.de ansehen &rarr;</a></div>
+        <ul>
+          <li>HTML Framesets von 2009</li>
+          <li>Kein HTTPS (unsicher)</li>
+          <li>Nicht mobil-fähig</li>
+          <li>Kaputte Umlaute (Qualit&auml;t)</li>
+          <li>Leistungen-Seite gibt 404</li>
+          <li>Kein SEO, keine Meta-Tags</li>
+          <li>Gebaut von "Franke IT-Consult"</li>
+        </ul>
+      </div>
+      <div class="compare-box compare-new">
+        <div class="compare-label">Nachher — <a href="../demos/elektro-hartmann/index.html" target="_blank" style="color: var(--green);">Meine Demo ansehen &rarr;</a></div>
+        <ul>
+          <li>Modernes responsive Design</li>
+          <li>HTTPS-ready</li>
+          <li>Perfekt auf dem Handy</li>
+          <li>Google Maps eingebettet</li>
+          <li>Alle Leistungen dargestellt</li>
+          <li>SEO optimiert</li>
+          <li>Telefon-Button als Call-to-Action</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-tag" style="margin-top: 3rem;">Weitere Demos</div>
+    <h2 style="color: var(--dark);">5 Websites, 5 komplett verschiedene Designs</h2>
+    <p>Jede Website hat ihren eigenen Stil — passend zur Branche und zur Persönlichkeit des Betriebs. Keine Templates, jede individuell.</p>
+
+    <div class="demo-grid">
+      <a href="../demos/elektro-hartmann/index.html" target="_blank" class="demo-card">
+        <div class="demo-type">Handwerk / Elektriker</div>
+        <h4>Elektro Hartmann &rarr;</h4>
+        <div class="demo-style">Clean Blue — professionell, vertrauenswürdig</div>
+      </a>
+      <a href="../demos/marckmann-zimmerei/index.html" target="_blank" class="demo-card">
+        <div class="demo-type">Handwerk / Zimmerei</div>
+        <h4>Zimmerei Marckmann &rarr;</h4>
+        <div class="demo-style">Dark Craft — dunkel, rau, handwerklich. Serif-Fonts, Gold-Akzente.</div>
+      </a>
+      <a href="../demos/fahrschule-luenedrive/index.html" target="_blank" class="demo-card">
+        <div class="demo-type">Dienstleistung / Fahrschule</div>
+        <h4>Fahrschule Lünedrive &rarr;</h4>
+        <div class="demo-style">Neon Dark — schwarz mit Neongrün, jung, bold. Gen-Z Ästhetik.</div>
+      </a>
+      <a href="../demos/gyros-center-plaka/index.html" target="_blank" class="demo-card">
+        <div class="demo-type">Gastronomie / Imbiss</div>
+        <h4>Imbiss Plaka Gyros-Center &rarr;</h4>
+        <div class="demo-style">Mediterranean — creme/terracotta, Restaurant-Speisekarte, warm.</div>
+      </a>
+      <a href="../demos/butterblume/index.html" target="_blank" class="demo-card">
+        <div class="demo-type">Handel / Florist</div>
+        <h4>Butterblume Barendorf &rarr;</h4>
+        <div class="demo-style">Editorial Soft — rosa, Magazin-Layout, Garamond-Serif, Emerson-Zitat.</div>
+      </a>
+    </div>
+
+    <p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--muted);">Auch die "Vorher"-Websites kann man sich ansehen:</p>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
+      <a href="http://www.hartmann-elektro.de/" target="_blank" style="font-size: 0.85rem; color: var(--red);">hartmann-elektro.de &rarr;</a>
+      <a href="http://www.marckmannzimmerei.de/" target="_blank" style="font-size: 0.85rem; color: var(--red);">marckmannzimmerei.de &rarr;</a>
+      <a href="http://www.fahrschule-luene-drive.de/" target="_blank" style="font-size: 0.85rem; color: var(--red);">fahrschule-luene-drive.de &rarr;</a>
+      <a href="http://www.gyros-center.de/" target="_blank" style="font-size: 0.85rem; color: var(--red);">gyros-center.de &rarr;</a>
+      <a href="http://www.butterblume-barendorf.de/" target="_blank" style="font-size: 0.85rem; color: var(--red);">butterblume-barendorf.de &rarr;</a>
+    </div>
+  </div>
+</div>
+
+<!-- GELD -->
+<div class="section">
+  <div class="section-tag">Finanzen</div>
+  <h2>Was es kostet, was es bringt</h2>
+
+  <div class="money-grid">
+    <div class="money-box">
+      <h3>Meine Kosten</h3>
+      <div class="money-row"><span>Hosting (Vercel)</span><span>0 EUR</span></div>
+      <div class="money-row"><span>Domain (Vercel Subdomain)</span><span>0 EUR</span></div>
+      <div class="money-row"><span>SSL-Zertifikat</span><span>0 EUR</span></div>
+      <div class="money-row"><span>Google APIs (Free Tier)</span><span>0 EUR</span></div>
+      <div class="money-row"><span>Website-Erstellung (KI)</span><span>0 EUR</span></div>
+      <div class="money-row"><span><strong>Gesamt pro Website</strong></span><span><strong>0 EUR</strong></span></div>
+    </div>
+    <div class="money-box money-highlight">
+      <h3>Einnahmen pro Kunde</h3>
+      <div class="money-row"><span>Website einmalig</span><span>200–500 EUR</span></div>
+      <div class="money-row"><span>Optional: Hosting/Monat</span><span>15 EUR</span></div>
+      <div class="money-row"><span>Optional: Eigene Domain</span><span>~6 EUR/Jahr</span></div>
+      <div class="money-row"><span><strong>Marge</strong></span><span><strong>~100%</strong></span></div>
+    </div>
+  </div>
+
+  <h3 style="font-weight: 700; margin: 2rem 0 1rem;">Hochrechnung</h3>
+  <table>
+    <tr><th>Szenario</th><th>Kunden</th><th>Einmalig</th><th>Monatlich</th><th>Jahres-Umsatz</th></tr>
+    <tr><td>Vorsichtig</td><td>5 Kunden</td><td>5 × 250 EUR</td><td>5 × 15 EUR</td><td><strong>2.150 EUR</strong></td></tr>
+    <tr><td>Realistisch</td><td>15 Kunden</td><td>15 × 350 EUR</td><td>10 × 15 EUR</td><td><strong>7.050 EUR</strong></td></tr>
+    <tr><td>Optimistisch</td><td>30 Kunden</td><td>30 × 400 EUR</td><td>20 × 15 EUR</td><td><strong>15.600 EUR</strong></td></tr>
+  </table>
+  <p style="font-size: 0.85rem; color: var(--muted);">Die ersten 3 Websites werden verschenkt — als Portfolio-Aufbau und Referenzen.</p>
+</div>
+
+<!-- RECHTLICHES -->
+<div class="section-alt">
+  <div class="inner">
+    <div class="section-tag">Rechtliches</div>
+    <h2>Was ich brauche, was nicht</h2>
+
+    <div class="legal-grid">
+      <div class="legal-card legal-yes">
+        <h4>&#10003; Gewerbeanmeldung</h4>
+        <p>Beim Gewerbeamt, ~20 EUR, 15 Minuten. Ab dem ersten Euro Umsatz Pflicht.</p>
+      </div>
+      <div class="legal-card legal-yes">
+        <h4>&#10003; Kleinunternehmerregelung</h4>
+        <p>Unter 22.000 EUR/Jahr keine Umsatzsteuer. Einfache Rechnungen ohne MwSt.</p>
+      </div>
+      <div class="legal-card legal-yes">
+        <h4>&#10003; Rechnungen schreiben</h4>
+        <p>PDF reicht. Mit Hinweis "Keine Umsatzsteuer gemäß §19 UStG".</p>
+      </div>
+      <div class="legal-card legal-yes">
+        <h4>&#10003; DSGVO beachten</h4>
+        <p>Nur öffentliche Geschäftsdaten nutzen. Kein automatisches Cold-Emailing. Persönlicher Kontakt ist legal.</p>
+      </div>
+      <div class="legal-card legal-no">
+        <h4>&#10007; Kein Steuerberater nötig</h4>
+        <p>Unter 22k/Jahr ist die Steuererklärung einfach genug zum Selbstmachen.</p>
+      </div>
+      <div class="legal-card legal-no">
+        <h4>&#10007; Keine GmbH/UG nötig</h4>
+        <p>Einzelunternehmen reicht völlig. Keine Gründungskosten, kein Stammkapital.</p>
+      </div>
+      <div class="legal-card legal-no">
+        <h4>&#10007; Keine Versicherung nötig</h4>
+        <p>Statische Websites ohne Nutzerdaten = minimales Risiko. Berufshaftpflicht optional.</p>
+      </div>
+      <div class="legal-card legal-no">
+        <h4>&#10007; Keine laufenden Verträge</h4>
+        <p>Ich verkaufe ein fertiges Produkt (HTML-Dateien). Keine Wartungspflicht, keine Hosting-Verpflichtung.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BUSINESS MODEL -->
+<div class="section">
+  <div class="section-tag">Geschäftsmodell</div>
+  <h2>Verkaufskonzept</h2>
+
+  <p>Ich baue <strong>einfache statische Image-Websites</strong> — kein Login, kein Shop, keine Datenbank. Reine Darstellung: Wer ist die Firma, was bieten sie an, wie erreicht man sie. Das reicht für 95% der lokalen Kleinunternehmen.</p>
+
+  <h3 style="margin: 2rem 0 1rem; font-weight: 700;">Warum Kunden kaufen</h3>
+  <table>
+    <tr><th>Was der Kunde selbst machen müsste</th><th>Was ich für ihn mache</th></tr>
+    <tr><td>Wix/Jimdo lernen (Stunden)</td><td>Website ist schon fertig</td></tr>
+    <tr><td>Texte selbst schreiben</td><td>Texte sind personalisiert</td></tr>
+    <tr><td>Design überlegen</td><td>Professionelles Design</td></tr>
+    <tr><td>Domain + Hosting einrichten</td><td>Ich richte alles ein</td></tr>
+    <tr><td>DSGVO/Impressum recherchieren</td><td>Schon eingebaut</td></tr>
+    <tr><td>Sich darum kümmern</td><td>Ich bin Ansprechpartner</td></tr>
+  </table>
+
+  <h3 style="margin: 2rem 0 1rem; font-weight: 700;">Preisgestaltung</h3>
+  <table>
+    <tr><th>Paket</th><th>Preis</th><th>Zielgruppe</th></tr>
+    <tr><td>Starter (One-Pager)</td><td>200–300 EUR</td><td>Imbiss, Friseur, kleine Läden</td></tr>
+    <tr><td>Standard (3-5 Seiten)</td><td>300–500 EUR</td><td>Handwerker, Fahrschulen, Restaurants</td></tr>
+    <tr><td>Optional: Hosting</td><td>15 EUR/Monat</td><td>Kunden die sich um nichts kümmern wollen</td></tr>
+  </table>
+  <p style="font-size: 0.85rem; color: var(--muted);">Eine Agentur nimmt für vergleichbare Websites 2.000–5.000 EUR. Ich bin ~80% günstiger.</p>
+</div>
+
+<!-- TECHNIK -->
+<div class="section-dark">
+  <div class="inner">
+    <div class="section-tag" style="color:#fbbf24;">Technik</div>
+    <h2>Was unter der Haube steckt</h2>
+    <p style="color: #94a3b8;">Das Tool besteht aus mehreren Modulen die zusammenarbeiten:</p>
+
+    <table style="color: #e2e8f0; margin-top: 2rem;">
+      <tr><th style="background: #1e293b; color: #94a3b8;">Modul</th><th style="background: #1e293b; color: #94a3b8;">Technologie</th><th style="background: #1e293b; color: #94a3b8;">Funktion</th></tr>
+      <tr><td>Lead-Generator</td><td>Google Places API</td><td>Firmen ohne Website finden, Kontaktdaten sammeln</td></tr>
+      <tr><td>Website-Checker</td><td>Eigener Crawler</td><td>HTTPS, Mobile, SEO prüfen — schlechte Websites identifizieren</td></tr>
+      <tr><td>Email-Finder</td><td>Playwright Browser</td><td>Emails von Websites und Impressum-Seiten scrapen</td></tr>
+      <tr><td>Research-Tool</td><td>Google API + Playwright</td><td>Komplettes Firmenprofil automatisch erstellen</td></tr>
+      <tr><td>Website-Generator</td><td>Claude Code (KI)</td><td>Individuelle Website bauen basierend auf Firmenprofil</td></tr>
+      <tr><td>Deploy</td><td>Vercel (geplant)</td><td>Website mit einem Befehl live schalten</td></tr>
+    </table>
+
+    <p style="color: #94a3b8; margin-top: 2rem;">Stack: Node.js, TypeScript, Playwright. Alles Open Source, keine laufenden Kosten.</p>
+  </div>
+</div>
+
+<!-- NEXT STEPS -->
+<div class="section">
+  <div class="section-tag">Nächste Schritte</div>
+  <h2>Was noch kommt</h2>
+
+  <table>
+    <tr><th>Was</th><th>Status</th><th>Beschreibung</th></tr>
+    <tr><td>Lead-Generator</td><td><span class="badge badge-green">Fertig</span></td><td>415 Leads in Lüneburg, 290 mit Email</td></tr>
+    <tr><td>Research-Tool</td><td><span class="badge badge-green">Fertig</span></td><td>Automatisches Firmenprofil in 30 Sekunden</td></tr>
+    <tr><td>Website-Generierung</td><td><span class="badge badge-green">Fertig</span></td><td>5 Demo-Websites gebaut, jede einzigartig</td></tr>
+    <tr><td>Vercel Deploy</td><td><span class="badge badge-amber">Geplant</span></td><td>Ein-Klick Deploy auf firma.vercel.app</td></tr>
+    <tr><td>Email-Outreach</td><td><span class="badge badge-amber">Geplant</span></td><td>Personalisierte Anschreiben automatisch generieren</td></tr>
+    <tr><td>Kunden-Wartung</td><td><span class="badge badge-amber">Geplant</span></td><td>Email-Monitoring, automatische Website-Updates</td></tr>
+    <tr><td>Telegram Bot</td><td><span class="badge badge-amber">Geplant</span></td><td>Dashboard für Leads, Kunden-Status, Benachrichtigungen</td></tr>
+    <tr><td>Gewerbeanmeldung</td><td><span class="badge badge-red">Offen</span></td><td>~20 EUR, beim Gewerbeamt Lüneburg</td></tr>
+    <tr><td>Erste 3 Websites verschenken</td><td><span class="badge badge-red">Offen</span></td><td>Portfolio aufbauen, Referenzen sammeln</td></tr>
+  </table>
+</div>
+
+<footer>
+  <p>Erstellt von Levi &middot; April 2026 &middot; Alle Daten aus echten Quellen (Google Places API)</p>
+</footer>
+
+</body>
+</html>
