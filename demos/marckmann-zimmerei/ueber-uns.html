@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Über uns — Zimmerei Marckmann Lüneburg</title>
+  <meta name="description" content="Zimmerei Hagen Marckmann — Meisterbetrieb in Lüneburg. Persönlich, ehrlich, solide. Holz ist nicht nur unser Werkstoff, es ist unsere Leidenschaft.">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --cream: #f5f0e8; --dark: #1a1a18; --wood: #8b6914; --wood-light: #c4a35a; --text: #3d3d3a; --muted: #7a7a72; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Space Grotesk', sans-serif; color: var(--text); background: var(--cream); }
+    a { color: inherit; text-decoration: none; }
+    .serif { font-family: 'DM Serif Display', serif; }
+
+    .topbar {
+      position: fixed; top: 0; width: 100%; z-index: 99;
+      background: var(--dark); color: var(--cream); padding: 0 3rem;
+      display: flex; justify-content: space-between; align-items: center; height: 56px;
+      font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase;
+    }
+    .topbar a { color: var(--cream); opacity: 0.7; transition: opacity 0.2s; }
+    .topbar a:hover { opacity: 1; }
+    .topbar-links { display: flex; gap: 2.5rem; }
+    .topbar-phone { color: var(--wood-light) !important; opacity: 1 !important; font-weight: 600; }
+    .topbar-links a.active { opacity: 1; border-bottom: 2px solid var(--wood-light); padding-bottom: 2px; }
+
+    .page-hero {
+      min-height: 50vh; background: var(--dark); color: var(--cream);
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 0 3rem 4rem; padding-top: 56px;
+    }
+    .page-hero-label {
+      font-size: 0.7rem; text-transform: uppercase; letter-spacing: 4px;
+      color: var(--wood-light); margin-bottom: 1rem; margin-top: 3rem;
+    }
+    .page-hero h1 {
+      font-family: 'DM Serif Display', serif; font-size: clamp(2.5rem, 6vw, 5rem);
+      line-height: 1; font-weight: 400; max-width: 800px;
+    }
+    .page-hero h1 span { color: var(--wood-light); }
+    .page-hero-sub {
+      margin-top: 1.5rem; font-size: 1.1rem; max-width: 560px; line-height: 1.7; color: #a8a89e;
+    }
+
+    .section { padding: 6rem 3rem; }
+    .section-dark { background: var(--dark); color: var(--cream); }
+    .section-cream { background: var(--cream); color: var(--text); }
+
+    .content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+    .content-text { font-size: 1.05rem; line-height: 1.9; }
+    .section-dark .content-text { color: #b0b0a6; }
+    .section-cream .content-text { color: var(--muted); }
+    .content-text strong { color: var(--cream); }
+    .section-cream .content-text strong { color: var(--text); }
+
+    .section-num {
+      font-family: 'DM Serif Display', serif; font-size: 5rem;
+      color: var(--wood-light); opacity: 0.2; line-height: 1; margin-bottom: -0.5rem;
+    }
+    .section-label {
+      font-size: 0.7rem; text-transform: uppercase; letter-spacing: 4px;
+      color: var(--wood-light); margin-bottom: 1rem;
+    }
+    .section h2 {
+      font-family: 'DM Serif Display', serif; font-size: 2.5rem; font-weight: 400;
+      margin-bottom: 2rem; max-width: 600px;
+    }
+
+    .divider { width: 60px; height: 2px; background: var(--wood-light); margin: 2rem 0; }
+
+    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--wood-light); margin-top: 3rem; }
+    .value-card { background: var(--dark); padding: 2.5rem; }
+    .value-card:hover { background: #2a2a26; transition: background 0.4s; }
+    .value-num { font-family: 'DM Serif Display', serif; font-size: 2.5rem; color: var(--wood-light); opacity: 0.4; }
+    .value-card h3 { font-size: 1.1rem; font-weight: 600; margin: 1rem 0 0.5rem; color: var(--cream); }
+    .value-card p { font-size: 0.9rem; color: #8a8a80; line-height: 1.6; }
+
+    .stat-row { display: flex; gap: 4rem; margin-top: 3rem; flex-wrap: wrap; }
+    .stat-item { }
+    .stat-num { font-family: 'DM Serif Display', serif; font-size: 3.5rem; color: var(--wood); line-height: 1; }
+    .stat-label { font-size: 0.85rem; color: var(--muted); margin-top: 0.5rem; }
+
+    .quote-block {
+      border-left: 3px solid var(--wood-light); padding: 2rem 0 2rem 2rem;
+      margin: 3rem 0; max-width: 700px;
+    }
+    .quote-block p {
+      font-family: 'DM Serif Display', serif; font-size: 1.5rem; font-weight: 400;
+      line-height: 1.5; color: var(--cream);
+    }
+    .section-cream .quote-block p { color: var(--text); }
+    .quote-block cite { font-style: normal; font-size: 0.85rem; color: var(--wood-light); margin-top: 1rem; display: block; }
+
+    .cta-bar {
+      background: var(--dark); border-top: 1px solid #333; padding: 4rem 3rem;
+      text-align: center;
+    }
+    .cta-bar h2 {
+      font-family: 'DM Serif Display', serif; font-size: 2rem; font-weight: 400;
+      color: var(--cream); margin-bottom: 1rem;
+    }
+    .cta-bar p { color: #888; margin-bottom: 2rem; font-size: 1rem; }
+    .cta-btn {
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      border: 1px solid var(--wood-light); color: var(--wood-light);
+      padding: 1rem 2.5rem; font-size: 0.9rem; text-transform: uppercase;
+      letter-spacing: 2px; transition: all 0.3s;
+    }
+    .cta-btn:hover { background: var(--wood-light); color: var(--dark); }
+
+    footer {
+      background: var(--dark); color: #666; border-top: 1px solid #333;
+      padding: 2rem 3rem; display: flex; justify-content: space-between;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 768px) {
+      .topbar { padding: 0 1.5rem; } .topbar-links { display: none; }
+      .page-hero { padding: 56px 1.5rem 3rem; min-height: 40vh; }
+      .page-hero h1 { font-size: 2.2rem; }
+      .section { padding: 4rem 1.5rem; }
+      .content-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .values-grid { grid-template-columns: 1fr; }
+      .stat-row { gap: 2rem; }
+      .quote-block { padding-left: 1.5rem; }
+      .quote-block p { font-size: 1.2rem; }
+      .cta-bar { padding: 3rem 1.5rem; }
+      footer { flex-direction: column; gap: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="index.html" style="font-weight:600; letter-spacing: 2px; opacity:1;">MARCKMANN</a>
+  <div class="topbar-links">
+    <a href="leistungen.html">Leistungen</a>
+    <a href="ueber-uns.html" class="active">Über uns</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
+  <a href="tel:01724548848" class="topbar-phone">0172 / 454 88 48</a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero-label">Über uns</div>
+  <h1>Handwerk mit <span>Haltung</span></h1>
+  <p class="page-hero-sub">Kein Konzern, kein Callcenter. Bei uns sprechen Sie direkt mit dem Meister. Das macht den Unterschied — bei der Planung, auf der Baustelle und danach.</p>
+</section>
+
+<!-- DER BETRIEB -->
+<section class="section section-cream">
+  <div class="section-num">01</div>
+  <div class="section-label">Der Betrieb</div>
+  <h2 class="serif">Ein Name, ein Wort.</h2>
+  <div class="content-grid">
+    <div>
+      <p class="content-text">
+        Die Zimmerei Marckmann steht in Lüneburg für <strong>solides, ehrliches Handwerk</strong>. Hagen Marckmann führt den Betrieb persönlich — mit Meisterbrief, Erfahrung und einer klaren Linie: Was wir zusagen, das halten wir. Was wir bauen, das hält.
+      </p>
+      <p class="content-text" style="margin-top:1.5rem;">
+        Wir sind kein Großunternehmen und wollen es auch nicht sein. <strong>Überschaubar, direkt, zuverlässig</strong> — das ist unser Anspruch. Jeder Kunde hat einen Ansprechpartner: den Chef. Vom ersten Gespräch bis zur letzten Schraube.
+      </p>
+    </div>
+    <div>
+      <div class="stat-row" style="flex-direction:column; gap:2rem;">
+        <div class="stat-item">
+          <div class="stat-num">1</div>
+          <div class="stat-label">Ansprechpartner für alles</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Meisterqualität aus Lüneburg</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">&infin;</div>
+          <div class="stat-label">Leidenschaft für Holz</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOLZ ALS MATERIAL -->
+<section class="section section-dark">
+  <div class="section-num">02</div>
+  <div class="section-label">Material</div>
+  <h2 class="serif">Warum Holz.</h2>
+  <div class="content-grid">
+    <div>
+      <p class="content-text">
+        Holz ist nicht einfach ein Baustoff. Es atmet, es arbeitet, es lebt. Wer mit Holz baut, baut mit einem Material, das <strong>seit Jahrtausenden funktioniert</strong> — und das auch in Zukunft die richtige Wahl bleibt. Nachwachsend, CO2-speichernd, wohngesund.
+      </p>
+      <p class="content-text" style="margin-top:1.5rem;">
+        Wir kennen jede Holzart, jede Faser, jedes Verhalten. <strong>Dieses Wissen</strong> ist der Kern unserer Arbeit. Es entscheidet, ob eine Konstruktion 20 oder 200 Jahre hält.
+      </p>
+    </div>
+    <div>
+      <div class="quote-block">
+        <p>Holz verzeiht Fehler nicht. Aber wer es versteht, baut damit für die Ewigkeit.</p>
+        <cite>— Hagen Marckmann</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WERTE -->
+<section class="section section-cream">
+  <div class="section-num">03</div>
+  <div class="section-label">Werte</div>
+  <h2 class="serif">Woran wir uns messen lassen.</h2>
+  <p class="content-text" style="max-width:600px; margin-bottom:1rem;">
+    Große Worte liegen uns nicht. Stattdessen drei Grundsätze, an denen wir jeden Tag arbeiten:
+  </p>
+</section>
+
+<section class="section section-dark" style="padding-top:0;">
+  <div class="values-grid">
+    <div class="value-card">
+      <div class="value-num">01</div>
+      <h3>Ehrlichkeit</h3>
+      <p>Wir sagen, was geht und was nicht. Lieber ein ehrliches Nein als ein Ja, das Probleme macht. Transparente Kosten, realistische Zeitpläne.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-num">02</div>
+      <h3>Präzision</h3>
+      <p>Jeder Schnitt sitzt, jede Verbindung hält. Handwerk heißt, dass jemand mit Können und Sorgfalt die Verantwortung trägt — nicht eine Maschine.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-num">03</div>
+      <h3>Verlässlichkeit</h3>
+      <p>Wenn wir Dienstag sagen, meinen wir Dienstag. Wenn wir fertig sagen, ist es fertig. Unser Wort zählt — auf der Baustelle und danach.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REGION -->
+<section class="section section-cream">
+  <div class="section-num">04</div>
+  <div class="section-label">Region</div>
+  <h2 class="serif">Lüneburg und Umgebung.</h2>
+  <div class="content-grid">
+    <div>
+      <p class="content-text">
+        Unser Betrieb sitzt am <strong>Brauerweg 2 in Lüneburg</strong> — und hier arbeiten wir auch am liebsten. Kurze Wege, schnelle Reaktionszeiten, persönliche Verbindungen. Wir kennen die Bausubstanz der Region, die Böden, die Vorschriften.
+      </p>
+      <p class="content-text" style="margin-top:1.5rem;">
+        Unser Einsatzgebiet umfasst <strong>Lüneburg, Adendorf, Bardowick, Melbeck</strong> und die gesamte umliegende Region. Ob Stadthaus oder Landgut — wir sind schnell vor Ort.
+      </p>
+    </div>
+    <div>
+      <p class="content-text">
+        Die Region ist geprägt von Backstein, Fachwerk und norddeutscher Sachlichkeit. <strong>Das passt zu uns.</strong> Wir bauen nicht laut, wir bauen solide. Nicht auffällig, aber auffallend gut.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="cta-bar">
+  <h2 class="serif">Lernen Sie uns kennen.</h2>
+  <p>Ein Anruf genügt. Wir nehmen uns Zeit für Ihr Anliegen.</p>
+  <a href="tel:01724548848" class="cta-btn">Jetzt anrufen &rarr;</a>
+</div>
+
+<footer>
+  <span>&copy; 2026 Zimmerei Marckmann</span>
+  <span>Brauerweg 2, 21335 Lüneburg</span>
+</footer>
+
+</body>
+</html>

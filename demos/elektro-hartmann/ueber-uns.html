@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Über uns | Elektro Hartmann — Ihr Elektriker seit 1968</title>
+  <meta name="description" content="Lernen Sie Elektro Hartmann kennen — seit 1968 Ihr zuverlässiger Elektrofachbetrieb in Adendorf bei Lüneburg. 5.0 Sterne auf Google.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue: #1a56db;
+      --blue-dark: #1e40af;
+      --blue-light: #dbeafe;
+      --amber: #f59e0b;
+      --amber-dark: #d97706;
+      --dark: #0f172a;
+      --text: #334155;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+      --white: #ffffff;
+      --radius: 12px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: var(--text); line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+
+    /* NAV */
+    .nav {
+      position: fixed; top: 0; width: 100%; z-index: 999;
+      background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border); padding: 0.75rem 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .nav-logo { font-size: 1.25rem; font-weight: 700; color: var(--blue); }
+    .nav-logo span { color: var(--amber); }
+    .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
+    .nav-links a { font-size: 0.9rem; font-weight: 500; color: var(--dark); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--blue); }
+    .nav-links a.active { color: var(--blue); }
+    .nav-cta {
+      background: var(--blue); color: var(--white) !important; padding: 0.5rem 1.25rem;
+      border-radius: 8px; font-weight: 600; transition: all 0.2s;
+    }
+    .nav-cta:hover { background: var(--blue-dark); }
+
+    /* PAGE HERO */
+    .page-hero {
+      padding: 8rem 2rem 4rem;
+      background: linear-gradient(135deg, #1e3a5f 0%, #1a56db 50%, #2563eb 100%);
+      color: white; text-align: center;
+    }
+    .page-hero h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.75rem; }
+    .page-hero p { font-size: 1.15rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+
+    /* SECTION */
+    .section { padding: 5rem 2rem; }
+    .section-alt { background: var(--bg); }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-tag {
+      font-size: 0.8rem; font-weight: 700; color: var(--blue);
+      text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0.75rem;
+    }
+    .section-title { font-size: clamp(1.75rem, 3vw, 2.25rem); font-weight: 800; color: var(--dark); letter-spacing: -0.5px; margin-bottom: 1.5rem; }
+
+    /* STORY */
+    .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .story-text p { margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.8; }
+    .story-highlight {
+      background: linear-gradient(135deg, var(--blue-light) 0%, #eff6ff 100%);
+      border-radius: 20px; padding: 3rem; text-align: center;
+    }
+    .story-year { font-size: 4rem; font-weight: 800; color: var(--blue); }
+    .story-year-label { font-size: 1.1rem; color: var(--muted); margin-top: 0.25rem; }
+    .story-stat {
+      display: flex; justify-content: center; gap: 3rem; margin-top: 2rem;
+      padding-top: 2rem; border-top: 1px solid var(--border);
+    }
+    .story-stat-item { text-align: center; }
+    .story-stat-val { font-size: 1.5rem; font-weight: 800; color: var(--dark); }
+    .story-stat-label { font-size: 0.8rem; color: var(--muted); }
+
+    /* VALUES */
+    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2.5rem; }
+    .value-card {
+      background: var(--white); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 2rem; text-align: center; transition: all 0.3s;
+    }
+    .value-card:hover { border-color: var(--blue); box-shadow: 0 8px 30px rgba(26,86,219,0.1); transform: translateY(-4px); }
+    .value-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+    .value-card h3 { font-size: 1.15rem; font-weight: 700; color: var(--dark); margin-bottom: 0.5rem; }
+    .value-card p { color: var(--muted); font-size: 0.95rem; }
+
+    /* RATING */
+    .rating-section { text-align: center; }
+    .rating-box {
+      background: var(--white); border: 1px solid var(--border); border-radius: 20px;
+      padding: 3rem; max-width: 600px; margin: 2rem auto 0; box-shadow: 0 4px 25px rgba(0,0,0,0.06);
+    }
+    .rating-stars { font-size: 2.5rem; letter-spacing: 6px; margin-bottom: 0.5rem; }
+    .rating-score { font-size: 3.5rem; font-weight: 800; color: var(--dark); }
+    .rating-text { color: var(--muted); margin-top: 0.25rem; font-size: 1.05rem; }
+    .rating-badge {
+      display: inline-block; background: var(--blue-light); padding: 0.75rem 1.5rem;
+      border-radius: 10px; margin-top: 1.5rem; font-weight: 600; color: var(--blue);
+    }
+    .rating-quotes { max-width: 700px; margin: 3rem auto 0; }
+    .quote {
+      background: var(--white); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 1.5rem 2rem; margin-bottom: 1rem; text-align: left;
+    }
+    .quote p { font-style: italic; color: var(--text); margin-bottom: 0.5rem; }
+    .quote span { font-size: 0.85rem; color: var(--muted); font-weight: 600; }
+
+    /* CTA */
+    .cta-section {
+      background: linear-gradient(135deg, #1e3a5f, #1a56db); color: white;
+      padding: 5rem 2rem; text-align: center;
+    }
+    .cta-section h2 { font-size: 2rem; font-weight: 800; margin-bottom: 0.75rem; }
+    .cta-section p { opacity: 0.85; margin-bottom: 2rem; font-size: 1.1rem; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.9rem 2rem; border-radius: 10px; font-weight: 600;
+      font-size: 1rem; transition: all 0.25s; border: none; cursor: pointer;
+    }
+    .btn-amber { background: var(--amber); color: var(--dark); }
+    .btn-amber:hover { background: var(--amber-dark); transform: translateY(-2px); }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark); color: #94a3b8; padding: 3rem 2rem; font-size: 0.85rem;
+    }
+    .footer-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-links { display: flex; gap: 2rem; }
+    .footer-links a { color: #94a3b8; transition: color 0.2s; }
+    .footer-links a:hover { color: white; }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .page-hero { padding: 7rem 1.5rem 3rem; }
+      .page-hero h1 { font-size: 1.85rem; }
+      .section { padding: 3rem 1.5rem; }
+      .story-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .values-grid { grid-template-columns: 1fr; }
+      .story-stat { gap: 2rem; }
+      .footer-inner { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Elektro<span>Hartmann</span></a>
+  <ul class="nav-links">
+    <li><a href="leistungen.html">Leistungen</a></li>
+    <li><a href="ueber-uns.html" class="active">Über uns</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li><a href="tel:0413118490" class="nav-cta">Jetzt anrufen</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <h1>Über uns</h1>
+  <p>Seit 1968 steht Elektro Hartmann für handwerkliche Qualität, persönlichen Service und Zuverlässigkeit in Adendorf und Umgebung.</p>
+</section>
+
+<!-- GESCHICHTE -->
+<section class="section">
+  <div class="container">
+    <div class="story-grid">
+      <div class="story-text">
+        <div class="section-tag">Unsere Geschichte</div>
+        <h2 class="section-title">Tradition trifft Moderne</h2>
+        <p>Was 1968 als kleiner Elektrobetrieb in Adendorf begann, hat sich über die Jahrzehnte zu einem etablierten Fachbetrieb entwickelt, dem Kunden in der gesamten Region Lüneburg vertrauen.</p>
+        <p>Über mehr als 55 Jahre haben wir Tausende von Projekten erfolgreich umgesetzt — von der einfachen Steckdose bis zur kompletten Gebäudeelektrik. Dabei ist eines immer gleich geblieben: unser Anspruch an Qualität und unser persönlicher Umgang mit jedem einzelnen Kunden.</p>
+        <p>Wir verbinden die Erfahrung und Werte eines traditionsreichen Handwerksbetriebs mit dem Wissen um moderne Technologien. So profitieren Sie von bewährter Handwerkskunst und innovativen Lösungen zugleich.</p>
+      </div>
+      <div class="story-highlight">
+        <div class="story-year">1968</div>
+        <div class="story-year-label">Gründungsjahr</div>
+        <div class="story-stat">
+          <div class="story-stat-item">
+            <div class="story-stat-val">55+</div>
+            <div class="story-stat-label">Jahre Erfahrung</div>
+          </div>
+          <div class="story-stat-item">
+            <div class="story-stat-val">Adendorf</div>
+            <div class="story-stat-label">& Region Lüneburg</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WERTE -->
+<section class="section section-alt">
+  <div class="container">
+    <div style="text-align: center;">
+      <div class="section-tag">Unsere Werte</div>
+      <h2 class="section-title">Wofür wir stehen</h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">&#128170;</div>
+        <h3>Zuverlässigkeit</h3>
+        <p>Wenn wir einen Termin vereinbaren, halten wir ihn. Sie können sich auf uns verlassen — bei kleinen Reparaturen genauso wie bei großen Projekten.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">&#11088;</div>
+        <h3>Qualität</h3>
+        <p>Saubere Arbeit nach den aktuellen Normen und Vorschriften. Wir verwenden hochwertige Materialien und arbeiten mit der Sorgfalt, die Sie verdienen.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">&#9889;</div>
+        <h3>Flexibilität</h3>
+        <p>Jedes Projekt ist anders, jeder Kunde hat individuelle Wünsche. Wir hören zu, beraten ehrlich und finden die beste Lösung — auch kurzfristig.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GOOGLE BEWERTUNG -->
+<section class="section">
+  <div class="container rating-section">
+    <div class="section-tag">Kundenstimmen</div>
+    <h2 class="section-title">Das sagen unsere Kunden</h2>
+    <div class="rating-box">
+      <div class="rating-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+      <div class="rating-score">5.0</div>
+      <div class="rating-text">von 5 Sternen auf Google (8 Bewertungen)</div>
+      <div class="rating-badge">&#128077; 100 % Weiterempfehlung</div>
+    </div>
+    <div class="rating-quotes">
+      <div class="quote">
+        <p>"Schnell, sauber und absolut zuverlässig. Kann ich nur empfehlen!"</p>
+        <span>&#11088;&#11088;&#11088;&#11088;&#11088; — Google Bewertung</span>
+      </div>
+      <div class="quote">
+        <p>"Sehr kompetente Beratung und einwandfreie Ausführung. Preis-Leistung stimmt."</p>
+        <span>&#11088;&#11088;&#11088;&#11088;&#11088; — Google Bewertung</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WARUM WIR -->
+<section class="section section-alt">
+  <div class="container" style="text-align: center; max-width: 750px;">
+    <div class="section-tag">Warum wir</div>
+    <h2 class="section-title">Ihr Vorteil mit Elektro Hartmann</h2>
+    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.25rem;">Bei uns bekommen Sie nicht einfach nur einen Elektriker — Sie bekommen einen Partner, der mitdenkt. Wir nehmen uns Zeit für Ihre Fragen, erklären verständlich, was gemacht wird, und hinterlassen die Baustelle so, wie wir sie vorgefunden haben: sauber.</p>
+    <p style="font-size: 1.05rem; line-height: 1.8;">Als regionaler Betrieb sind wir schnell vor Ort und kennen die Gegebenheiten in Adendorf, Lüneburg und Umgebung. Sie erreichen uns persönlich — ohne Warteschleife und ohne Callcenter. Das ist unser Versprechen.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Lernen Sie uns kennen</h2>
+  <p>Wir freuen uns auf Ihr Projekt. Rufen Sie uns an für eine unverbindliche Beratung.</p>
+  <a href="tel:0413118490" class="btn btn-amber">&#128222; 04131 / 18490</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span>&copy; 2026 Elektro Hartmann — Dieselstraße 3, 21365 Adendorf</span>
+    <div class="footer-links">
+      <a href="leistungen.html">Leistungen</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

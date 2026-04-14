@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unser Angebot — Butterblume, Ihr Florist in Barendorf</title>
+  <meta name="description" content="Blumensträuße, Hochzeitsfloristik, Trauerfloristik, saisonale Dekoration, Topfpflanzen und Lieferservice — Butterblume in Barendorf.">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --rose: #9f1239; --rose-soft: #fda4af; --blush: #fff1f2; --sage: #4d7c0f; --sage-light: #ecfccb; --dark: #1c1917; --text: #57534e; --muted: #a8a29e; --cream: #faf8f5; --white: #fff; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Karla', sans-serif; color: var(--text); background: var(--cream); font-weight: 300; }
+    a { color: inherit; text-decoration: none; }
+    .serif { font-family: 'Cormorant Garamond', serif; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 99;
+      background: rgba(250,248,245,0.9); backdrop-filter: blur(12px);
+      padding: 1.25rem 3rem; display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 700; color: var(--rose); font-style: italic; }
+    nav ul { list-style: none; display: flex; gap: 2.5rem; }
+    nav a { font-size: 0.8rem; font-weight: 500; text-transform: uppercase; letter-spacing: 2px; color: var(--muted); }
+    nav a:hover { color: var(--rose); }
+    nav a.active { color: var(--rose); }
+
+    /* PAGE HEADER */
+    .page-header {
+      padding: 10rem 2rem 5rem; text-align: center;
+      background: linear-gradient(180deg, var(--blush) 0%, var(--cream) 100%);
+    }
+    .page-header-icon { font-size: 2.5rem; margin-bottom: 1.5rem; opacity: 0.7; }
+    .page-header h1 {
+      font-family: 'Cormorant Garamond', serif; font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 400; color: var(--dark); font-style: italic; margin-bottom: 1rem;
+    }
+    .page-header p { font-size: 1.05rem; color: var(--muted); max-width: 500px; margin: 0 auto; line-height: 1.8; }
+
+    /* SECTIONS */
+    section { padding: 5rem 3rem; }
+    .container { max-width: 1000px; margin: 0 auto; }
+
+    /* OFFER DETAIL */
+    .offer-detail {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-bottom: 1px; background: #e7e5e4;
+    }
+    .offer-detail:last-child { margin-bottom: 0; }
+    .offer-detail-num {
+      background: var(--blush); display: flex; align-items: center; justify-content: center;
+      font-family: 'Cormorant Garamond', serif; font-size: 5rem; color: var(--rose-soft);
+      font-style: italic; padding: 3rem;
+    }
+    .offer-detail-content {
+      background: var(--cream); padding: 3.5rem; display: flex; flex-direction: column; justify-content: center;
+    }
+    .offer-detail-content h2 {
+      font-family: 'Cormorant Garamond', serif; font-size: 1.8rem;
+      font-weight: 700; color: var(--dark); margin-bottom: 1rem;
+    }
+    .offer-detail-content p {
+      font-size: 1rem; line-height: 1.9; color: var(--muted); margin-bottom: 0.75rem;
+    }
+    .offer-detail-content p:last-child { margin-bottom: 0; }
+
+    /* Alternate layout */
+    .offer-detail.reverse .offer-detail-num { order: 2; }
+    .offer-detail.reverse .offer-detail-content { order: 1; }
+
+    /* QUOTE */
+    .quote-section {
+      background: var(--blush); padding: 5rem 2rem; text-align: center;
+    }
+    .quote {
+      font-family: 'Cormorant Garamond', serif; font-size: 2rem;
+      font-style: italic; color: var(--dark); max-width: 600px; margin: 0 auto;
+      line-height: 1.4;
+    }
+    .quote-author { margin-top: 1.5rem; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 3px; color: var(--muted); }
+
+    /* CTA */
+    .cta-section { text-align: center; padding: 5rem 2rem; }
+    .cta-section h2 {
+      font-family: 'Cormorant Garamond', serif; font-size: 2.2rem;
+      font-weight: 400; font-style: italic; color: var(--dark); margin-bottom: 1rem;
+    }
+    .cta-section p { color: var(--muted); font-size: 1rem; margin-bottom: 2rem; line-height: 1.8; }
+    .cta-btn {
+      display: inline-block; background: var(--rose); color: white; padding: 0.875rem 2.5rem;
+      border-radius: 50px; font-weight: 600; font-size: 0.9rem; transition: all 0.2s;
+    }
+    .cta-btn:hover { background: #881337; }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid #e7e5e4; padding: 3rem; text-align: center;
+      font-size: 0.8rem; color: var(--muted);
+    }
+    footer .footer-logo {
+      font-family: 'Cormorant Garamond', serif; font-size: 1.2rem;
+      color: var(--rose); font-style: italic; margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 1rem 1.5rem; } nav ul { display: none; }
+      section { padding: 3rem 1.5rem; }
+      .page-header { padding: 8rem 1.5rem 3rem; }
+      .offer-detail { grid-template-columns: 1fr; }
+      .offer-detail-num { font-size: 3.5rem; padding: 2rem; }
+      .offer-detail-content { padding: 2.5rem 1.5rem; }
+      .offer-detail.reverse .offer-detail-num { order: 0; }
+      .offer-detail.reverse .offer-detail-content { order: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">Butterblume</a>
+  <ul>
+    <li><a href="angebot.html" class="active">Angebot</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li><a href="tel:041377440">04137 / 7440</a></li>
+  </ul>
+</nav>
+
+<section class="page-header">
+  <div class="page-header-icon">&#127800;</div>
+  <h1>Unser Angebot</h1>
+  <p>Sechs Bereiche, ein Versprechen: Blumen mit Herz, Handwerk und einem Hauch Poesie.</p>
+</section>
+
+<section style="padding-top: 0;">
+  <div class="container" style="max-width: 1100px;">
+
+    <!-- I. Blumenstraeusse -->
+    <div class="offer-detail">
+      <div class="offer-detail-num">I</div>
+      <div class="offer-detail-content">
+        <h2>Blumensträuße</h2>
+        <p>Ob zum Geburtstag, als Dankeschön oder einfach so — ein frischer Strauß sagt mehr als tausend Worte. Bei Butterblume binden wir jeden Strauß von Hand, individuell nach Ihren Wünschen und mit den schönsten saisonalen Blumen.</p>
+        <p>Wählen Sie aus unserer Tagesauswahl oder lassen Sie sich beraten. Wir finden die passenden Farben, Formen und Düfte für Ihren Anlass — bunt und fröhlich, elegant und schlicht oder wild und natürlich.</p>
+      </div>
+    </div>
+
+    <!-- II. Hochzeitsfloristik -->
+    <div class="offer-detail reverse">
+      <div class="offer-detail-num">II</div>
+      <div class="offer-detail-content">
+        <h2>Hochzeitsfloristik</h2>
+        <p>Ihr schönster Tag verdient Blumen, die genauso besonders sind wie der Moment selbst. Von der ersten Beratung bis zur Lieferung am Hochzeitstag begleiten wir Sie mit Erfahrung und Einfühlungsvermögen.</p>
+        <p>Brautstrauß, Anstecker, Tischdekoration, Kirchenschmuck, Autodeko — wir gestalten ein stimmiges Gesamtbild, das zu Ihnen und Ihrem Fest passt. Romantisch, modern, rustikal oder ganz klassisch — alles ist möglich.</p>
+      </div>
+    </div>
+
+    <!-- III. Trauerfloristik -->
+    <div class="offer-detail">
+      <div class="offer-detail-num">III</div>
+      <div class="offer-detail-content">
+        <h2>Trauerfloristik</h2>
+        <p>In schweren Stunden sind Blumen ein stiller Trost. Wir gestalten Kränze, Gestecke, Sargschmuck und Trauersträuße mit Würde und Sorgfalt — ganz nach Ihren Vorstellungen und dem Charakter des Menschen, den Sie verabschieden.</p>
+        <p>Nehmen Sie sich Zeit. Wir beraten Sie persönlich und einfühlsam, damit die Blumen genau das ausdrücken, was Worte manchmal nicht können.</p>
+      </div>
+    </div>
+
+    <!-- IV. Saisonale Deko -->
+    <div class="offer-detail reverse">
+      <div class="offer-detail-num">IV</div>
+      <div class="offer-detail-content">
+        <h2>Saisonale Dekoration</h2>
+        <p>Frühlingskränze, sommerliche Gestecke, Herbstschalen und Adventszauber — bei uns finden Sie zu jeder Jahreszeit die passende Dekoration für Zuhause, den Garten oder Ihr Geschäft.</p>
+        <p>Alles wird bei uns im Laden liebevoll zusammengestellt und arrangiert. Lassen Sie sich inspirieren, wenn Sie durch unsere Ausstellung stöbern — es gibt immer etwas Neues zu entdecken.</p>
+      </div>
+    </div>
+
+    <!-- V. Topfpflanzen & Geschenke -->
+    <div class="offer-detail">
+      <div class="offer-detail-num">V</div>
+      <div class="offer-detail-content">
+        <h2>Topfpflanzen & Geschenke</h2>
+        <p>Nicht nur Schnittblumen machen Freude. Unsere Auswahl an Grünpflanzen, Orchideen, Sukkulenten und blühenden Topfpflanzen bringt Leben in jedes Zimmer — und hält deutlich länger als ein Strauß.</p>
+        <p>Dazu finden Sie bei uns hübsche Übertöpfe, Vasen, Kerzen, Seifen und kleine Geschenkideen. Perfekt zum Kombinieren oder als eigenständiges Mitbringsel.</p>
+      </div>
+    </div>
+
+    <!-- VI. Lieferservice -->
+    <div class="offer-detail reverse">
+      <div class="offer-detail-num">VI</div>
+      <div class="offer-detail-content">
+        <h2>Lieferservice</h2>
+        <p>Blumengrüße direkt an die Haustür — persönlich und zuverlässig. Ob Überraschung, Genesungswunsch oder Gratulation: Wir liefern Ihre Blumen frisch gebunden in Barendorf, Lüneburg und der gesamten Umgebung.</p>
+        <p>Rufen Sie einfach an oder kommen Sie vorbei. Wir besprechen Ihren Wunsch, binden den Strauß und bringen ihn zum gewünschten Zeitpunkt. Auch kurzfristige Bestellungen sind oft möglich.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="quote-section">
+  <div class="quote">&bdquo;Wo Blumen blühen, lächelt die Welt.&ldquo;</div>
+  <div class="quote-author">Ralph Waldo Emerson</div>
+</section>
+
+<section class="cta-section">
+  <h2>Neugierig geworden?</h2>
+  <p>Kommen Sie vorbei oder rufen Sie an — wir beraten Sie gern.</p>
+  <a href="kontakt.html" class="cta-btn">Zum Kontakt</a>
+</section>
+
+<footer>
+  <div class="footer-logo">Butterblume</div>
+  <p>&copy; 2026 — Ihr Florist in Barendorf bei Lüneburg</p>
+</footer>
+
+</body>
+</html>

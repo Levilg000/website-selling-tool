@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leistungen | Elektro Hartmann — Elektriker in Adendorf & Lüneburg</title>
+  <meta name="description" content="Unsere Leistungen: Elektroinstallation, E-Check, Smart Home, Beleuchtungstechnik, Elektroheizung und Torantriebe. Elektro Hartmann — seit 1968.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue: #1a56db;
+      --blue-dark: #1e40af;
+      --blue-light: #dbeafe;
+      --amber: #f59e0b;
+      --amber-dark: #d97706;
+      --dark: #0f172a;
+      --text: #334155;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --bg: #f8fafc;
+      --white: #ffffff;
+      --radius: 12px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: var(--text); line-height: 1.7; }
+    a { color: inherit; text-decoration: none; }
+
+    /* NAV */
+    .nav {
+      position: fixed; top: 0; width: 100%; z-index: 999;
+      background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border); padding: 0.75rem 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .nav-logo { font-size: 1.25rem; font-weight: 700; color: var(--blue); }
+    .nav-logo span { color: var(--amber); }
+    .nav-links { display: flex; gap: 2rem; align-items: center; list-style: none; }
+    .nav-links a { font-size: 0.9rem; font-weight: 500; color: var(--dark); transition: color 0.2s; }
+    .nav-links a:hover { color: var(--blue); }
+    .nav-links a.active { color: var(--blue); }
+    .nav-cta {
+      background: var(--blue); color: var(--white) !important; padding: 0.5rem 1.25rem;
+      border-radius: 8px; font-weight: 600; transition: all 0.2s;
+    }
+    .nav-cta:hover { background: var(--blue-dark); }
+
+    /* PAGE HERO */
+    .page-hero {
+      padding: 8rem 2rem 4rem;
+      background: linear-gradient(135deg, #1e3a5f 0%, #1a56db 50%, #2563eb 100%);
+      color: white; text-align: center;
+    }
+    .page-hero h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.75rem; }
+    .page-hero p { font-size: 1.15rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+
+    /* SECTION */
+    .section { padding: 5rem 2rem; }
+    .section-alt { background: var(--bg); }
+    .container { max-width: 1100px; margin: 0 auto; }
+
+    /* SERVICE DETAIL */
+    .service-detail {
+      display: grid; grid-template-columns: 80px 1fr; gap: 2rem;
+      padding: 3rem 0; border-bottom: 1px solid var(--border);
+    }
+    .service-detail:last-child { border-bottom: none; }
+    .service-icon {
+      width: 72px; height: 72px; background: var(--blue-light); border-radius: 16px;
+      display: flex; align-items: center; justify-content: center; font-size: 2rem;
+    }
+    .service-detail h2 { font-size: 1.5rem; font-weight: 700; color: var(--dark); margin-bottom: 0.75rem; }
+    .service-detail p { color: var(--text); font-size: 1rem; line-height: 1.8; margin-bottom: 0.75rem; }
+    .service-detail ul {
+      list-style: none; margin: 1rem 0; padding: 0;
+    }
+    .service-detail ul li {
+      padding: 0.3rem 0; padding-left: 1.5rem; position: relative; color: var(--text);
+    }
+    .service-detail ul li::before {
+      content: '\2713'; position: absolute; left: 0; color: #16a34a; font-weight: 700;
+    }
+
+    /* CTA */
+    .cta-section {
+      background: linear-gradient(135deg, #1e3a5f, #1a56db); color: white;
+      padding: 5rem 2rem; text-align: center;
+    }
+    .cta-section h2 { font-size: 2rem; font-weight: 800; margin-bottom: 0.75rem; }
+    .cta-section p { opacity: 0.85; margin-bottom: 2rem; font-size: 1.1rem; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.9rem 2rem; border-radius: 10px; font-weight: 600;
+      font-size: 1rem; transition: all 0.25s; border: none; cursor: pointer;
+    }
+    .btn-amber { background: var(--amber); color: var(--dark); }
+    .btn-amber:hover { background: var(--amber-dark); transform: translateY(-2px); }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark); color: #94a3b8; padding: 3rem 2rem; font-size: 0.85rem;
+    }
+    .footer-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-links { display: flex; gap: 2rem; }
+    .footer-links a { color: #94a3b8; transition: color 0.2s; }
+    .footer-links a:hover { color: white; }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .page-hero { padding: 7rem 1.5rem 3rem; }
+      .page-hero h1 { font-size: 1.85rem; }
+      .section { padding: 3rem 1.5rem; }
+      .service-detail { grid-template-columns: 1fr; gap: 1rem; }
+      .footer-inner { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="index.html" class="nav-logo">Elektro<span>Hartmann</span></a>
+  <ul class="nav-links">
+    <li><a href="leistungen.html" class="active">Leistungen</a></li>
+    <li><a href="ueber-uns.html">Über uns</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+    <li><a href="tel:0413118490" class="nav-cta">Jetzt anrufen</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <h1>Unsere Leistungen</h1>
+  <p>Von der klassischen Elektroinstallation bis zur modernen Smart-Home-Lösung — kompetent, zuverlässig und aus einer Hand.</p>
+</section>
+
+<!-- LEISTUNGEN DETAIL -->
+<section class="section">
+  <div class="container">
+
+    <div class="service-detail" id="elektroinstallation">
+      <div class="service-icon">&#128268;&#65039;</div>
+      <div>
+        <h2>Elektroinstallation</h2>
+        <p>Ob Neubau, Altbausanierung oder Erweiterung bestehender Anlagen — wir planen und installieren Ihre komplette Elektroanlage fachgerecht nach den aktuellen VDE-Normen und Vorschriften. Von der Zählerschrankverteilung über die Leitungsverlegung bis hin zu Schaltern und Steckdosen erhalten Sie bei uns alles aus einer Hand.</p>
+        <p>Wir beraten Sie bereits in der Planungsphase, damit Ihre Elektroanlage genau auf Ihre Bedürfnisse zugeschnitten ist. Dabei achten wir auf zukunftssichere Lösungen, die auch nachträgliche Erweiterungen problemlos ermöglichen.</p>
+        <ul>
+          <li>Komplette Neuinstallation bei Neubau</li>
+          <li>Sanierung und Modernisierung von Altbauten</li>
+          <li>Erweiterung bestehender Elektroanlagen</li>
+          <li>Zählerschränke und Unterverteilungen</li>
+          <li>Beratung und Planung nach aktuellen Normen</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-detail" id="echeck">
+      <div class="service-icon">&#9989;</div>
+      <div>
+        <h2>E-Check</h2>
+        <p>Der E-Check ist die anerkannte Prüfung Ihrer gesamten elektrischen Anlage und Geräte. Als zertifizierter Innungsfachbetrieb führen wir diese Prüfung nach den Vorgaben der DIN VDE 0100-600 und DIN VDE 0105-100 durch. Der E-Check gibt Ihnen die Sicherheit, dass Ihre Elektroinstallation einwandfrei funktioniert und keine Gefahren bestehen.</p>
+        <p>Viele Versicherungen erkennen den E-Check als Nachweis ordnungsgemäßer Elektroinstallation an. Im Schadensfall kann dies entscheidend sein. Für Vermieter ist der E-Check zudem eine wichtige Dokumentation ihrer Verkehrssicherungspflicht.</p>
+        <ul>
+          <li>Prüfung aller ortsfesten Elektroanlagen</li>
+          <li>Prüfung ortsveränderlicher Geräte</li>
+          <li>Protokollierung nach VDE-Vorschriften</li>
+          <li>Anerkannt von Versicherungen</li>
+          <li>Regelmäßige Wiederholungsprüfungen</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-detail" id="smarthome">
+      <div class="service-icon">&#127968;</div>
+      <div>
+        <h2>Smart Home</h2>
+        <p>Machen Sie Ihr Zuhause intelligent. Mit einer Smart-Home-Lösung steuern Sie Beleuchtung, Heizung, Rollläden und viele weitere Geräte bequem per Smartphone, Tablet oder Sprachsteuerung. Wir beraten Sie herstellerunabhängig und finden die Lösung, die am besten zu Ihnen und Ihrem Zuhause passt.</p>
+        <p>Ob nachrüstbare Funklösungen oder kabelgebundene Systeme für den Neubau — wir planen Ihre Smart-Home-Installation individuell und installieren alles fachgerecht. Dabei legen wir besonderen Wert auf einfache Bedienung und Zuverlässigkeit.</p>
+        <ul>
+          <li>Lichtsteuerung und Szenenmanagement</li>
+          <li>Rollladensteuerung und Zeitschaltungen</li>
+          <li>Heizungssteuerung für mehr Energieeffizienz</li>
+          <li>Funk- und kabelgebundene Systeme</li>
+          <li>Nachrüstung im Bestand möglich</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-detail" id="beleuchtung">
+      <div class="service-icon">&#128161;</div>
+      <div>
+        <h2>Beleuchtungstechnik</h2>
+        <p>Die richtige Beleuchtung schafft Atmosphäre, erhöht den Komfort und spart Energie. Wir planen und realisieren moderne Beleuchtungskonzepte für Wohn- und Geschäftsräume, Außenbereiche und Gärten. Dabei setzen wir auf langlebige und energieeffiziente LED-Technologie.</p>
+        <p>Von der gemütlichen Wohnzimmerbeleuchtung über funktionale Arbeitsplatzbeleuchtung bis hin zu stimmungsvoller Gartenbeleuchtung — wir finden die passende Lösung für jeden Bereich. Auf Wunsch integrieren wir die Beleuchtung auch in Ihr Smart-Home-System.</p>
+        <ul>
+          <li>LED-Umrüstung und Modernisierung</li>
+          <li>Lichtplanung für Innen- und Außenbereiche</li>
+          <li>Energiesparende Beleuchtungskonzepte</li>
+          <li>Garten- und Fassadenbeleuchtung</li>
+          <li>Integration in Smart-Home-Systeme</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-detail" id="elektroheizung">
+      <div class="service-icon">&#128293;</div>
+      <div>
+        <h2>Elektroheizung</h2>
+        <p>Elektrische Heizsysteme sind eine flexible und effiziente Alternative zu herkömmlichen Heizungen. Besonders in der Sanierung, bei Zubauten oder als Ergänzung bestehender Heizsysteme bieten Elektroheizungen entscheidende Vorteile: keine Rohrleitungen, kein Schornstein, schnelle Installation.</p>
+        <p>Wir beraten Sie zu den verschiedenen Systemen — von Infrarotheizungen über Flächenspeicherheizungen bis hin zu Fußbodentemperierung — und installieren die optimale Lösung für Ihre Räumlichkeiten. In Kombination mit einer Photovoltaikanlage heizen Sie sogar mit eigenem Strom.</p>
+        <ul>
+          <li>Infrarotheizungen für Wand und Decke</li>
+          <li>Flächenspeicherheizungen</li>
+          <li>Elektrische Fußbodenheizung</li>
+          <li>Beratung zur Kombination mit Photovoltaik</li>
+          <li>Schnelle Installation ohne Rohrleitungen</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="service-detail" id="torantriebe">
+      <div class="service-icon">&#128682;</div>
+      <div>
+        <h2>Torantriebe</h2>
+        <p>Elektrische Torantriebe machen den Alltag komfortabler und sicherer. Egal ob Garagentor, Hoftor oder Schiebetor — wir liefern und montieren hochwertige Antriebe namhafter Hersteller. Per Fernbedienung, Smartphone-App oder Schlüsselschalter öffnen und schließen Sie Ihre Tore bequem und sicher.</p>
+        <p>Wir beraten Sie bei der Auswahl des passenden Antriebs und kümmern uns um die fachgerechte Montage inklusive der kompletten Elektroinstallation. Auch die Nachrüstung bestehender Tore mit einem elektrischen Antrieb ist in den meisten Fällen problemlos möglich.</p>
+        <ul>
+          <li>Garagentorantriebe aller Art</li>
+          <li>Hoftor- und Schiebetorantriebe</li>
+          <li>Fernbedienung und Smartphone-Steuerung</li>
+          <li>Nachrüstung bestehender Tore</li>
+          <li>Wartung und Reparatur</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Interesse an einer unserer Leistungen?</h2>
+  <p>Rufen Sie uns an — wir beraten Sie gerne unverbindlich und erstellen Ihnen ein individuelles Angebot.</p>
+  <a href="tel:0413118490" class="btn btn-amber">&#128222; 04131 / 18490</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span>&copy; 2026 Elektro Hartmann — Dieselstraße 3, 21365 Adendorf</span>
+    <div class="footer-links">
+      <a href="leistungen.html">Leistungen</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
