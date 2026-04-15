@@ -2165,7 +2165,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "HOT",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "mehmet.dagdelen.mehmet@gmail.com"
     },
     {
       "placeId": "ChIJxf4OstiBY0ERZjb_hjZzipE",
@@ -3638,7 +3639,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "HOT",
-      "category": "kosmetik"
+      "category": "kosmetik",
+      "email": "nguyenkhanhhuyen.qn94@gmail.com"
     },
     {
       "placeId": "ChIJi1qdvs_dsUcR18kQw759_sI",
@@ -3707,7 +3709,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "HOT",
-      "category": "florist"
+      "category": "florist",
+      "email": "mail@bundweise.de"
     },
     {
       "placeId": "ChIJoWsUyJp_Y0ERBxcQnl74xhk",
@@ -5036,7 +5039,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@elektrotechnik-delen.de"
     },
     {
       "placeId": "ChIJRx_Rp9nfsUcRRTwvbvKScWY",
@@ -5072,7 +5076,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@ney-elektrotechnik.de"
     },
     {
       "placeId": "ChIJs24GVzTDsUcRXwyTtjht7fE",
@@ -5145,7 +5150,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@voss-elektro.de"
     },
     {
       "placeId": "ChIJWYtLDLTdsUcRkFWMnh96vPw",
@@ -5181,7 +5187,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "sanitaer"
+      "category": "sanitaer",
+      "email": "e-mailinfo@riebesell-meyer.de"
     },
     {
       "placeId": "ChIJqwYecGbesUcRVBvCR8aBraE",
@@ -5254,7 +5261,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "sanitaer"
+      "category": "sanitaer",
+      "email": "info@hannebohm.com"
     },
     {
       "placeId": "ChIJt1sRD-ndsUcR_EJ3AY4NDmc",
@@ -5292,7 +5300,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "dachdecker"
+      "category": "dachdecker",
+      "email": "info@teamdachdeckerei.de"
     },
     {
       "placeId": "ChIJGcdtOq_esUcROWd7vmoaDNY",
@@ -5329,7 +5338,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "dachdecker"
+      "category": "dachdecker",
+      "email": "info@dachdecker-bauprofis.de"
     },
     {
       "placeId": "ChIJB59H6mki10oRDVigwI1dhMU",
@@ -5365,7 +5375,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "dachdecker"
+      "category": "dachdecker",
+      "email": "info@lueneburger-dachtechnik.de"
     },
     {
       "placeId": "ChIJk_m8w4rosUcR6C1zwdfBgDg",
@@ -5401,7 +5412,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "dachdecker"
+      "category": "dachdecker",
+      "email": "info@dach-rosenberg.de"
     },
     {
       "placeId": "ChIJt2IjGdjdsUcRQjWDgy8VfKs",
@@ -5437,7 +5449,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "info@theodor-schulz.com"
     },
     {
       "placeId": "ChIJq_CFLAPbsUcR5yOPcNkKXnI",
@@ -5474,7 +5487,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "luene.anstrich@gmail.com"
     },
     {
       "placeId": "ChIJedwNst7dsUcRVNQDJWXkFBY",
@@ -5508,7 +5522,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "k.greife@malerei-kg.de"
     },
     {
       "placeId": "ChIJp4t1v17esUcRpBqNOdG4R54",
@@ -5550,7 +5565,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "info@meinwohnstore.de"
     },
     {
       "placeId": "ChIJZZ7hPdfdsUcRxEmiSDYj1lY",
@@ -5612,7 +5628,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "zimmerei"
+      "category": "zimmerei",
+      "email": "info@zahnaerzte-lueneburg.de"
     },
     {
       "placeId": "ChIJLYD4sAvdsUcRnduKL6sCtXw",
@@ -5648,7 +5665,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "zimmerei"
+      "category": "zimmerei",
+      "email": "kontakt@bergholzimmobilien.de"
     },
     {
       "placeId": "ChIJSQMcPsXdsUcRi2yFXB16DK0",
@@ -5686,7 +5704,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "metallbau"
+      "category": "metallbau",
+      "email": "mail@lueneburger-schluesseldienst.de"
     },
     {
       "placeId": "ChIJH72jhMXdsUcRfREGAI0DJwE",
@@ -5778,7 +5797,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "gartenbau"
+      "category": "gartenbau",
+      "email": "info@rasenprofinord.de"
     },
     {
       "placeId": "ChIJS_g3L9HdsUcRWX4ZAObhY98",
@@ -5839,7 +5859,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "zimmerei"
+      "category": "zimmerei",
+      "email": "info@holzwerte-lueneburg.de"
     },
     {
       "placeId": "ChIJj6eJ5fHdsUcRF2CxxEWmQxo",
@@ -5875,7 +5896,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@etl-gmbh.eu"
     },
     {
       "placeId": "ChIJKWUeycHdsUcRylkRk4L0CKs",
@@ -5912,7 +5934,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@baumann-schoendube.de"
     },
     {
       "placeId": "ChIJaV1N1SndsUcRM9FfRQr46UE",
@@ -5948,7 +5971,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@kln-elektro.de"
     },
     {
       "placeId": "ChIJtyxEeOjdsUcR073xN4Wa9Xs",
@@ -5989,7 +6013,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "mail@burmester-elektrotechnik.de"
     },
     {
       "placeId": "ChIJwRPQDE_tUEARGtunrzJ2SWI",
@@ -6025,7 +6050,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@elektrotechnik-hoefner.de"
     },
     {
       "placeId": "ChIJNUsVUtq1xwcRvzL_Np6eAG0",
@@ -6061,7 +6087,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@luene-elektro.de"
     },
     {
       "placeId": "ChIJr-e4B1OQ_EERtP3HfysFnLw",
@@ -6100,7 +6127,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@rentsch-elektrotechnik.de"
     },
     {
       "placeId": "ChIJ7__HtpLdsUcROGRXODmnbXk",
@@ -6136,7 +6164,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@bendler-elektrotechnik.de"
     },
     {
       "placeId": "ChIJM_uuiFrnsUcRn0a6QljkrQk",
@@ -6209,7 +6238,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "marius.kopp@kopp-elektro.de"
     },
     {
       "placeId": "ChIJ__8DrlrnsUcR7AwJb2-Ftu8",
@@ -6244,7 +6274,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "mail@elektrobehrendt.de"
     },
     {
       "placeId": "ChIJd6_XqO_dsUcRtaXZmF6wY2M",
@@ -6280,7 +6311,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "sanitaer"
+      "category": "sanitaer",
+      "email": "info@lueneburger-haustechnik.de"
     },
     {
       "placeId": "ChIJQ3bY0J3fsUcRCNwwFR_kTF8",
@@ -6315,7 +6347,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@elektrotechnik-vonbrandis.de"
     },
     {
       "placeId": "ChIJ4YkV20TcsUcREmmgdVTq5Yw",
@@ -6353,7 +6386,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "sanitaer"
+      "category": "sanitaer",
+      "email": "info@lohr-lueneburg.de"
     },
     {
       "placeId": "ChIJUZR5IabgsUcRtAx1IaU7ATM",
@@ -6388,7 +6422,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "sanitaer"
+      "category": "sanitaer",
+      "email": "info@frank-wegner-shm.de"
     },
     {
       "placeId": "ChIJnQjaeMvdsUcRbPzdVSHM7fU",
@@ -6424,7 +6459,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "sanitaer"
+      "category": "sanitaer",
+      "email": "info@sanitaer-roehlke.de"
     },
     {
       "placeId": "ChIJKWUeycHdsUcRCR2QQiI6j-Y",
@@ -6499,7 +6535,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "dachdecker"
+      "category": "dachdecker",
+      "email": "david.meier@dachwerk-lueneburg.de"
     },
     {
       "placeId": "ChIJT5-A7djnsUcRY8f6dkuF5WU",
@@ -6537,7 +6574,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "dachdecker"
+      "category": "dachdecker",
+      "email": "juri.brandt@zimmerei-lueneburg.net"
     },
     {
       "placeId": "ChIJ6TU-EWKom0IRpNv3hrpXNio",
@@ -6572,7 +6610,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "dachdecker"
+      "category": "dachdecker",
+      "email": "info@fliegenderdachziegel.de"
     },
     {
       "placeId": "ChIJ4Xt1vUPesUcRbSroaYIDtmI",
@@ -6609,7 +6648,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "dachdecker"
+      "category": "dachdecker",
+      "email": "wilfriedvoss1@web.de"
     },
     {
       "placeId": "ChIJecs12fvdsUcRFeW0-IxN4ak",
