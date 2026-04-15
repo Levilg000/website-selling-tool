@@ -2,7 +2,16 @@ node_modules/
 .env
 *.db
 *.zip
+
+# Temporäre/generierte Monitor-Daten (werden auf dem Pi neu erzeugt)
 data/inbox-log.json
 data/monitor-state.json
 data/analytics.json
 data/sent-log.json
+
+# WICHTIG: Diese Dateien MÜSSEN in Git bleiben:
+# data/leads.json        — Lead-Datenbank
+# data/crm.json          — CRM/Pipeline-Daten
+# data/*.csv             — Exportierte Leads
+# profiles/              — Firmenprofile
+# outreach/              — Email-Drafts + Previews
