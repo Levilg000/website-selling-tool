@@ -202,7 +202,7 @@ Beispiele:
 
     try {
       const info = await transporter.sendMail({
-        from: `"Levi Webdesign" <${process.env.GMAIL_USER}>`,
+        from: '"Levi Webdesign" <levi.webdesign.lg@gmail.com>',
         to: draft.to,
         subject: draft.subject,
         html: draft.html,

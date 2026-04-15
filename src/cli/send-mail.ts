@@ -31,13 +31,18 @@ Beispiele:
     process.exit(0);
   }
 
-  const htmlPath = resolve(__dirname, '../..', htmlFile);
-  let html = readFileSync(htmlPath, 'utf-8');
+  const filePath = resolve(__dirname, '../..', htmlFile);
+  const content = readFileSync(filePath, 'utf-8');
+  const isHtml = htmlFile.endsWith('.html') || htmlFile.endsWith('.htm');
 
-  // Relative Links zu absoluten file:// Links umwandeln geht nicht per Email.
-  // Stattdessen: Links zu den alten Websites bleiben (die sind online),
-  // aber die Demo-Links entfernen wir und ersetzen mit Hinweis
-  html = html.replace(/href="\.\.\/demos\//g, 'href="cid:demo-hinweis" data-original="../demos/');
+  let html: string | undefined;
+  let text: string | undefined;
+
+  if (isHtml) {
+    html = content.replace(/href="\.\.\/demos\//g, 'href="cid:demo-hinweis" data-original="../demos/');
+  } else {
+    text = content;
+  }
 
   // Attachments vorbereiten
   const attachments = attachmentPaths.map(p => ({
@@ -46,18 +51,19 @@ Beispiele:
   }));
 
   console.log(`📧 Sende Email...`);
-  console.log(`   Von: ${process.env.GMAIL_USER}`);
+  console.log(`   Von: levi.webdesign.lg@gmail.com`);
   console.log(`   An: ${to}`);
   console.log(`   Betreff: ${subject}`);
-  console.log(`   HTML: ${htmlFile}`);
+  console.log(`   Format: ${isHtml ? 'HTML' : 'Text'}`);
+  console.log(`   Datei: ${htmlFile}`);
   if (attachments.length) console.log(`   Anhänge: ${attachments.map(a => a.filename).join(', ')}`);
 
   try {
     const info = await transporter.sendMail({
-      from: `"Levi Webdesign" <${process.env.GMAIL_USER}>`,
+      from: '"Levi Webdesign" <levi.webdesign.lg@gmail.com>',
       to,
       subject,
-      html,
+      ...(html ? { html } : { text }),
       attachments,
     });
 

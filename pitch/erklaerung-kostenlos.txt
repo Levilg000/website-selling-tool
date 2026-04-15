@@ -1,0 +1,38 @@
+Kostenstruktur — warum 0€
+=========================
+
+Hosting: Vercel Free Tier
+- Statische Assets werden auf Vercels Edge CDN deployed
+- Kein Server-Prozess, kein Container — nur HTML/CSS/JS auf S3 + CloudFront
+- Free Tier: unlimited static sites, 100GB bandwidth/mo
+- Vercel monetarisiert über Enterprise (Serverless Functions, Teams, Analytics)
+- Statische Seiten kosten Vercel quasi nichts → kein Grund das zu begrenzen
+- HTTPS via Let's Encrypt automatisch, Subdomain inklusive (*.vercel.app)
+
+Domain: vercel.app Subdomain
+- Kostenlos, sofort verfügbar
+- Eigene Domain optional: ~10€/Jahr, zahlt der Kunde
+
+Code: Reines HTML/CSS
+- Kein CMS, kein Framework, kein Backend
+- Einmal deployed → läuft ohne Wartung, ohne Server, ohne DB
+- Kein laufender Prozess = keine laufenden Kosten
+
+Lead-Suche: Google Places API
+- $200 Free Credit/Monat (Places API New)
+- Ein Stadt-Scan mit ~50 Requests kostet ~$2
+- Reicht für ~100 Scans/Monat
+
+Email: Gmail SMTP
+- Normales Gmail-Konto + App-Passwort
+- Limit: 500 Mails/Tag (mehr als genug)
+
+Monitoring: Raspberry Pi
+- Telegram Bot + IMAP Poller + Scheduler
+- Läuft als systemd Service auf dem Pi der eh an ist
+- Node.js Prozess, ~50MB RAM
+
+Zusammenfassung: Alle genutzten Services haben Free Tiers die für
+diesen Use Case mehr als ausreichen. Keine Trial-Perioden, keine
+Kreditkarte nötig. Solange die Websites statisch bleiben (kein
+Backend, kein Auth, kein DB), bleibt das bei 0€.

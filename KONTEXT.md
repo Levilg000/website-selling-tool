@@ -9,16 +9,25 @@ Semi-automatisches Website-Selling-Tool. Findet lokale Kleinunternehmen ohne Web
 [Google Places API]
         |
         v
-[collect.ts] --> Firmenprofil (JSON) --> [profiles/]
+[scan.ts] --> Bulk-Scan Stadt --> [scorer.ts] --> Score + Tier
+        |                                |
+        v                                v
+[data/leads.json]                 Lead-DB (HOT/WARM/COLD/SKIP)
         |
         v
-[CLI: research.ts] --> Manuelle Recherche / Profil-Vervollstaendigung
+[research.ts] --> Einzelfirma Tiefenrecherche --> [profiles/FIRMA.json]
         |
         v
-[Demo-Website manuell bauen] --> [demos/FIRMENNAME/]
+[generate.ts] --> Template + Profil --> [demos/FIRMA/index.html]
         |
         v
-[send-mail.ts] --> Personalisiertes Anschreiben per Gmail SMTP
+[deploy.ts] --> Vercel Deploy --> firma-name.vercel.app
+        |
+        v
+[outreach.ts] --> Email-Draft + Versand --> [outreach/FIRMA.json]
+        |
+        v
+[bot/index.ts] --> Telegram Bot Dashboard
 ```
 
 ## Tech-Stack
@@ -28,47 +37,71 @@ Semi-automatisches Website-Selling-Tool. Findet lokale Kleinunternehmen ohne Web
 | Node.js + TypeScript | Runtime + Sprache |
 | Google Places API (New) | Lead-Suche nach Branche + Stadt |
 | Playwright | Website-Scraping + Email-Finder |
+| Grammy | Telegram Bot Framework |
 | Nodemailer | Email-Versand via Gmail SMTP |
-| GitHub Pages | Demo-Hosting (getestet, nur public Repos) |
-| Vercel | Demo-Hosting (geplant, besser als GitHub Pages) |
+| Vercel | Demo-Hosting (alle 5 Demos live) |
 
 ## Wichtige Dateien
 
 | Datei / Ordner | Funktion |
 |----------------|----------|
-| `src/research/collect.ts` | Kern-Recherche: Google Places API + Website-Scraping |
-| `src/cli/research.ts` | CLI-Einstiegspunkt: `npm run research -- "Firma" "Stadt"` |
-| `src/cli/send-mail.ts` | Email senden via Gmail SMTP |
-| `src/cli/test-mail.ts` | Gmail Login-Test |
-| `profiles/` | Gesammelte Firmenprofile als JSON |
+| `src/leadgen/scanner.ts` | Bulk Google Places Scan (Stadt x Branchen) |
+| `src/leadgen/scorer.ts` | Lead-Scoring + Tier-Klassifizierung |
+| `src/leadgen/chains.ts` | Ketten-Blacklist (ATU, BAUHAUS etc.) |
+| `src/leadgen/db.ts` | Lead-Datenbank (JSON) + CSV Export |
+| `src/research/collect.ts` | Tiefenrecherche: Google Places + Website-Scraping |
+| `src/generator/builder.ts` | Website-Generator (HTML aus Profil + Style) |
+| `src/generator/styles.ts` | 5 Style-Presets (handwerk/gastro/beauty/gesundheit/modern) |
+| `src/bot/index.ts` | Telegram Bot (Lead-Dashboard) |
+| `src/cli/scan.ts` | CLI: Stadt scannen, Stats, Export |
+| `src/cli/research.ts` | CLI: Einzelfirma recherchieren |
+| `src/cli/generate.ts` | CLI: Website generieren |
+| `src/cli/deploy.ts` | CLI: Vercel Deploy |
+| `src/cli/outreach.ts` | CLI: Email-Drafts erstellen + senden |
+| `src/cli/monitor.ts` | CLI: Kunden-Email Monitor (IMAP TODO) |
+| `src/cli/send-mail.ts` | CLI: Direkt Email senden |
+| `src/cli/test-mail.ts` | CLI: Gmail SMTP testen |
+| `profiles/` | Firmenprofile als JSON |
 | `demos/` | Fertige Demo-Websites (statisches HTML/CSS) |
-| `pitch/index.html` | Pitch-Praesentation fuer Investoren/Familie |
-| `pitch/PROJEKT-KONTEXT.md` | Projekt-Kontext fuer Claude Code Sessions |
+| `data/` | Lead-DB (leads.json) + CSV Exports |
+| `outreach/` | Email-Drafts + Previews |
+| `pitch/` | Pitch-Praesentation |
 | `.env` | API Keys — NICHT in Git! |
-| `.github/workflows/pages.yml` | GitHub Pages Deploy-Workflow |
 
-## Demo-Websites
+## CLI-Befehle
 
-| Ordner | Stil |
-|--------|------|
-| `demos/elektro-hartmann/` | Clean Blue Style |
-| `demos/marckmann-zimmerei/` | Dark Craft Style |
-| `demos/fahrschule-luenedrive/` | Neon Dark Style |
-| `demos/gyros-center-plaka/` | Mediterranean Style |
-| `demos/butterblume/` | Editorial Soft Style |
-
-## API / Commands
-
-### CLI-Befehle
 ```bash
-# Firmenprofil automatisch sammeln
+# Stadt scannen (Bulk-Suche)
+npm run scan -- scan "Lueneburg"
+npm run scan -- scan "Hamburg" "friseur" "kosmetik"
+npm run scan -- stats
+npm run scan -- list HOT
+npm run scan -- export HOT
+npm run scan -- top 20
+
+# Einzelfirma recherchieren
 npm run research -- "Firmenname" "Stadt"
 
-# Email senden
-npx tsx src/cli/send-mail.ts <to> <subject> <html-file> [attachments]
+# Website generieren
+npm run generate -- build elektro-hartmann
+npm run generate -- build butterblume beauty
+npm run generate -- batch
+npm run generate -- styles
 
-# Gmail Login testen
-npx tsx src/cli/test-mail.ts
+# Vercel Deploy
+npm run deploy -- elektro-hartmann
+npm run deploy -- all
+
+# Email-Outreach
+npm run outreach -- draft "Elektro Hartmann" "info@hartmann.de" "https://..."
+npm run outreach -- send elektro-hartmann
+npm run outreach -- list
+
+# Telegram Bot starten
+npm run bot
+
+# Gmail testen
+npm run test-mail
 ```
 
 ## Konfiguration
@@ -77,13 +110,19 @@ npx tsx src/cli/test-mail.ts
 | Variable | Wert |
 |----------|------|
 | `GOOGLE_API_KEY` | Google Places API (New) + PageSpeed Insights |
-| `GMAIL_USER` | `leviresaslg@gmail.com` (Workaround, Wechsel geplant) |
+| `GMAIL_USER` | `leviresaslg@gmail.com` (aktiv) |
 | `GMAIL_APP_PASSWORD` | Gmail App-Passwort fuer SMTP |
+| `TELEGRAM_BOT_TOKEN` | Telegram Bot Token (noch einzutragen!) |
 
-### Geplante Email-Absender-Aenderung
-- Von: `leviresaslg@gmail.com`
-- Auf: `levi.webdesign.lg@gmail.com`
-- Blockiert noch SMTP — muss ein paar Tage warten bis Google-Sperre aufgehoben
+## Demo-Websites (alle live auf Vercel)
+
+| Demo | URL | Stil |
+|------|-----|------|
+| Elektro Hartmann | elektro-hartmann.vercel.app | Clean Blue |
+| Butterblume | butterblume-barendorf.vercel.app | Editorial Soft |
+| Zimmerei Marckmann | zimmerei-marckmann.vercel.app | Dark Craft |
+| Gyros Center Plaka | gyros-center-plaka.vercel.app | Mediterranean |
+| Fahrschule LueneDrive | fahrschule-luenedrive.vercel.app | Neon Dark |
 
 ## Business-Strategie
 - Zielgruppe: Lokale Kleinunternehmen ohne Website
@@ -94,55 +133,22 @@ npx tsx src/cli/test-mail.ts
 - Kontaktreihenfolge: Telefon > Email > persoenlich
 - Gewerbeanmeldung noetig (~20 EUR, Kleinunternehmerregelung)
 
-## Erster Testlauf: Lueneburg (Ergebnisse)
-- 447 Firmen total gefunden
-- 23 Ketten + 9 Geister-Firmen rausgefiltert = 415 aktive Leads
-- 68 Firmen ohne Website
-- 84 HOT Leads
-- 290 Emails automatisch gescraped
-
 ## Known Issues / Limitierungen
 
 | Problem | Status | Workaround |
 |---------|--------|------------|
-| Lead-Generator Source-Dateien (DB, Scraper, Analyzer) bei `npm install` verloren | Offen | Neu bauen |
 | Neues Gmail `levi.webdesign.lg` blockiert SMTP | Temporaer | `leviresaslg@gmail.com` nutzen |
-| GitHub Pages nur bei public Repos | By Design | Vercel verwenden (geplant) |
-| Lead-Daten (DB + CSV) verloren | Offen | Neu generieren |
-
-## Debugging
-
-### Gmail SMTP funktioniert nicht
-- App-Passwort pruefen (kein normales Passwort!)
-- 2-Faktor-Auth muss bei Gmail aktiviert sein
-- Neues Gmail-Konto: erst nach ~3 Tagen fuer SMTP freigegeben
-- `npx tsx src/cli/test-mail.ts` ausfuehren zum Testen
-
-### Google Places API gibt keine Ergebnisse
-- API Key pruefen (Places API New muss aktiviert sein, nicht die alte Places API)
-- Kontingent pruefen (Places API New hat Kosten nach kostenlosem Kontingent)
-
-## Build & Deploy
-
-### Demo-Websites deployen (GitHub Pages)
-```bash
-# Nur bei public Repos! Push triggert automatisch .github/workflows/pages.yml
-git push
-```
-
-### Demo-Websites deployen (Vercel — geplant)
-- Deploy-Script noch nicht gebaut
-- Ziel: Subdomains pro Firma (z.B. elektro-hartmann.levi-webdesign.de)
+| Telegram Bot Token fehlt in .env | Offen | Token bei @BotFather erstellen |
+| IMAP Monitoring nicht implementiert | Offen | Emails manuell pruefen |
+| `--name` Flag bei Vercel deprecated | Gering | Funktioniert noch, wird spaeter entfernt |
 
 ## Offene Punkte
 
-- [ ] Vercel Deploy Script bauen
-- [ ] Email-Outreach System (personalisierte Anschreiben automatisieren)
+- [ ] Telegram Bot Token in .env eintragen + testen
 - [ ] Email-Absender auf `levi.webdesign.lg@gmail.com` umstellen (nach SMTP-Freigabe)
-- [ ] Kunden-Email Monitoring + Auto-Wartung
-- [ ] Telegram Bot Dashboard fuer Lead-Uebersicht
-- [ ] Lead-Daten wiederherstellen (DB + CSV neu generieren)
-- [ ] Lead-Generator Source-Dateien neu bauen (DB, Scraper, Analyzer)
+- [ ] IMAP Email-Monitoring implementieren
+- [ ] Eigene Domain (z.B. levi-webdesign.de) + Subdomains pro Kunde
+- [ ] Gewerbeanmeldung
 
 ---
 *Zuletzt aktualisiert: 2026-04-14*
