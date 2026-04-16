@@ -1,0 +1,54 @@
+{
+  "entries": [
+    {
+      "slug": "butterblume",
+      "name": "Butterblume",
+      "email": "butterblume21397@gmx.de",
+      "phone": "04137 7440",
+      "city": "Barendorf",
+      "category": "florist",
+      "stage": "outreach",
+      "demoUrl": "https://butterblume-barendorf.vercel.app",
+      "outreachSentAt": "2026-04-16T18:25:18.834Z",
+      "notes": [],
+      "calls": [],
+      "followUps": [],
+      "createdAt": "2026-04-16T18:25:18.834Z",
+      "updatedAt": "2026-04-16T18:25:18.834Z"
+    },
+    {
+      "slug": "zimmerei-marckmann",
+      "name": "Zimmerei Marckmann",
+      "email": "info@marckmannzimmerei.de",
+      "phone": "0172 4548848",
+      "city": "Lüneburg",
+      "category": "zimmerei",
+      "stage": "outreach",
+      "demoUrl": "https://zimmerei-marckmann.vercel.app",
+      "outreachSentAt": "2026-04-16T18:25:18.834Z",
+      "notes": [],
+      "calls": [],
+      "followUps": [],
+      "createdAt": "2026-04-16T18:25:18.834Z",
+      "updatedAt": "2026-04-16T18:25:18.834Z"
+    },
+    {
+      "slug": "schluesseldienst-alznauer",
+      "name": "Schlüsseldienst Alznauer",
+      "email": "mail@lueneburger-schluesseldienst.de",
+      "phone": "04131 31969",
+      "city": "Lüneburg",
+      "category": "metallbau",
+      "stage": "outreach",
+      "demoUrl": "https://schluesseldienst-alznauer.vercel.app",
+      "outreachSentAt": "2026-04-16T18:25:18.834Z",
+      "notes": [],
+      "calls": [],
+      "followUps": [],
+      "createdAt": "2026-04-16T18:25:18.834Z",
+      "updatedAt": "2026-04-16T18:25:18.834Z"
+    }
+  ],
+  "totalRevenue": 0,
+  "lastUpdated": "2026-04-16T18:25:18.834Z"
+}
