@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lüneburger Schloss- & Schlüsseldienst Alznauer — Lüneburg</title>
+  <meta name="description" content="Schlüsseldienst Alznauer in Lüneburg. Schlossöffnung, Schlüsselanfertigung, Sicherheitstechnik. Auf dem Kauf 4. Tel. 04131 31969.">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --steel: #2b4c6f;
+      --steel-light: #3a6491;
+      --gold: #c9952b;
+      --gold-soft: #f5e6c4;
+      --bg: #fafaf8;
+      --text: #333;
+      --muted: #6b7280;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(--bg); }
+    a { color: inherit; text-decoration: none; }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; width: 100%; z-index: 50;
+      background: #fff; border-bottom: 1px solid #e5e5e0;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0.9rem 2.5rem;
+    }
+    .nav-name { font-weight: 700; font-size: 0.95rem; color: var(--steel); }
+    .nav-links { display: flex; gap: 1.75rem; align-items: center; }
+    .nav-links a { font-size: 0.85rem; color: var(--muted); }
+    .nav-links a:hover { color: var(--steel); }
+    .nav-cta {
+      background: var(--steel); color: #fff; padding: 0.55rem 1.25rem;
+      border-radius: 5px; font-weight: 600; font-size: 0.85rem;
+    }
+    .nav-cta:hover { background: var(--steel-light); }
+
+    /* HERO */
+    .hero {
+      background: var(--steel);
+      color: #fff;
+      padding: 9rem 2.5rem 4rem;
+    }
+    .hero-inner { max-width: 720px; }
+    .hero-tagline {
+      font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px;
+      color: var(--gold); margin-bottom: 1.5rem; font-weight: 600;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      font-weight: 700; line-height: 1.2; margin-bottom: 1.25rem;
+    }
+    .hero-text {
+      font-size: 1.05rem; line-height: 1.7; opacity: 0.8;
+      max-width: 500px; margin-bottom: 2rem;
+    }
+    .hero-btn {
+      display: inline-block; background: var(--gold); color: var(--steel);
+      padding: 0.85rem 2rem; font-weight: 700; border-radius: 5px;
+      transition: background 0.2s;
+    }
+    .hero-btn:hover { background: #d4a23a; }
+    .hero-facts {
+      display: flex; gap: 3rem; margin-top: 3rem;
+      padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.15);
+      flex-wrap: wrap;
+    }
+    .hero-fact dt { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1.5px; color: rgba(255,255,255,0.5); margin-bottom: 0.15rem; }
+    .hero-fact dd { font-size: 1rem; font-weight: 600; }
+
+    /* LEISTUNGEN */
+    .leistungen { padding: 4.5rem 2.5rem; max-width: 960px; margin: 0 auto; }
+    .leistungen h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.3rem; }
+    .leistungen .sub { color: var(--muted); margin-bottom: 2.5rem; }
+    .ls-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .ls-card {
+      background: #fff; border: 1px solid #e8e8e4; border-radius: 8px;
+      padding: 2rem; border-top: 3px solid var(--steel);
+      transition: box-shadow 0.2s;
+    }
+    .ls-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.06); }
+    .ls-card h3 { font-size: 1rem; font-weight: 700; color: var(--steel); margin-bottom: 0.5rem; }
+    .ls-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
+
+    /* NOTDIENST */
+    .notdienst {
+      background: var(--gold-soft);
+      padding: 3rem 2.5rem;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 1.5rem;
+    }
+    .notdienst-text strong { font-size: 1.15rem; color: var(--steel); display: block; margin-bottom: 0.25rem; }
+    .notdienst-text span { color: #806630; font-size: 0.95rem; }
+    .notdienst a {
+      background: var(--steel); color: #fff;
+      padding: 0.85rem 2rem; font-weight: 700; border-radius: 5px;
+    }
+
+    /* VERTRAUEN */
+    .vertrauen { padding: 4rem 2.5rem; max-width: 720px; }
+    .vertrauen h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 2rem; }
+    .vt-item {
+      display: flex; gap: 1.25rem; align-items: baseline;
+      padding: 1rem 0; border-bottom: 1px solid #eee;
+    }
+    .vt-item:last-child { border-bottom: none; }
+    .vt-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--gold); flex-shrink: 0; margin-top: 0.4rem;
+    }
+    .vt-item strong { font-weight: 600; }
+    .vt-item span { color: var(--muted); }
+
+    /* KONTAKT */
+    .kontakt { padding: 4rem 2.5rem; max-width: 860px; }
+    .kontakt h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 2rem; }
+    .k-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 3rem; }
+    .k-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--gold); font-weight: 600; margin-bottom: 0.25rem; }
+    .k-value { font-size: 0.95rem; line-height: 1.5; }
+    .k-value a { color: var(--steel); font-weight: 600; border-bottom: 1px solid #ccc; }
+    .k-value a:hover { border-color: var(--steel); }
+
+    footer {
+      border-top: 1px solid #e5e5e0; padding: 1.5rem 2.5rem;
+      font-size: 0.8rem; color: #bbb;
+      display: flex; justify-content: space-between;
+    }
+    footer span { color: #ddd; }
+
+    @media (max-width: 700px) {
+      nav { padding: 0.9rem 1.25rem; }
+      .nav-links a:not(.nav-cta) { display: none; }
+      .hero { padding: 7rem 1.25rem 3rem; }
+      .leistungen, .vertrauen, .kontakt { padding-left: 1.25rem; padding-right: 1.25rem; }
+      .ls-grid { grid-template-columns: 1fr; }
+      .notdienst { padding: 2rem 1.25rem; }
+      .k-grid { grid-template-columns: 1fr; }
+      .hero-facts { gap: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+<div id="vergleich-banner" style="position:fixed;top:0;left:0;right:0;z-index:999;background:#1a1a1a;color:#fff;display:flex;justify-content:center;align-items:center;gap:1.5rem;padding:0.7rem 1.5rem;font-family:sans-serif;font-size:0.85rem;">
+  <span style="opacity:0.6;">Schulprojekt — Vergleich:</span>
+  <a href="http://www.lueneburger-schluesseldienst.de/" target="_blank" style="color:#f87171;text-decoration:underline;">Vorher</a>
+  <span style="opacity:0.4;">|</span>
+  <span style="color:#4ade80;">Nachher (diese Seite)</span>
+  <button onclick="document.getElementById('vergleich-banner').remove();document.body.style.paddingTop='0'" style="background:none;border:none;color:#666;cursor:pointer;font-size:1.1rem;margin-left:1rem;padding:0 0.5rem;">&#10005;</button>
+</div>
+<style>#vergleich-banner~*:first-of-type,body{padding-top:42px;}</style>
+
+<nav>
+  <div class="nav-name">Schlüsseldienst Alznauer</div>
+  <div class="nav-links">
+    <a href="#leistungen">Leistungen</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="tel:0413131969" class="nav-cta">04131 31969</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-tagline">Unser Schlüssel ist Ihre Sicherheit</div>
+    <h1>Schlüsseldienst & Sicherheitstechnik in Lüneburg</h1>
+    <p class="hero-text">Schlossöffnungen, Schlüsselanfertigung und Einbruchschutz. Ihr lokaler Fachbetrieb seit Jahren — fair, schnell und zuverlässig.</p>
+    <a href="tel:0413131969" class="hero-btn">Jetzt anrufen</a>
+    <div class="hero-facts">
+      <dl class="hero-fact"><dt>Standort</dt><dd>Auf dem Kauf 4, Lüneburg</dd></dl>
+      <dl class="hero-fact"><dt>Bewertung</dt><dd>4.7 / 5 Sterne</dd></dl>
+      <dl class="hero-fact"><dt>Inhaber</dt><dd>Guido Kolz e.K.</dd></dl>
+    </div>
+  </div>
+</div>
+
+<div class="leistungen" id="leistungen">
+  <h2>Unsere Leistungen</h2>
+  <p class="sub">Was wir für Sie tun</p>
+  <div class="ls-grid">
+    <div class="ls-card">
+      <h3>Schlossöffnung</h3>
+      <p>Tür zugefallen oder Schlüssel verloren? Wir öffnen Ihre Tür schnell und ohne unnötige Beschädigungen. Transparente Preise.</p>
+    </div>
+    <div class="ls-card">
+      <h3>Schlüssel anfertigen</h3>
+      <p>Haus-, Wohnungs- und Autoschlüssel. Sicherheitsschlüssel, Nachschlüssel nach Muster oder Schließkarte.</p>
+    </div>
+    <div class="ls-card">
+      <h3>Sicherheitstechnik</h3>
+      <p>Schließanlagen, Türsicherungen, Einbruchschutz. Beratung und Einbau für Privathaushalte und Gewerbe.</p>
+    </div>
+    <div class="ls-card">
+      <h3>Schlösser & Beschläge</h3>
+      <p>Austausch und Reparatur von Schlössern, Schließzylindern und Türbeschlägen aller Art.</p>
+    </div>
+    <div class="ls-card">
+      <h3>Tresore</h3>
+      <p>Beratung, Verkauf und Öffnung. Vom kleinen Möbeltresor bis zur Sicherheitsstufe.</p>
+    </div>
+    <div class="ls-card">
+      <h3>Schließanlagen</h3>
+      <p>Planung und Einbau von Schließsystemen für Mehrfamilienhäuser und Firmengebäude.</p>
+    </div>
+  </div>
+</div>
+
+<div class="notdienst">
+  <div class="notdienst-text">
+    <strong>Ausgesperrt?</strong>
+    <span>Rufen Sie uns an — wir helfen schnell und zu fairen Preisen.</span>
+  </div>
+  <a href="tel:0413131969">04131 31969</a>
+</div>
+
+<div class="vertrauen">
+  <h2>Darum Alznauer</h2>
+  <div class="vt-item"><div class="vt-dot"></div><div><strong>Lokaler Fachbetrieb</strong> — <span>Ladengeschäft in der Lüneburger Innenstadt, kein anonymer Notdienst aus dem Internet.</span></div></div>
+  <div class="vt-item"><div class="vt-dot"></div><div><strong>Faire Preise</strong> — <span>Keine Überraschungen bei der Rechnung. Sie wissen vorher, was es kostet.</span></div></div>
+  <div class="vt-item"><div class="vt-dot"></div><div><strong>98 Bewertungen, 4.7 Sterne</strong> — <span>Unsere Kunden vertrauen uns und empfehlen uns weiter.</span></div></div>
+  <div class="vt-item"><div class="vt-dot"></div><div><strong>Erfahrung</strong> — <span>Inhabergeführter Betrieb mit langjähriger Erfahrung in Sicherheitstechnik.</span></div></div>
+</div>
+
+<div class="kontakt" id="kontakt">
+  <h2>Kontakt & Öffnungszeiten</h2>
+  <iframe src="https://maps.google.com/maps?q=L%C3%BCneburger+Schloss-+%26+Schl%C3%BCsseldienst+Alznauer+Auf+dem+Kauf+4+L%C3%BCneburg&output=embed" style="width:100%;height:280px;border:none;border-radius:8px;margin-bottom:2rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div class="k-grid">
+    <div>
+      <div class="k-label">Adresse</div>
+      <div class="k-value">Lüneburger Schloss- & Schlüsseldienst<br>Inh. Guido Kolz e.K.<br>Auf dem Kauf 4<br>21335 Lüneburg</div>
+    </div>
+    <div>
+      <div class="k-label">Telefon</div>
+      <div class="k-value"><a href="tel:0413131969">04131 31969</a></div>
+    </div>
+    <div>
+      <div class="k-label">Öffnungszeiten</div>
+      <div class="k-value">Mo – Fr: 8:30 – 13:00, 14:00 – 17:00<br>Samstag & Sonntag: geschlossen</div>
+    </div>
+    <div>
+      <div class="k-label">Email</div>
+      <div class="k-value"><a href="mailto:mail@lueneburger-schluesseldienst.de">mail@lueneburger-schluesseldienst.de</a></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span>Lüneburger Schloss- & Schlüsseldienst Alznauer — Lüneburg</span>
+  <span>USt-IdNr.: DE815401145</span>
+</footer>
+
+</body>
+</html>

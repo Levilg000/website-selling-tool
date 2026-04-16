@@ -1,5 +1,5 @@
 import nodemailer from 'nodemailer';
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
@@ -19,75 +19,32 @@ interface LeadInfo {
   demoUrl?: string;
 }
 
-function generateEmailHtml(lead: LeadInfo): string {
+function generateEmailText(lead: LeadInfo): string {
   const hasOldSite = lead.website && !lead.website.includes('facebook.com');
 
-  // Vergleichs-Box wenn beide Links vorhanden
-  let compareBox = '';
-  if (lead.demoUrl && hasOldSite) {
-    compareBox = `
-    <table style="width:100%;border-collapse:collapse;margin:20px 0;">
-      <tr>
-        <td style="width:50%;padding:15px;background:#fef2f2;border-radius:8px 0 0 8px;text-align:center;vertical-align:top;">
-          <p style="color:#dc2626;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 8px 0;">Ihre aktuelle Website</p>
-          <a href="${lead.website}" style="color:#dc2626;font-size:14px;font-weight:600;">${lead.website!.replace(/https?:\/\/(www\.)?/, '').replace(/\/$/, '')} &rarr;</a>
-        </td>
-        <td style="width:50%;padding:15px;background:#f0fdf4;border-radius:0 8px 8px 0;text-align:center;vertical-align:top;">
-          <p style="color:#16a34a;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 8px 0;">Mein Entwurf für Sie</p>
-          <a href="${lead.demoUrl}" style="color:#16a34a;font-size:14px;font-weight:600;">Demo ansehen &rarr;</a>
-        </td>
-      </tr>
-    </table>`;
-  } else if (lead.demoUrl) {
-    compareBox = `
-    <table style="width:100%;border-collapse:collapse;margin:20px 0;">
-      <tr>
-        <td style="padding:15px;background:#f0fdf4;border-radius:8px;text-align:center;">
-          <p style="color:#16a34a;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:0 0 8px 0;">Mein Entwurf für ${lead.name}</p>
-          <a href="${lead.demoUrl}" style="color:#16a34a;font-size:14px;font-weight:600;">Demo ansehen &rarr;</a>
-        </td>
-      </tr>
-    </table>`;
-  }
-
   const intro = hasOldSite
-    ? `ich hab mir Ihre Website mal angeschaut und fand, da geht noch was — vor allem auf dem Handy. Deshalb hab ich einfach mal einen Entwurf gemacht, wie das modern aussehen könnte.`
-    : `mir ist aufgefallen, dass man ${lead.name} online noch nicht so richtig findet. Das ist schade, weil viele Kunden heutzutage zuerst im Internet suchen. Deshalb hab ich einfach mal einen Entwurf gemacht.`;
+    ? `Ich hab mir Ihre Website angeschaut und einen modernen Entwurf gemacht:`
+    : `Mir ist aufgefallen, dass ${lead.name} online schwer zu finden ist. Deshalb hab ich einen Entwurf gemacht:`;
 
-  return `<div style="font-family:Arial,sans-serif;max-width:550px;margin:0 auto;color:#333;line-height:1.7;">
+  return `Hallo,
 
-  <p style="color:#334155;font-size:15px;">Hallo,</p>
+mein Name ist Levi, ich bin Schüler aus Lüneburg und mache ein Schulprojekt zum Thema Webdesign.
 
-  <p style="color:#334155;font-size:14px;">mein Name ist Levi, ich bin Schüler aus der Nähe von Lüneburg. Für ein Schulprojekt beschäftige ich mich gerade mit Webdesign und baue Websites für lokale Unternehmen.</p>
+${intro}
 
-  <p style="color:#334155;font-size:14px;">${intro}</p>
+${lead.demoUrl}
 
-  <p style="color:#334155;font-size:14px;"><strong>Schauen Sie sich gerne den Vorher-Nachher-Vergleich an:</strong></p>
+Der Entwurf ist komplett unverbindlich - ich benötige praktische Erfahrung für mein Schulprojekt.
+Falls Ihnen die neue Webseite gefällt und Sie die Seite gerne haben möchten, melden Sie sich bitte bei mir!
+Für Sie fallen keine Kosten dafür an.
 
-  ${compareBox}
-
-  <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:15px;margin:20px 0;">
-    <p style="color:#92400e;font-size:14px;font-weight:600;margin:0 0 5px 0;">Komplett kostenlos & unverbindlich</p>
-    <p style="color:#a16207;font-size:13px;margin:0;">Das ist ein Schulprojekt — ich möchte einfach Erfahrung sammeln und brauche Referenzen. Es entstehen für Sie keine Kosten und keine Verpflichtungen. Falls Ihnen der Entwurf gefällt, freue ich mich. Falls nicht, auch kein Problem!</p>
-  </div>
-
-  <p style="color:#334155;font-size:14px;">Falls Sie Fragen haben, melden Sie sich einfach!</p>
-
-  <p style="color:#334155;font-size:14px;">
-    Viele Grüße<br>
-    <strong>Levi</strong><br>
-    <span style="color:#64748b;">Schüler & Webdesign-Projekt</span><br>
-    <span style="color:#64748b;">levi.webdesign.lg@gmail.com</span>
-  </p>
-
-</div>`;
+Viele Grüße
+Levi
+levi.webdesign.lg@gmail.com`;
 }
 
 function generateSubject(lead: LeadInfo): string {
-  if (lead.demoUrl) {
-    return `Kostenloser Website-Entwurf für ${lead.name} (Schulprojekt)`;
-  }
-  return `Website für ${lead.name}? Kostenlos als Schulprojekt`;
+  return `Schulprojekt: Website-Entwurf für ${lead.name}`;
 }
 
 async function main() {
@@ -123,11 +80,29 @@ Beispiele:
       .replace(/[^a-z0-9]+/g, '-')
       .replace(/^-|-$/g, '');
 
-    const profilePath = resolve(__dirname, '../../profiles', `${slug}.json`);
+    // Profil suchen: erst exakter Slug, dann Fuzzy-Match über alle Profile
+    const profilesDir = resolve(__dirname, '../../profiles');
+    let profile: any = null;
+
+    const exactPath = resolve(profilesDir, `${slug}.json`);
+    if (existsSync(exactPath)) {
+      profile = JSON.parse(readFileSync(exactPath, 'utf-8'));
+    } else if (existsSync(profilesDir)) {
+      // Fuzzy: Suche Profil das den Namen enthält
+      const query = name.toLowerCase();
+      const files = readdirSync(profilesDir).filter(f => f.endsWith('.json'));
+      for (const f of files) {
+        const p = JSON.parse(readFileSync(resolve(profilesDir, f), 'utf-8'));
+        if (p.name?.toLowerCase().includes(query) || query.includes(p.name?.toLowerCase().split(' ')[0])) {
+          profile = p;
+          break;
+        }
+      }
+    }
+
     let lead: LeadInfo = { name };
 
-    if (existsSync(profilePath)) {
-      const profile = JSON.parse(readFileSync(profilePath, 'utf-8'));
+    if (profile) {
       lead = {
         name: profile.name,
         phone: profile.phone,
@@ -139,19 +114,42 @@ Beispiele:
       };
       console.log(`📋 Profil geladen: ${profile.name} (${profile.category})`);
     } else {
-      lead.email = email;
-      lead.demoUrl = demoUrl;
-      console.log(`ℹ️  Kein Profil gefunden, nutze manuelle Daten`);
+      // Fallback: Lead-DB durchsuchen
+      const dbPath = resolve(__dirname, '../../data/leads.json');
+      if (existsSync(dbPath)) {
+        const db = JSON.parse(readFileSync(dbPath, 'utf-8'));
+        const match = db.leads.find((l: any) => l.name.toLowerCase().includes(name.toLowerCase()));
+        if (match) {
+          lead = {
+            name: match.name,
+            phone: match.phone,
+            email: email || match.email,
+            city: match.city || '',
+            category: match.category,
+            website: match.website,
+            demoUrl,
+          };
+          console.log(`📋 Lead-DB Match: ${match.name} (${match.category})`);
+        } else {
+          lead.email = email;
+          lead.demoUrl = demoUrl;
+          console.log(`ℹ️  Kein Profil/Lead gefunden, nutze manuelle Daten`);
+        }
+      } else {
+        lead.email = email;
+        lead.demoUrl = demoUrl;
+        console.log(`ℹ️  Kein Profil gefunden, nutze manuelle Daten`);
+      }
     }
 
-    const html = generateEmailHtml(lead);
+    const text = generateEmailText(lead);
     const subject = generateSubject(lead);
 
     // Draft speichern
     const draft = {
       to: lead.email || 'KEINE_EMAIL',
       subject,
-      html,
+      text,
       lead,
       createdAt: new Date().toISOString(),
       sent: false,
@@ -160,12 +158,12 @@ Beispiele:
     const draftPath = resolve(OUTREACH_DIR, `${slug}.json`);
     writeFileSync(draftPath, JSON.stringify(draft, null, 2), 'utf-8');
 
-    // HTML-Preview speichern
-    const previewPath = resolve(OUTREACH_DIR, `${slug}-preview.html`);
-    writeFileSync(previewPath, html, 'utf-8');
+    // Text-Preview speichern
+    const previewPath = resolve(OUTREACH_DIR, `${slug}-preview.txt`);
+    writeFileSync(previewPath, text, 'utf-8');
 
     console.log(`\n✅ Draft erstellt: outreach/${slug}.json`);
-    console.log(`   Preview: outreach/${slug}-preview.html`);
+    console.log(`   Preview: outreach/${slug}-preview.txt`);
     console.log(`   An: ${draft.to}`);
     console.log(`   Betreff: ${subject}`);
 
@@ -205,7 +203,7 @@ Beispiele:
         from: '"Levi Webdesign" <levi.webdesign.lg@gmail.com>',
         to: draft.to,
         subject: draft.subject,
-        html: draft.html,
+        text: draft.text,
       });
 
       draft.sent = true;

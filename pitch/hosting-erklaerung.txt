@@ -1,0 +1,34 @@
+Wie 0€ Hosting möglich ist
+==========================
+
+Vercel hostet statische Websites kostenlos weil es sie quasi nichts kostet.
+
+Wie das funktioniert: Die HTML/CSS-Dateien werden einmal auf ein CDN
+(Content Delivery Network) hochgeladen — das sind Server weltweit die
+Dateien ausliefern. Es läuft kein Prozess, kein Server, keine Datenbank.
+Wenn jemand die Seite aufruft, liefert der nächste CDN-Server die fertige
+Datei aus. Das ist für Vercel so billig (Bruchteile eines Cents pro Aufruf),
+dass sie es verschenken können.
+
+Warum machen die das? Vercel verdient Geld mit großen Firmen die Serverless
+Functions, Team-Features und Enterprise-Support brauchen. Der kostenlose Tier
+ist Marketing — Entwickler fangen gratis an, ihre Firma zahlt dann
+20-1000$/Monat wenn es ernst wird. Kleine statische Seiten wie unsere werden
+nie auf den kostenpflichtigen Tier upgraden, aber das ist Vercel egal.
+
+Was inklusive ist (gratis):
+- Unbegrenzt statische Websites
+- 100 GB Bandwidth pro Monat
+- HTTPS automatisch (Let's Encrypt)
+- Globales CDN
+- *.vercel.app Subdomain
+- Git-basiertes Deployment
+
+Was extra kostet (brauchen wir nicht):
+- Serverless Functions über Free-Tier hinaus
+- Team-Features
+- Analytics (Premium)
+- Enterprise Support
+
+Solange wir nur HTML/CSS ohne Backend deployen, bleibt es bei 0€.
+Der Free Tier existiert seit Vercels Gründung 2015.

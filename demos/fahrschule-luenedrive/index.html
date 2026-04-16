@@ -3,200 +3,343 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fahrschule Lünedrive — Dein Führerschein in Lüneburg</title>
-  <meta name="description" content="Fahrschule Lünedrive in Lüneburg. Auto, Motorrad, Anhänger. Modern, entspannt, fair.">
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Fahrschule Lünedrive — Führerschein in Lüneburg</title>
+  <meta name="description" content="Fahrschule Lünedrive in Lüneburg. Auto, Motorrad, Anhänger. Entspannte Ausbildung, faire Preise.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root { --lime: #a3e635; --dark: #0a0a0a; --card: #161616; --text: #a1a1aa; --white: #fafafa; }
+    :root {
+      --blue: #1e3a5f;
+      --blue-light: #2d5a8e;
+      --accent: #e8a838;
+      --bg: #fafaf8;
+      --white: #fff;
+      --text: #3d3d3d;
+      --muted: #6b7280;
+      --light: #f3f4f6;
+    }
     html { scroll-behavior: smooth; }
-    body { font-family: 'Sora', sans-serif; background: var(--dark); color: var(--text); }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg); }
     a { color: inherit; text-decoration: none; }
 
     /* NAV */
     nav {
       position: fixed; top: 0; width: 100%; z-index: 99;
-      padding: 1.25rem 3rem; display: flex; justify-content: space-between; align-items: center;
-      background: rgba(10,10,10,0.85); backdrop-filter: blur(16px);
+      padding: 1rem 3rem; display: flex; justify-content: space-between; align-items: center;
+      background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e5e7eb;
     }
-    .logo { font-size: 1.3rem; font-weight: 800; color: var(--white); }
-    .logo span { color: var(--lime); }
+    .logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; color: var(--blue); }
+    .logo span { color: var(--accent); }
     nav ul { list-style: none; display: flex; gap: 2rem; }
-    nav a { font-size: 0.85rem; font-weight: 500; color: var(--text); transition: color 0.2s; }
-    nav a:hover { color: var(--lime); }
-    .pill {
-      background: var(--lime); color: var(--dark); padding: 0.5rem 1.5rem;
-      border-radius: 50px; font-weight: 700; font-size: 0.85rem; transition: all 0.2s;
+    nav a { font-size: 0.85rem; font-weight: 500; color: var(--muted); transition: color 0.2s; }
+    nav a:hover { color: var(--blue); }
+    .nav-cta {
+      background: var(--blue); color: var(--white); padding: 0.6rem 1.5rem;
+      border-radius: 6px; font-weight: 600; font-size: 0.85rem; transition: background 0.2s;
     }
-    .pill:hover { background: #bef264; transform: scale(1.05); }
+    .nav-cta:hover { background: var(--blue-light); }
 
     /* HERO */
     .hero {
-      min-height: 100vh; display: flex; flex-direction: column; justify-content: center;
-      align-items: center; text-align: center; padding: 6rem 2rem;
-      position: relative; overflow: hidden;
+      min-height: 90vh; display: flex; align-items: center;
+      padding: 8rem 3rem 6rem; position: relative;
+      background: linear-gradient(135deg, var(--blue) 0%, var(--blue-light) 100%);
+      color: var(--white);
     }
-    .hero::before {
-      content: ''; position: absolute; width: 500px; height: 500px;
-      background: radial-gradient(circle, rgba(163,230,53,0.12), transparent 70%);
-      top: 20%; left: 50%; transform: translateX(-50%); border-radius: 50%;
-    }
-    .hero-tag {
-      font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 4px;
-      color: var(--lime); margin-bottom: 2rem;
+    .hero-content { max-width: 600px; }
+    .hero-badge {
+      display: inline-block; font-size: 0.75rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 2px;
+      background: rgba(255,255,255,0.15); padding: 0.4rem 1rem; border-radius: 4px;
+      margin-bottom: 1.5rem;
     }
     .hero h1 {
-      font-size: clamp(3rem, 7vw, 5.5rem); font-weight: 800; color: var(--white);
-      line-height: 1.05; letter-spacing: -2px; position: relative; z-index: 1;
+      font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 700; line-height: 1.15; margin-bottom: 1.5rem;
     }
-    .hero h1 .highlight {
-      background: linear-gradient(90deg, var(--lime), #4ade80);
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    .hero p { font-size: 1.1rem; line-height: 1.7; opacity: 0.85; max-width: 480px; margin-bottom: 2rem; }
+    .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--accent); color: var(--blue); padding: 0.9rem 2rem;
+      border-radius: 6px; font-weight: 700; font-size: 0.95rem; transition: all 0.2s;
     }
-    .hero-sub { margin-top: 1.5rem; font-size: 1.15rem; max-width: 500px; line-height: 1.7; color: #71717a; position: relative; z-index: 1; }
-    .hero-btns { margin-top: 2.5rem; display: flex; gap: 1rem; position: relative; z-index: 1; }
-    .btn-lime { background: var(--lime); color: var(--dark); padding: 1rem 2.5rem; border-radius: 50px; font-weight: 700; font-size: 1rem; transition: all 0.25s; }
-    .btn-lime:hover { background: #bef264; transform: translateY(-3px); box-shadow: 0 15px 40px rgba(163,230,53,0.2); }
-    .btn-outline { border: 2px solid #333; color: var(--white); padding: 1rem 2.5rem; border-radius: 50px; font-weight: 600; transition: all 0.2s; }
-    .btn-outline:hover { border-color: var(--lime); color: var(--lime); }
+    .btn-primary:hover { background: #f0b84d; transform: translateY(-2px); }
+    .btn-secondary {
+      border: 2px solid rgba(255,255,255,0.4); color: var(--white); padding: 0.9rem 2rem;
+      border-radius: 6px; font-weight: 600; transition: all 0.2s;
+    }
+    .btn-secondary:hover { border-color: var(--white); }
+
+    .hero-info {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      display: flex; background: var(--white); color: var(--text);
+    }
+    .hero-info-item {
+      flex: 1; padding: 1.5rem 2rem; text-align: center;
+      border-right: 1px solid #e5e7eb;
+    }
+    .hero-info-item:last-child { border-right: none; }
+    .hero-info-item strong { display: block; font-size: 1.1rem; color: var(--blue); margin-bottom: 0.25rem; }
+    .hero-info-item span { font-size: 0.8rem; color: var(--muted); }
+
+    /* SECTIONS */
+    section { padding: 5rem 3rem; }
+    .container { max-width: 1000px; margin: 0 auto; }
+    .section-label {
+      font-size: 0.75rem; text-transform: uppercase; letter-spacing: 3px;
+      color: var(--accent); font-weight: 700; margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif; font-size: 2rem;
+      color: var(--blue); font-weight: 700; margin-bottom: 2.5rem;
+    }
 
     /* KLASSEN */
-    .section { padding: 6rem 3rem; }
-    .section-tag { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 4px; color: var(--lime); margin-bottom: 1rem; }
-    .section h2 { font-size: 2.5rem; font-weight: 800; color: var(--white); letter-spacing: -1px; margin-bottom: 3rem; }
-
-    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-    .card {
-      background: var(--card); border: 1px solid #222; border-radius: 20px;
-      padding: 2.5rem; transition: all 0.35s; position: relative; overflow: hidden;
+    .klassen-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .klasse {
+      background: var(--white); border: 1px solid #e5e7eb; border-radius: 10px;
+      padding: 2rem; transition: all 0.3s;
     }
-    .card::before {
-      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
-      background: linear-gradient(90deg, var(--lime), transparent); opacity: 0; transition: opacity 0.3s;
+    .klasse:hover { border-color: var(--blue); box-shadow: 0 8px 30px rgba(30,58,95,0.08); }
+    .klasse-icon {
+      font-size: 1.4rem; font-weight: 700; color: var(--white); background: var(--blue);
+      width: 44px; height: 44px; border-radius: 6px; display: flex; align-items: center;
+      justify-content: center; margin-bottom: 1rem; font-family: 'Inter', sans-serif;
     }
-    .card:hover { border-color: #333; transform: translateY(-6px); }
-    .card:hover::before { opacity: 1; }
-    .card-emoji { font-size: 3rem; margin-bottom: 1.25rem; }
-    .card h3 { font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 0.5rem; }
-    .card p { font-size: 0.9rem; line-height: 1.7; }
+    .klasse h3 { font-size: 1.1rem; font-weight: 700; color: var(--blue); margin-bottom: 0.5rem; }
+    .klasse p { font-size: 0.9rem; line-height: 1.6; color: var(--muted); }
+    .klasse-tag {
+      display: inline-block; margin-top: 1rem; font-size: 0.75rem; font-weight: 600;
+      color: var(--blue); background: #e8f0fe; padding: 0.3rem 0.8rem; border-radius: 4px;
+    }
 
-    /* STEPS */
-    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-top: 3rem; }
-    .step { text-align: center; }
-    .step-circle {
-      width: 64px; height: 64px; border-radius: 50%; border: 2px solid #333;
+    /* ABLAUF */
+    .ablauf-bg { background: var(--light); }
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+    .step { text-align: center; position: relative; }
+    .step-num {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: var(--blue); color: var(--white);
       display: flex; align-items: center; justify-content: center;
-      font-size: 1.5rem; font-weight: 800; color: var(--lime); margin: 0 auto 1rem;
-      transition: all 0.3s;
+      font-size: 1.1rem; font-weight: 700; margin: 0 auto 1rem;
     }
-    .step:hover .step-circle { border-color: var(--lime); background: rgba(163,230,53,0.1); }
-    .step h4 { font-weight: 700; color: var(--white); margin-bottom: 0.25rem; }
-    .step p { font-size: 0.85rem; }
+    .step h4 { font-size: 0.95rem; font-weight: 700; color: var(--blue); margin-bottom: 0.25rem; }
+    .step p { font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
 
-    /* CTA BAND */
-    .cta-band {
-      background: var(--lime); color: var(--dark); text-align: center;
-      padding: 4rem 2rem; font-size: 1.5rem; font-weight: 800;
+    /* WARUM */
+    .features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    .feature {
+      background: var(--white); padding: 1.5rem; border-radius: 8px;
+      border: 1px solid #e5e7eb; border-left: 3px solid var(--blue);
     }
-    .cta-band a { display: inline-block; margin-top: 1rem; background: var(--dark); color: var(--lime); padding: 1rem 3rem; border-radius: 50px; font-size: 1rem; transition: transform 0.2s; }
-    .cta-band a:hover { transform: scale(1.05); }
+    .feature h4 { font-size: 0.95rem; font-weight: 600; color: var(--blue); margin-bottom: 0.25rem; }
+    .feature p { font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
 
-    /* CONTACT */
-    .contact-flex { display: flex; gap: 4rem; margin-top: 3rem; flex-wrap: wrap; }
-    .contact-block h4 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 3px; color: var(--lime); margin-bottom: 0.5rem; }
-    .contact-block p { color: #888; }
-    .contact-block a { color: var(--white); }
+    /* CTA */
+    .cta {
+      background: var(--blue); color: var(--white); text-align: center;
+      padding: 4rem 2rem; border-radius: 12px; margin: 0 3rem;
+    }
+    .cta h2 { font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 0.75rem; }
+    .cta p { opacity: 0.8; margin-bottom: 1.5rem; }
+    .cta a {
+      display: inline-block; background: var(--accent); color: var(--blue);
+      padding: 1rem 2.5rem; border-radius: 6px; font-weight: 700; transition: all 0.2s;
+    }
+    .cta a:hover { background: #f0b84d; }
 
-    footer { border-top: 1px solid #1a1a1a; padding: 2rem 3rem; font-size: 0.8rem; color: #444; text-align: center; }
+    /* KONTAKT */
+    .contact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+    .contact-card {
+      background: var(--white); border: 1px solid #e5e7eb; border-radius: 10px; padding: 2rem;
+    }
+    .contact-card h4 {
+      font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px;
+      color: var(--accent); font-weight: 700; margin-bottom: 0.75rem;
+    }
+    .contact-card p { color: var(--muted); line-height: 1.6; }
+    .contact-card a { color: var(--blue); font-weight: 600; }
+
+    footer {
+      text-align: center; padding: 2rem; font-size: 0.8rem; color: var(--muted);
+      border-top: 1px solid #e5e7eb; margin-top: 4rem;
+    }
 
     @media (max-width: 768px) {
       nav { padding: 1rem 1.5rem; } nav ul { display: none; }
-      .hero h1 { font-size: 2.5rem; }
-      .section { padding: 4rem 1.5rem; }
-      .cards, .steps { grid-template-columns: 1fr; }
+      .hero { padding: 7rem 1.5rem 8rem; }
+      section { padding: 3.5rem 1.5rem; }
+      .klassen-grid, .steps, .features, .contact-grid { grid-template-columns: 1fr; }
+      .hero-info { flex-direction: column; }
+      .hero-info-item { border-right: none; border-bottom: 1px solid #e5e7eb; }
+      .cta { margin: 0 1.5rem; }
     }
   </style>
 </head>
 <body>
+<div id="vergleich-banner" style="position:fixed;top:0;left:0;right:0;z-index:999;background:#1a1a1a;color:#fff;display:flex;justify-content:center;align-items:center;gap:1.5rem;padding:0.7rem 1.5rem;font-family:sans-serif;font-size:0.85rem;">
+  <span style="opacity:0.6;">Schulprojekt — Vergleich:</span>
+  <a href="http://www.fahrschule-luene-drive.de/" target="_blank" style="color:#f87171;text-decoration:underline;">Vorher</a>
+  <span style="opacity:0.4;">|</span>
+  <span style="color:#4ade80;">Nachher (diese Seite)</span>
+  <button onclick="document.getElementById('vergleich-banner').remove();document.body.style.paddingTop='0'" style="background:none;border:none;color:#666;cursor:pointer;font-size:1.1rem;margin-left:1rem;padding:0 0.5rem;">&#10005;</button>
+</div>
+<style>#vergleich-banner~*:first-of-type,body{padding-top:42px;}</style>
 
 <nav>
-  <div class="logo">lüne<span>drive</span></div>
+  <div class="logo">Lüne<span>drive</span></div>
   <ul>
     <li><a href="#klassen">Klassen</a></li>
     <li><a href="#ablauf">Ablauf</a></li>
     <li><a href="#kontakt">Kontakt</a></li>
   </ul>
-  <a href="tel:04131855301" class="pill">Anrufen</a>
+  <a href="tel:04131855301" class="nav-cta">Anrufen</a>
 </nav>
 
 <section class="hero">
-  <div class="hero-tag">Fahrschule Lüneburg</div>
-  <h1>Fahr<br><span class="highlight">deinen Weg.</span></h1>
-  <p class="hero-sub">Entspannt zum Führerschein. Moderne Ausbildung, geduldige Fahrlehrer und faire Preise — mitten in Lüneburg.</p>
-  <div class="hero-btns">
-    <a href="tel:04131855301" class="btn-lime">04131 / 855301</a>
-    <a href="#klassen" class="btn-outline">Mehr erfahren</a>
+  <div class="hero-content">
+    <div class="hero-badge">Fahrschule in Lüneburg</div>
+    <h1>Dein Führerschein. Entspannt gemacht.</h1>
+    <p>Moderne Ausbildung mit geduldigen Fahrlehrern und fairen Preisen. Mitten in Lüneburg, direkt am Barckhausenplatz.</p>
+    <div class="hero-btns">
+      <a href="tel:04131855301" class="btn-primary">Jetzt anrufen</a>
+      <a href="#klassen" class="btn-secondary">Unsere Klassen</a>
+    </div>
   </div>
-</section>
-
-<section class="section" id="klassen">
-  <div class="section-tag">Führerscheinklassen</div>
-  <h2>Was willst du fahren?</h2>
-  <div class="cards">
-    <div class="card">
-      <div class="card-emoji">&#128663;</div>
-      <h3>Klasse B</h3>
-      <p>Der Autoführerschein. Ab 17 begleitet (BF17) oder ab 18 solo. Auch Automatik möglich.</p>
+  <div class="hero-info">
+    <div class="hero-info-item">
+      <strong>Auto & Motorrad</strong>
+      <span>Klasse B, A1, A2, A</span>
     </div>
-    <div class="card">
-      <div class="card-emoji">&#127949;</div>
-      <h3>Klasse A</h3>
-      <p>Motorrad in allen Stufen — A1, A2, A. Stufenführerschein oder Direkteinstieg.</p>
+    <div class="hero-info-item">
+      <strong>Barckhausenstr. 2</strong>
+      <span>21335 Lüneburg</span>
     </div>
-    <div class="card">
-      <div class="card-emoji">&#128666;</div>
-      <h3>Klasse BE</h3>
-      <p>Auto + Anhänger. Perfekt für Wohnwagen-Urlaub oder Transporte.</p>
+    <div class="hero-info-item">
+      <strong>04131 / 855 301</strong>
+      <span>Mo – Fr erreichbar</span>
     </div>
   </div>
 </section>
 
-<section class="section" id="ablauf">
-  <div class="section-tag">In 4 Steps</div>
-  <h2>So läuft's.</h2>
-  <div class="steps">
-    <div class="step"><div class="step-circle">1</div><h4>Anmelden</h4><p>Anrufen, vorbeikommen, loslegen.</p></div>
-    <div class="step"><div class="step-circle">2</div><h4>Theorie</h4><p>Entspannter Unterricht. Kein Stress.</p></div>
-    <div class="step"><div class="step-circle">3</div><h4>Fahren</h4><p>Üben bis du dich sicher fühlst.</p></div>
-    <div class="step"><div class="step-circle">4</div><h4>Bestehen</h4><p>Prüfung rocken. Fertig.</p></div>
+<section id="klassen">
+  <div class="container">
+    <div class="section-label">Führerscheinklassen</div>
+    <div class="section-title">Was möchtest du fahren?</div>
+    <div class="klassen-grid">
+      <div class="klasse">
+        <div class="klasse-icon">B</div>
+        <h3>Auto</h3>
+        <p>Der Autoführerschein. Ab 17 mit Begleitung (BF17) oder ab 18 allein. Auch Automatik möglich.</p>
+        <span class="klasse-tag">Am beliebtesten</span>
+      </div>
+      <div class="klasse">
+        <div class="klasse-icon">A</div>
+        <h3>Motorrad</h3>
+        <p>Motorrad in allen Stufen — A1, A2 und A. Stufenaufstieg oder Direkteinstieg.</p>
+        <span class="klasse-tag">Ab 16 Jahren</span>
+      </div>
+      <div class="klasse">
+        <div class="klasse-icon">BE</div>
+        <h3>Anhänger</h3>
+        <p>Auto mit Anhänger. Ideal für Camping, Umzüge oder den Pferdeanhänger.</p>
+        <span class="klasse-tag">Zusatzklasse</span>
+      </div>
+    </div>
   </div>
 </section>
 
-<div class="cta-band">
-  Bereit? Ruf einfach an.
-  <br>
-  <a href="tel:04131855301">04131 / 855301</a>
+<section class="ablauf-bg" id="ablauf">
+  <div class="container">
+    <div class="section-label">Dein Weg zum Führerschein</div>
+    <div class="section-title">In vier Schritten ans Ziel</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Anmelden</h4>
+        <p>Ruf an oder komm vorbei. Wir besprechen alles in Ruhe.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>Theorie</h4>
+        <p>Verständlicher Unterricht in kleinen Gruppen.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>Fahren</h4>
+        <p>Übungsstunden bis du dich wirklich sicher fühlst.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h4>Bestehen</h4>
+        <p>Gut vorbereitet in die Prüfung — und bestehen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-label">Warum Lünedrive</div>
+    <div class="section-title">Das macht uns aus</div>
+    <div class="features">
+      <div class="feature">
+        <div>
+          <h4>Verständlicher Unterricht</h4>
+          <p>Theorie ohne Fachchinesisch. Wir erklären so, dass es hängen bleibt.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div>
+          <h4>Geduldige Fahrlehrer</h4>
+          <p>Kein Stress, kein Druck. Jeder lernt in seinem Tempo.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div>
+          <h4>Faire Preise</h4>
+          <p>Transparent und ehrlich. Keine versteckten Kosten.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div>
+          <h4>Zentrale Lage</h4>
+          <p>Barckhausenstraße 2 — gut erreichbar, mitten in Lüneburg.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <h2>Bereit für den Führerschein?</h2>
+  <p>Ruf uns an oder komm einfach vorbei. Wir freuen uns auf dich.</p>
+  <a href="tel:04131855301">04131 / 855 301</a>
 </div>
 
-<section class="section" id="kontakt">
-  <div class="section-tag">Kontakt</div>
-  <h2>Find uns.</h2>
-  <div class="contact-flex">
-    <div class="contact-block">
-      <h4>Telefon</h4>
-      <p><a href="tel:04131855301">04131 / 855301</a></p>
-    </div>
-    <div class="contact-block">
-      <h4>Standort</h4>
-      <p>Lüneburg</p>
-    </div>
-    <div class="contact-block">
-      <h4>Theorie</h4>
-      <p>Mo – Fr, 17 – 19 Uhr</p>
-    </div>
-    <div class="contact-block">
-      <h4>Fahrstunden</h4>
-      <p>Nach Vereinbarung</p>
+<section id="kontakt">
+  <div class="container">
+    <div class="section-label">Kontakt</div>
+    <div class="section-title">So erreichst du uns</div>
+    <iframe src="https://maps.google.com/maps?q=Fahrschule+L%C3%BCnedrive+Barckhausenstra%C3%9Fe+2+L%C3%BCneburg&output=embed" style="width:100%;height:280px;border:none;border-radius:8px;margin-bottom:2rem;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h4>Adresse</h4>
+        <p>Fahrschule Lünedrive<br>Barckhausenstraße 2<br>21335 Lüneburg</p>
+      </div>
+      <div class="contact-card">
+        <h4>Telefon</h4>
+        <p><a href="tel:04131855301">04131 / 855 301</a></p>
+      </div>
+      <div class="contact-card">
+        <h4>Theorieunterricht</h4>
+        <p>Montag – Freitag<br>17:00 – 19:00 Uhr</p>
+      </div>
+      <div class="contact-card">
+        <h4>Fahrstunden</h4>
+        <p>Nach Vereinbarung<br>Auch abends möglich</p>
+      </div>
     </div>
   </div>
 </section>

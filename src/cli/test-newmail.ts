@@ -1,4 +1,10 @@
 import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
+import { resolve, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+dotenv.config({ path: resolve(__dirname, '../../.env') });
 
 const variants = [
   { user: 'levi.webdesign.lg@gmail.com', pass: 'rvmmkihyovlblur' },
@@ -12,8 +18,8 @@ for (const { user, pass } of variants) {
   });
   try {
     await t.verify();
-    console.log(`✅ ${user} (pass: ${pass.slice(0,4)}...) — FUNKTIONIERT!`);
+    console.log(`✅ ${user} — SMTP FUNKTIONIERT!`);
   } catch (e: any) {
-    console.log(`❌ ${user} (pass: ${pass.slice(0,4)}...) — ${e.message.slice(0, 80)}`);
+    console.log(`❌ ${user} — ${e.message.slice(0, 60)}`);
   }
 }
