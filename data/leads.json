@@ -5113,7 +5113,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "elektro@koehler-gellersen.de"
     },
     {
       "placeId": "ChIJL5fv9XojrkcRe4K8jdvXkh0",
@@ -6686,7 +6687,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "dachdecker"
+      "category": "dachdecker",
+      "email": "info@schreiber-bedachungen.de"
     },
     {
       "placeId": "ChIJHaG6vXfesUcRKDfVspwsOzo",
@@ -6722,7 +6724,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "info@dahms-maler.de"
     },
     {
       "placeId": "ChIJq1mSBuvdsUcRDkJHzGXVNgw",
@@ -6758,7 +6761,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "thomas.baas@arcor.de"
     },
     {
       "placeId": "ChIJC9ejpEfosUcRZC0ECnfTVTI",
@@ -6795,7 +6799,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "mail@roland-lyra.de"
     },
     {
       "placeId": "ChIJbUYrTrPhsUcRi5f81sq6xaE",
@@ -6868,7 +6873,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "info@maler-flindt.de"
     },
     {
       "placeId": "ChIJY4VdzO_dsUcR92KxT93GCE4",
@@ -6905,7 +6911,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "zimmerei"
+      "category": "zimmerei",
+      "email": "info@hoffmann-holzbau.de"
     },
     {
       "placeId": "ChIJl13PsQLdsUcRbycTsHe-1d8",
@@ -6940,7 +6947,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "zimmerei"
+      "category": "zimmerei",
+      "email": "hallo@winterseel-tischlerei.de"
     },
     {
       "placeId": "ChIJhdQERQDdsUcRUhXSlRsyBkY",
@@ -7005,7 +7013,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "zimmerei"
+      "category": "zimmerei",
+      "email": "kontakt@baeckerei-zimmer.de"
     },
     {
       "placeId": "ChIJY3ja8NjdsUcREseMkqLxcQg",
@@ -7044,7 +7053,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "zimmerei"
+      "category": "zimmerei",
+      "email": "kontakt@baeckerei-zimmer.de"
     },
     {
       "placeId": "ChIJs8EMHCTdsUcRMCeDZnKehDs",
@@ -7105,7 +7115,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "gartenbau"
+      "category": "gartenbau",
+      "email": "galabaumennen@gmail.com"
     },
     {
       "placeId": "ChIJ3U8FYya6l0cRAh_f-hR6Z4o",
@@ -7133,7 +7144,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "gartenbau"
+      "category": "gartenbau",
+      "email": "info@kuld-hausundgarten.de"
     },
     {
       "placeId": "ChIJtYcWl9vdsUcRPZQEcsn0n1A",
@@ -7169,7 +7181,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "gartenbau"
+      "category": "gartenbau",
+      "email": "khalid.gartnepflege@gmail.com"
     },
     {
       "placeId": "ChIJ4VQ8FHXdsUcRjXG0XpwspO4",
@@ -7244,7 +7257,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@haus-profis.com"
     },
     {
       "placeId": "ChIJZ6xCQfLdsUcRulqBhr162hk",
@@ -7282,7 +7296,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "handel"
+      "category": "handel",
+      "email": "info@schneiderundsteffens.de"
     },
     {
       "placeId": "ChIJWSbtqTzcsUcRXPumWgobt1A",
@@ -7316,7 +7331,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "info@yourdomain.com"
     },
     {
       "placeId": "ChIJgVUNQ8ndsUcRNqpgb_srF5I",
@@ -7351,7 +7367,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@ellenberg-kuhn.de"
     },
     {
       "placeId": "ChIJeyVV54jdsUcRHnCWoeWz7K4",
@@ -7386,7 +7403,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@ks-service-gmbh.de"
     },
     {
       "placeId": "ChIJo8KlugLdsUcROgwcjFg0s4k",
@@ -7423,7 +7441,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@junker-elektrotechnik.de"
     },
     {
       "placeId": "ChIJLcKyQ_LdsUcR4BQcLFfXUqo",
@@ -7460,7 +7479,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@schneiderundsteffens.de"
     },
     {
       "placeId": "ChIJj6sWSsLdsUcRI7dhvn63OEM",
@@ -7497,7 +7517,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@heidenreich-elektrotechnik.de"
     },
     {
       "placeId": "ChIJ_yyAH3jesUcRORBQoPCKlUc",
@@ -7532,7 +7553,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@gem-mbh.de"
     },
     {
       "placeId": "ChIJF42ZK1uCY0ERbK31DODCMQI",
@@ -7559,7 +7581,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@elektro-n-martin.de"
     },
     {
       "placeId": "ChIJf2euvs3dsUcRQ_MYnTYHGoE",
@@ -7599,7 +7622,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "sanitaer"
+      "category": "sanitaer",
+      "email": "info@fredzandergmbh.de"
     },
     {
       "placeId": "ChIJs2_2NcDdsUcR_fFEPTob8cA",
@@ -7634,7 +7658,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "sanitaer"
+      "category": "sanitaer",
+      "email": "ohlhagen-sanitaertechnik@t-online.de"
     },
     {
       "placeId": "ChIJNzatvovesUcRvr8ywOc6PLk",
@@ -7741,7 +7766,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "dachdecker"
+      "category": "dachdecker",
+      "email": "info@hansebau-lg.de"
     },
     {
       "placeId": "ChIJdzZx43fnsUcRb2DputC7GqU",
@@ -7777,7 +7803,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "dachdecker"
+      "category": "dachdecker",
+      "email": "info@dach-boettcher.de"
     },
     {
       "placeId": "ChIJD-_bgm_dsUcRhmEy-8Gwf7Y",
@@ -7850,7 +7877,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "info@malerbosse.de"
     },
     {
       "placeId": "ChIJVZJWOOndsUcRC2QHSo5hpOI",
@@ -7885,7 +7913,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "859660info@maltisse.de"
     },
     {
       "placeId": "ChIJ-3ECdILnsUcR2Y4yxAIWHxU",
@@ -7920,7 +7949,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "info@malerbosse.de"
     },
     {
       "placeId": "ChIJAVH2_fHdsUcRFidU-590DLw",
@@ -7990,7 +8020,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "info@malermeister-kkrause.de"
     },
     {
       "placeId": "ChIJI0JVfMTnsUcRoGn-_-uC9BI",
@@ -8025,7 +8056,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "info@maler-schlichting.de"
     },
     {
       "placeId": "ChIJd_rG5VzdsUcRjK5SGTJ-q5I",
@@ -8131,7 +8163,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "info@werbegemeinschaft-bardowick.de"
     },
     {
       "placeId": "ChIJVVVhULbesUcRsk8yuxpT8zk",
@@ -8158,7 +8191,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "fwendlandt@hotmail.com"
     },
     {
       "placeId": "ChIJ171iaQHesUcRgNm7V-QWP_w",
@@ -8191,7 +8225,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "info@malerlohbeck.de"
     },
     {
       "placeId": "ChIJdSlMu5WKeIsRC3dUZ3aefyY",
@@ -8227,7 +8262,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "info@as-renovierung.de"
     },
     {
       "placeId": "ChIJdULY8_3hsUcRZOUNQMw1eR4",
@@ -8262,7 +8298,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "zimmerei"
+      "category": "zimmerei",
+      "email": "info@zimmerei-naujoks.de"
     },
     {
       "placeId": "ChIJiUjc-GDZsUcR5iSWty6xbeY",
@@ -8298,7 +8335,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "zimmerei"
+      "category": "zimmerei",
+      "email": "info@tischlerei-goldnik.de"
     },
     {
       "placeId": "ChIJ0RE4ABbesUcRMu4JO9QqIVg",
@@ -8333,7 +8371,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "zimmerei"
+      "category": "zimmerei",
+      "email": "info@tischler-lueer.de"
     },
     {
       "placeId": "ChIJu3MuX7HdsUcRvRIbCNdfzH8",
@@ -8360,7 +8399,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "zimmerei"
+      "category": "zimmerei",
+      "email": "info@studemund.de"
     },
     {
       "placeId": "ChIJ5fK99eHdsUcRbV2KSzM0RGU",
@@ -8395,7 +8435,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "zimmerei"
+      "category": "zimmerei",
+      "email": "bals.design@web.de"
     },
     {
       "placeId": "ChIJXbp8iNrdsUcReMEgGJY1mlM",
@@ -8429,7 +8470,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "zimmerei"
+      "category": "zimmerei",
+      "email": "zentrale@81fuenf.de"
     },
     {
       "placeId": "ChIJUVC8Vc_esUcRNpY5H38cNXw",
@@ -8464,7 +8506,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "zimmerei"
+      "category": "zimmerei",
+      "email": "info@tischlermeister-meckelburg.de"
     },
     {
       "placeId": "ChIJRZz-an4frkcRXyo1FFcDDIk",
@@ -8497,7 +8540,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "zimmerei"
+      "category": "zimmerei",
+      "email": "info@tischlerei-kretschmar.de"
     },
     {
       "placeId": "ChIJVcmEuu7bsUcRTka9QMJIzh0",
@@ -8533,7 +8577,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "zimmerei"
+      "category": "zimmerei",
+      "email": "service@tischlerei-hoeche.de"
     },
     {
       "placeId": "ChIJm5nKc-ndsUcRsjgjowCu_5o",
@@ -8568,7 +8613,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@insachenauto.de"
     },
     {
       "placeId": "ChIJC0paN_LdsUcRCtGgIS9MaZE",
@@ -8603,7 +8649,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@back-kux.de"
     },
     {
       "placeId": "ChIJy-IWk17esUcRgCujglr3Wtk",
@@ -8641,7 +8688,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@dieautostube.de"
     },
     {
       "placeId": "ChIJbRoGsaXdsUcRLGjN0PFRvI0",
@@ -8679,7 +8727,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "kontakt@rbm-lueneburg.de"
     },
     {
       "placeId": "ChIJVXIcYF7esUcRhc0dE4GPu6Q",
@@ -8714,7 +8763,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@autowerkstatt-bruederle.de"
     },
     {
       "placeId": "ChIJtyxEeOjdsUcRf9Pw93psArw",
@@ -8749,7 +8799,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@autoservice-burmester.de"
     },
     {
       "placeId": "ChIJt6HcXhXfsUcRAnAqBt2-q-k",
@@ -8784,7 +8835,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@swunfall.de"
     },
     {
       "placeId": "ChIJ3fKs4IzdsUcRX5hrzIC_wmc",
@@ -8819,7 +8871,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "beslerkfz-service@web.de"
     },
     {
       "placeId": "ChIJf33_NnnnsUcRUs6UgpEV1Tg",
@@ -8889,7 +8942,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "kfz-reinhold@freenet.de"
     },
     {
       "placeId": "ChIJq3K8ILPdsUcRQR-cpGKpCEc",
@@ -8924,7 +8978,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@kfzgutachterlueneburg.de"
     },
     {
       "placeId": "ChIJkZLBU-3dsUcRoxztdYfLkzk",
@@ -8959,7 +9014,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@rbtech.de"
     },
     {
       "placeId": "ChIJUVC8Vc_esUcRhJl9bjWLaXo",
@@ -9029,7 +9085,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@kues-schemax.de"
     },
     {
       "placeId": "ChIJWWD7dNndsUcR34HWRoLz69Y",
@@ -9064,7 +9121,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@reifendienst-lodders.de"
     },
     {
       "placeId": "ChIJ48hxWYzdsUcR0PAxXiEtkgo",
@@ -9102,7 +9160,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@premio-eggert.de"
     },
     {
       "placeId": "ChIJ1T-A7FrnsUcR4xQID1cXJbw",
@@ -9137,7 +9196,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@reifenzentrale-adendorf.de"
     },
     {
       "placeId": "ChIJIRLDOkzesUcRAuXaV-v59XQ",
@@ -9173,7 +9233,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@lack-lueneburg.de"
     },
     {
       "placeId": "ChIJB2PjKV_esUcR8ZuxoVsEj_g",
@@ -9212,7 +9273,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@melker-online.de"
     },
     {
       "placeId": "ChIJGVAuksHdsUcRVi5TRX6ZLQU",
@@ -9248,7 +9310,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@insachenunfall.de"
     },
     {
       "placeId": "ChIJM8Y9-FvZsUcRhjQcbr84AXg",
@@ -9283,7 +9346,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@auto-service-stelter.de"
     },
     {
       "placeId": "ChIJpfkbNYLnsUcR9MH0l5Em950",
@@ -9321,7 +9385,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@frs.go1a.de"
     },
     {
       "placeId": "ChIJmRoWbcHdsUcRRvynCPF9iqM",
@@ -9356,7 +9421,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@lackschu.de"
     },
     {
       "placeId": "ChIJiXll2tzDsUcRNf6zmk-Td7g",
@@ -9394,7 +9460,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@autowerkstatt-schulzki.de"
     },
     {
       "placeId": "ChIJAQCkq3DesUcRY17j8pkjJOM",
@@ -9429,7 +9496,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@michael-kfz-service.de"
     },
     {
       "placeId": "ChIJ5YRYNYzdsUcRWxRU-_EWmfQ",
@@ -9539,7 +9607,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@matthies.de"
     },
     {
       "placeId": "ChIJT8ao4VnnsUcRa7wYGIpfgjA",
@@ -9574,7 +9643,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@motor-emil.de"
     },
     {
       "placeId": "ChIJIWX7au_dsUcROaJp3OsWkCE",
@@ -9609,7 +9679,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@k-u-m-motorentechnik.de"
     },
     {
       "placeId": "ChIJ3Y0bdl7esUcRTjPbKsKuoTM",
@@ -9646,7 +9717,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@maz-gruppe.de"
     },
     {
       "placeId": "ChIJL7icmsHdsUcRE24MsQRt6dE",
@@ -9682,7 +9754,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@apd-autoaufbereitung.de"
     },
     {
       "placeId": "ChIJeWdyR3fnsUcRQ1fCRWUcwtQ",
@@ -9717,7 +9790,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "frank.messerschmidt@carcolor-bardowick.de"
     },
     {
       "placeId": "ChIJp3SMK-LdsUcRDw__QrURTio",
@@ -9789,7 +9863,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "kontakt@planity.com"
     },
     {
       "placeId": "ChIJpwEXl-CBY0ERYbWuflH9-S8",
@@ -9825,7 +9900,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "info@hairdesign-kaiser.de"
     },
     {
       "placeId": "ChIJTw83oLmPsUcRcxI4evxQU6c",
@@ -9861,7 +9937,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "ferenc@fishkoeppe-friseur.de"
     },
     {
       "placeId": "ChIJ6zupUsvdsUcRh5mNCie6-FE",
@@ -9933,7 +10010,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "info@hairdesign-kaiser.de"
     },
     {
       "placeId": "ChIJgWbOL4_dsUcR_7ck6WUMS44",
@@ -10114,7 +10192,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "info.beihanna@gmx.de"
     },
     {
       "placeId": "ChIJ00Dnv87dsUcRuSsfOUS33UQ",
@@ -10187,7 +10266,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "kontakt@thelook-hanseviertel.de"
     },
     {
       "placeId": "ChIJQ4vhNc7dsUcRi_v8qvzd85c",
@@ -10225,7 +10305,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "mail@salon-stephi-p.de"
     },
     {
       "placeId": "ChIJazo1mM_dsUcR3zp2eK7Ixjg",
@@ -10333,7 +10414,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "info@annes-salon.de"
     },
     {
       "placeId": "ChIJcV8lKs_dsUcRPeb1NwQAjgQ",
@@ -10369,7 +10451,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "info@boehnsch.de"
     },
     {
       "placeId": "ChIJc39YmdHdsUcRgoVjHqUgxuk",
@@ -10405,7 +10488,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "info@olaf-koehler.de"
     },
     {
       "placeId": "ChIJxbfFyPrdsUcR6bcGgi7VqRo",
@@ -10443,7 +10527,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "info@aundo-haartechnik.de"
     },
     {
       "placeId": "ChIJr0IdL96BY0ERNnOmR7H1XJQ",
@@ -10479,7 +10564,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "termine@kamm-lg.de"
     },
     {
       "placeId": "ChIJKQZtstiBY0ER93jCNrOdUx0",
@@ -10551,7 +10637,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "schnittweldtm@t-online.de"
     },
     {
       "placeId": "ChIJRUrO_P1ARAUR8ZfoiwH9q88",
@@ -10587,7 +10674,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "frisoer-christian.ernst@web.de"
     },
     {
       "placeId": "ChIJ4eLRI8bdsUcRtIA-1-kFNJ0",
@@ -10626,7 +10714,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "kontakt@mariongottspenn.de"
     },
     {
       "placeId": "ChIJr49KM37esUcRsORLqHiwQ-k",
@@ -10697,7 +10786,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "anfrage@lueneburg-skin-aesthetics.de"
     },
     {
       "placeId": "ChIJ_wyR9CPcsUcRfuD6LanC15o",
@@ -10774,7 +10864,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kosmetik"
+      "category": "kosmetik",
+      "email": "info@adequat-lueneburg.de"
     },
     {
       "placeId": "ChIJDY-cn33dsUcR8HzvHVYtIZ8",
@@ -10809,7 +10900,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kosmetik"
+      "category": "kosmetik",
+      "email": "info@meyadabeauty.de"
     },
     {
       "placeId": "ChIJc176eMvdsUcRBGUVLInMO6E",
@@ -10896,7 +10988,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kosmetik"
+      "category": "kosmetik",
+      "email": "krieger-hanseviertel@web.de"
     },
     {
       "placeId": "ChIJY9xBV_KJsUcRI6Ry0eUwRew",
@@ -10973,7 +11066,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "info@hautinstitut-lueneburg.de"
     },
     {
       "placeId": "ChIJkVu47sjdsUcR2q96h0TJqH8",
@@ -11045,7 +11139,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kosmetik"
+      "category": "kosmetik",
+      "email": "info@beautycenter-krause.de"
     },
     {
       "placeId": "ChIJhUV4l0_BsUcRPUsYL0kp_R0",
@@ -11082,7 +11177,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kosmetik"
+      "category": "kosmetik",
+      "email": "info@feelgood-studio.de"
     },
     {
       "placeId": "ChIJVXQJcM_dsUcRNBg1zDNmy48",
@@ -11117,7 +11213,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "handel"
+      "category": "handel",
+      "email": "abc@mail.com"
     },
     {
       "placeId": "ChIJ4e_y82HnsUcRmNoUu0kR5Os",
@@ -11152,7 +11249,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kosmetik"
+      "category": "kosmetik",
+      "email": "hallo@saina-beauty.de"
     },
     {
       "placeId": "ChIJKdd24M3dsUcRZTNRtJ-9bgA",
@@ -11225,7 +11323,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "info@buschrah.de"
     },
     {
       "placeId": "ChIJKS6mfsDfsUcRmw6pkMRFLQk",
@@ -11295,7 +11394,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@maelzermuehle.de"
     },
     {
       "placeId": "ChIJXQH4W87dsUcRjf5DGSChB3s",
@@ -11333,7 +11433,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@maelzer-brauhaus.de"
     },
     {
       "placeId": "ChIJnVzLGMXdsUcR1hRjd9RMekA",
@@ -11372,7 +11473,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "post@viscvle.de"
     },
     {
       "placeId": "ChIJM4JnRT_dsUcRaHwR91yde98",
@@ -11408,7 +11510,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@tapbar-lueneburg.de"
     },
     {
       "placeId": "ChIJmcw95uTdsUcRhJM2RkBYTAQ",
@@ -11446,7 +11549,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@elpaso-lueneburg.de"
     },
     {
       "placeId": "ChIJCT4jLsXdsUcRt9quKPSEFZo",
@@ -11481,7 +11585,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@restauranteinzigartig.de"
     },
     {
       "placeId": "ChIJTVb89MXdsUcRcIVaO31WH0s",
@@ -11516,7 +11621,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@elrado-house.de"
     },
     {
       "placeId": "ChIJIe1xcDHdsUcRQqjPoYBwEDI",
@@ -11552,7 +11658,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "hallo@tohuus-lueneburg.de"
     },
     {
       "placeId": "ChIJTVb89MXdsUcRlbFqJ44J8Gw",
@@ -11588,7 +11695,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "post@sabacca.de"
     },
     {
       "placeId": "ChIJg3FWLt6BY0ERFfFdtPOEZnc",
@@ -11625,7 +11733,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "max.mustermann@beispiel.de"
     },
     {
       "placeId": "ChIJPxMRyMXdsUcRoN_nSaRDloM",
@@ -11667,7 +11776,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "hemingways@hotmail.de"
     },
     {
       "placeId": "ChIJvXFyFsTdsUcRADM-5BSbhWg",
@@ -11703,7 +11813,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "opatijarestaurant@aol.com"
     },
     {
       "placeId": "ChIJKdW7Yh_dsUcRUU7DvEa3zJI",
@@ -11754,7 +11865,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "auszeitlg@gmail.com"
     },
     {
       "placeId": "ChIJSaSOgsfdsUcRsbXX8MWow7o",
@@ -11796,7 +11908,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@barbeqube.de"
     },
     {
       "placeId": "ChIJZfxbCMXdsUcRyfS-0bDJWOk",
@@ -11869,7 +11982,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@steakhaus-zuraltenschmiede.de"
     },
     {
       "placeId": "ChIJ4XhvDsXdsUcRMt70_RNL6sc",
@@ -11906,7 +12020,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@september-lueneburg.de"
     },
     {
       "placeId": "ChIJKZfEmXXdsUcRDQWou7g0gyw",
@@ -11947,7 +12062,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@brezam.de"
     },
     {
       "placeId": "ChIJQ-Beqc_dsUcRbkikc_b0oTM",
@@ -11985,7 +12101,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "post@piccanti.de"
     },
     {
       "placeId": "ChIJCeRYn5vdsUcRe4qrC2RAORc",
@@ -12021,7 +12138,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@steakhaus-amsande.de"
     },
     {
       "placeId": "ChIJdzpvZwDdsUcR9GWvRzkjrUM",
@@ -12057,7 +12175,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@mango-lueneburg.de"
     },
     {
       "placeId": "ChIJh1ahCN-BY0ERBDGtbr3n9is",
@@ -12096,7 +12215,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@cafe-central.cc"
     },
     {
       "placeId": "ChIJT_7hD8XdsUcRUksPCgkVb8A",
@@ -12131,7 +12251,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@schallander.de"
     },
     {
       "placeId": "ChIJ4djjVfjdsUcRxfTcdgjUVMs",
@@ -12203,7 +12324,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@roehmsdeli.de"
     },
     {
       "placeId": "ChIJm0okK9DdsUcR9vflophfuqE",
@@ -12240,7 +12362,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "reservierung@friedas-aw.net"
     },
     {
       "placeId": "ChIJJ9JPbKvdsUcRK27YI9K7vQ4",
@@ -12279,7 +12402,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@sudesirestaurant.de"
     },
     {
       "placeId": "ChIJR9WnUuPdsUcRZHsZdVdaCgs",
@@ -12315,7 +12439,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "sen.lueneburg@gmail.com"
     },
     {
       "placeId": "ChIJzQuFSM_dsUcRX52fACLojps",
@@ -12351,7 +12476,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "mdislakis@yahoo.de"
     },
     {
       "placeId": "ChIJMRVghCTdsUcRNdM_YzSxxFg",
@@ -12394,7 +12520,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@agron-lueneburg.de"
     },
     {
       "placeId": "ChIJXQH4W87dsUcRj3i4ireEO6Y",
@@ -12469,7 +12596,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@forsthaus-roteschleuse.de"
     },
     {
       "placeId": "ChIJ8VhIkuHdsUcRcniH44OfmtI",
@@ -12504,7 +12632,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "simbrella@hotmail.com"
     },
     {
       "placeId": "ChIJaUi_Ps_dsUcRpHpO7CAHiGk",
@@ -12541,7 +12670,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "tapas@pacos-bar.de"
     },
     {
       "placeId": "ChIJK_z6_nfesUcRyReF8xiDj7c",
@@ -12577,7 +12707,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@dasalvo-lueneburg.de"
     },
     {
       "placeId": "ChIJLXzcacXdsUcRfpoUl_SkDA0",
@@ -12615,7 +12746,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "hallaceli@hotmail.com"
     },
     {
       "placeId": "ChIJZ3BROcbdsUcR2oCpXWowzJA",
@@ -12653,7 +12785,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@wyndberg.de"
     },
     {
       "placeId": "ChIJvbxb_m_esUcRnTvpBz1-u0A",
@@ -12693,7 +12826,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "mustermann@beispiel.de"
     },
     {
       "placeId": "ChIJj3OWsuzdsUcR5cnnDMqamME",
@@ -12730,7 +12864,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@lieferando.de"
     },
     {
       "placeId": "ChIJQQukXVfdsUcR0_V45WaDxv4",
@@ -12803,7 +12938,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "salih203@icloud.com"
     },
     {
       "placeId": "ChIJVeUn7EDdsUcRwC6ofwSbLow",
@@ -12843,7 +12979,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "erdalyalcin1974@hotmail.com"
     },
     {
       "placeId": "ChIJUeku5NrdsUcRpD-gC8yn2vA",
@@ -12956,7 +13093,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "kontakt@pamukkale-lg.de"
     },
     {
       "placeId": "ChIJ26lkPkTesUcRfTbVR-Ovl-U",
@@ -12992,7 +13130,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@saigonlicious.de"
     },
     {
       "placeId": "ChIJjbWeV8_dsUcRaZzQ0-j0_lM",
@@ -13138,7 +13277,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@merhaba-kebab.de"
     },
     {
       "placeId": "ChIJI8le-sPdsUcRvWcvc7HZWAo",
@@ -13174,7 +13314,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@korfugrill.net"
     },
     {
       "placeId": "ChIJyYobztrdsUcRmoxCoFB1RgQ",
@@ -13216,7 +13357,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@loving-hut.de"
     },
     {
       "placeId": "ChIJndRIbMXdsUcR-OEpKz7_L7Q",
@@ -13253,7 +13395,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "nudelkontor@t-online.de"
     },
     {
       "placeId": "ChIJsc_rgv_dsUcRzbwUNXdnQlI",
@@ -13325,7 +13468,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@zeus-lueneburg.de"
     },
     {
       "placeId": "ChIJ2deTZL_dsUcRDNvsN1tKLpo",
@@ -13404,7 +13548,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@baeckerei-voelsch.de"
     },
     {
       "placeId": "ChIJNU18E8EnrkcRNKw86g5WFmo",
@@ -13451,7 +13596,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "moin@soeoetunsoltig.de"
     },
     {
       "placeId": "ChIJxVOH287dsUcRZ-bG2BFXeA8",
@@ -13494,7 +13640,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@cafe-zeitgeist.de"
     },
     {
       "placeId": "ChIJfU3IcVXnsUcRKi0s7zyPks8",
@@ -13532,7 +13679,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "mail@backwaren4u.de"
     },
     {
       "placeId": "ChIJW1CvwYvesUcRt3ZkviicZgM",
@@ -13609,7 +13757,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "loewe-hof@loewe-stiftung.de"
     },
     {
       "placeId": "ChIJKy2uXADdsUcRV0Owo9LlilU",
@@ -13658,7 +13807,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "kontakt@callunaeis.de"
     },
     {
       "placeId": "ChIJeeq3ARfdsUcRoWmYhLSav8A",
@@ -13730,7 +13880,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@heidbaecker.de"
     },
     {
       "placeId": "ChIJAW4HwXbdsUcRG-QwpDBaElE",
@@ -13765,7 +13916,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "cafe@imglockenhof.de"
     },
     {
       "placeId": "ChIJbxRRN8_dsUcRswCiEcDudJE",
@@ -13803,7 +13955,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "dreiteiler@gmx.de"
     },
     {
       "placeId": "ChIJF6Yvdc_dsUcRkdWYF8TOUfc",
@@ -13876,7 +14029,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "florist"
+      "category": "florist",
+      "email": "blickfang57@gmx.de"
     },
     {
       "placeId": "ChIJ65KG-trdsUcRUTTtDP4Icss",
@@ -13911,7 +14065,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "florist"
+      "category": "florist",
+      "email": "info@blumen-cardano.de"
     },
     {
       "placeId": "ChIJle2eTofesUcR1qsw6FYiJCc",
@@ -13946,7 +14101,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "florist"
+      "category": "florist",
+      "email": "info@blumenhaus-lueneburg.de"
     },
     {
       "placeId": "ChIJL0m73K_dsUcRnA1jermTJAY",
@@ -13981,7 +14137,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "florist"
+      "category": "florist",
+      "email": "hello@bloomflowerstudio.de"
     },
     {
       "placeId": "ChIJWR9Iqd-BY0ERsAINgAQwVRw",
@@ -14016,7 +14173,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "florist"
+      "category": "florist",
+      "email": "info@blumenkontor-albers.de"
     },
     {
       "placeId": "ChIJWfn9t4R_Y0ERUQVXs1HMINs",
@@ -14055,7 +14213,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "florist"
+      "category": "florist",
+      "email": "blumenhof.mueller@t-online.de"
     },
     {
       "placeId": "ChIJOZCJFLfdsUcRsGjI4AuTS-4",
@@ -14195,7 +14354,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "fahrschule"
+      "category": "fahrschule",
+      "email": "info@fahrschule-neumann-lg.de"
     },
     {
       "placeId": "ChIJFXlWebjdsUcRzQ4W6Uu4r7U",
@@ -14263,7 +14423,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "fahrschule"
+      "category": "fahrschule",
+      "email": "holger.gouder@fahrschuledorn.de"
     },
     {
       "placeId": "ChIJH1MWhY7dsUcRLEple9UUdmw",
@@ -14297,7 +14458,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "fahrschule"
+      "category": "fahrschule",
+      "email": "info@scooldrive.com"
     },
     {
       "placeId": "ChIJ6UG8483dsUcRcRE7pK22FqQ",
@@ -14331,7 +14493,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "fahrschule"
+      "category": "fahrschule",
+      "email": "falko.schuette@gmx.de"
     },
     {
       "placeId": "ChIJqWfyAtndsUcRSQpZb1ziW30",
@@ -14365,7 +14528,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "fahrschule"
+      "category": "fahrschule",
+      "email": "info@fahrschule-cramm.de"
     },
     {
       "placeId": "ChIJyVnLjsjdsUcR_RaJguCV4Ys",
@@ -14433,7 +14597,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "fahrschule"
+      "category": "fahrschule",
+      "email": "holger.gouder@fahrschuledorn.de"
     },
     {
       "placeId": "ChIJ-58-YFHnsUcRXoHvo-c8leY",
@@ -14467,7 +14632,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "fahrschule"
+      "category": "fahrschule",
+      "email": "heidistreicher@aol.com"
     },
     {
       "placeId": "ChIJA5_3o4vesUcRsc92tSHOTTU",
@@ -14535,7 +14701,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "fahrschule"
+      "category": "fahrschule",
+      "email": "info@fahrschulexxl.de"
     },
     {
       "placeId": "ChIJG9wO_3fnsUcRdJ-Z1SqiTcQ",
@@ -14569,7 +14736,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "fahrschule"
+      "category": "fahrschule",
+      "email": "mail@everyday-fahrschule.de"
     },
     {
       "placeId": "ChIJTU9C0DHcsUcRyTOidzDh1Yg",
@@ -14643,7 +14811,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "info@reha-prophy.de"
     },
     {
       "placeId": "ChIJc7R47MHdsUcRTHrAJbLL-Rc",
@@ -14678,7 +14847,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "info@physiopraxislueneburg.de"
     },
     {
       "placeId": "ChIJX2BtBwPdsUcRkMPpSsECOrk",
@@ -14713,7 +14883,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "info@recovery-guide-physio.de"
     },
     {
       "placeId": "ChIJL8vFKBnfsUcRe2W5MYk_0lw",
@@ -14749,7 +14920,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "kontakt@physiotherapie-hanseviertel.de"
     },
     {
       "placeId": "ChIJD6WoMcPdsUcRMnQkf1Yqmc0",
@@ -14784,7 +14956,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "info@reha-lueneburg.de"
     },
     {
       "placeId": "ChIJ13UxnMrdsUcRilxbV-1vwY4",
@@ -14823,7 +14996,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "benutzer@domain.com"
     },
     {
       "placeId": "ChIJ-VzSy6PdsUcRCpzYOve0YW0",
@@ -14862,7 +15036,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "kontakt@2k-physiotherapie.de"
     },
     {
       "placeId": "ChIJSUfnhIDdsUcReEpwIC7YD1k",
@@ -14897,7 +15072,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "hallo@physiohome-lg.de"
     },
     {
       "placeId": "ChIJNwLlnYDesUcRRoRcAmrVHlU",
@@ -14934,7 +15110,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "kontakt@sonntag-physio.de"
     },
     {
       "placeId": "ChIJb3LyCBXcsUcRycf1Z6rz9d8",
@@ -14969,7 +15146,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "info@lorbach.eu"
     },
     {
       "placeId": "ChIJF4zrS3zesUcRZKSt2N2jmt4",
@@ -15011,7 +15189,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "info@agillis.de"
     },
     {
       "placeId": "ChIJKe8e-VLdsUcRz1R4q5gIMNs",
@@ -15046,7 +15225,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "kontakt@henrika-kaup.de"
     },
     {
       "placeId": "ChIJuYjQ7SnfsUcRGEfQRDzFH5Y",
@@ -15081,7 +15261,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "info@physiomanufaktur-lueneburg.de"
     },
     {
       "placeId": "ChIJOzyLahyPsUcRnovnx9h5uPc",
@@ -15120,7 +15301,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "massage@antje-behrens.de"
     },
     {
       "placeId": "ChIJR3pBxN7fsUcRd9cS-zQB1E4",
@@ -15160,7 +15342,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "info@fit-im-norden.de"
     },
     {
       "placeId": "ChIJQ-Beqc_dsUcRRcX7Dl-_9s0",
@@ -15196,7 +15379,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "kontakt@praxisamsande.de"
     },
     {
       "placeId": "ChIJM3nQ8s7dsUcRr_kS8u2mSX4",
@@ -15232,7 +15416,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "anmeldung@zahnarzt-lueneburg.de"
     },
     {
       "placeId": "ChIJCy9kcc_dsUcRuuodQQ77htI",
@@ -15269,7 +15454,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "lueneburg@zukunftzahn.de"
     },
     {
       "placeId": "ChIJm0gA2OCBY0ERgY2DkKv5brQ",
@@ -15304,7 +15490,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "info@zahnzentrum-lueneburg.de"
     },
     {
       "placeId": "ChIJVYGSXs7dsUcRxFtPhLXXjzA",
@@ -15341,7 +15528,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "info@hanse.dental"
     },
     {
       "placeId": "ChIJG3DQ1TbcsUcRPhtj2ZpHkWk",
@@ -15376,7 +15564,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "dr.richardwolf@gmx.de"
     },
     {
       "placeId": "ChIJF4JWKs_dsUcRYtHJDptlwOU",
@@ -15411,7 +15600,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "dr.arlt@web.de"
     },
     {
       "placeId": "ChIJpVLsKM_dsUcRdJy7Js_enK4",
@@ -15447,7 +15637,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "info@dentalambulance.de"
     },
     {
       "placeId": "ChIJp5Y2Nc_dsUcR9_V_dZY3ayk",
@@ -15484,7 +15675,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "info@zahnzentrum-am-kunstkarree.de"
     },
     {
       "placeId": "ChIJAd0cbdDdsUcR-rTiD5qWrao",
@@ -15519,7 +15711,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "praxis@bremer-fenske.de"
     },
     {
       "placeId": "ChIJV5hThcXdsUcRyw4tJNltF0o",
@@ -15554,7 +15747,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "info@dr-florianfischer.de"
     },
     {
       "placeId": "ChIJrZa7E2besUcRVltCKDCPjHU",
@@ -15589,7 +15783,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "kontakt@zahnarzt-stadtkoppel.de"
     },
     {
       "placeId": "ChIJH-GqVDbcsUcRSFBjsQ7s58Q",
@@ -15624,7 +15819,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "info@zahnspange-lueneburg.de"
     },
     {
       "placeId": "ChIJ10Jl_9ndsUcRdvZLjg3wmhs",
@@ -15729,7 +15925,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "docbarckhausen-lg@t-online.de"
     },
     {
       "placeId": "ChIJCxBDpL_dsUcRmrUflXGnRQE",
@@ -15765,7 +15962,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "info@praxiskreideberg.de"
     },
     {
       "placeId": "ChIJA5IGT3zesUcRY3A56VrxPpw",
@@ -15800,7 +15998,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "ab4f5343d97c4399bb5352f61065a64d@o38419.ingest.sentry.io"
     },
     {
       "placeId": "ChIJ-2nBo4WDsUcRpPRWnznHrDw",
@@ -15835,7 +16034,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "post@pas13.de"
     },
     {
       "placeId": "ChIJYe0UTEXcsUcRh6t3srKiM0s",
@@ -15870,7 +16070,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "kontakt@kfo-wasserturm.de"
     },
     {
       "placeId": "ChIJWyFlW87dsUcRXJ1vrQrWtxM",
@@ -15906,7 +16107,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "info@implantatzentrum-lueneburg.de"
     },
     {
       "placeId": "ChIJG2s24wresUcRsg1YfXvd1_c",
@@ -15977,7 +16179,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "kanzlei@birr-schneider.de"
     },
     {
       "placeId": "ChIJ73lTfM_dsUcRNMqZrD6DEFI",
@@ -16013,7 +16216,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "info@ra-fuchs.de"
     },
     {
       "placeId": "ChIJcWNa1MfdsUcRvPkJCiOqsPw",
@@ -16050,7 +16254,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "mail@kanzlei-klostergang.de"
     },
     {
       "placeId": "ChIJQdWYHs3dsUcRn1k_eSW7WoI",
@@ -16086,7 +16291,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "info@woebkenbraune.de"
     },
     {
       "placeId": "ChIJg7IqlcjdsUcRjPUDWK91xnU",
@@ -16123,7 +16329,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "info@kanzlei-koenemann.de"
     },
     {
       "placeId": "ChIJV5hThcXdsUcR5FrPuxUPyxM",
@@ -16158,7 +16365,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "info@pdr-lg.de"
     },
     {
       "placeId": "ChIJXy3QH8ndsUcRkm2Imu3jAek",
@@ -16196,7 +16404,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "kontakt@anwalt-lueneburg.net"
     },
     {
       "placeId": "ChIJuZt8FM_dsUcRNpkhDBCpPiE",
@@ -16233,7 +16442,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "kanzlei@kgsw-anwaelte.com"
     },
     {
       "placeId": "ChIJZbhNz7KTr0cRORjvc1AzOWs",
@@ -16269,7 +16479,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "info@kanzlei-schradick.de"
     },
     {
       "placeId": "ChIJv-FpZs7dsUcR-WXqxwNWXCc",
@@ -16305,7 +16516,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "mail@rechtsanwalt-albers.de"
     },
     {
       "placeId": "ChIJFwLfc8_dsUcR2LxLEO0Gs20",
@@ -16340,7 +16552,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "mail@kanzlei-oelfke.de"
     },
     {
       "placeId": "ChIJZas4isXdsUcRZhMqenKlSxE",
@@ -16448,7 +16661,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "lg@berburg.de"
     },
     {
       "placeId": "ChIJUXWV98XdsUcRjxEoPefbSe4",
@@ -16484,7 +16698,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "kanzlei@ht-strafrecht.de"
     },
     {
       "placeId": "ChIJaTZSl2TesUcRnTfwpPGvq5o",
@@ -16591,7 +16806,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "info@ms-schliesstechnik.de"
     },
     {
       "placeId": "ChIJJ0EdMtHdsUcRMiveExoDTpI",
@@ -16626,7 +16842,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "info@lueneburger-schluesseldienst24.de"
     },
     {
       "placeId": "ChIJhRaWesHdsUcRAI1TufQBFDc",
@@ -16661,7 +16878,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "info@jelena-reinigung.de"
     },
     {
       "placeId": "ChIJD-VqwwXvpS8RwHzNAjwaTrA",
@@ -16695,7 +16913,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "lueneclean@web.de"
     },
     {
       "placeId": "ChIJGwSuQ1HdsUcRNdC5ElJ7pvM",
@@ -16729,7 +16948,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "mail@scharfenberg.gmbh"
     },
     {
       "placeId": "ChIJ6RiZIE7esUcRXGLUfNIG10g",
@@ -16767,7 +16987,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "handel"
+      "category": "handel",
+      "email": "antje.koenemann@dbl-marwitz.de"
     },
     {
       "placeId": "ChIJeTO4hP7dsUcRQbDOf6iCU4E",
@@ -16801,7 +17022,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "info@kille-gebaeudedienste.de"
     },
     {
       "placeId": "ChIJsU_0Is_dsUcRL8LQ2kBATnk",
@@ -16838,7 +17060,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "handel"
+      "category": "handel",
+      "email": "foto-krenzien@gmx.de"
     },
     {
       "placeId": "ChIJj79MBsXdsUcREbmFVaF0LHE",
@@ -16872,7 +17095,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "info@studio-luedeking.de"
     },
     {
       "placeId": "ChIJH_vcIIvINYYRwWTE452RA_Q",
@@ -16906,7 +17130,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "walinskifotografie@gmail.com"
     },
     {
       "placeId": "ChIJGe-9PcndsUcR4lFLqVF8324",
@@ -16940,7 +17165,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "info@thorstenscherz.de"
     },
     {
       "placeId": "ChIJS6kMiP_dsUcRCxq42AtldDk",
@@ -16974,7 +17200,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "info@foto-resch.de"
     },
     {
       "placeId": "ChIJlc94X7LfsUcRTSSRKeQht9I",
@@ -17008,7 +17235,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "julien_jones@icloud.com"
     },
     {
       "placeId": "ChIJU_kdIzPbsUcR3uz6Ur_mSPM",
@@ -17042,7 +17270,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "glowalla.fotografie@gmail.com"
     },
     {
       "placeId": "ChIJu2Rm0XnesUcRYEcY-oMEChM",
@@ -17077,7 +17306,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "simplyphotographs@mail.de"
     },
     {
       "placeId": "ChIJJY4Jrd_dsUcRtJ7pMNYhrN0",
@@ -17147,7 +17377,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "handel"
+      "category": "handel",
+      "email": "info@salt-city-ink.de"
     },
     {
       "placeId": "ChIJZ7dHPUXdsUcRO56v9wFKy9g",
@@ -17181,7 +17412,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "alice.wonderline.lueneburg@gmail.com"
     },
     {
       "placeId": "ChIJwyl9fJTdsUcRvBM9ir58zfM",
@@ -17217,7 +17449,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "handel"
+      "category": "handel",
+      "email": "info@uglyducktattoo.com"
     },
     {
       "placeId": "ChIJ7cDGzcjdsUcR-Ub93Ot54SU",
@@ -17324,7 +17557,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "tierarzt"
+      "category": "tierarzt",
+      "email": "info@wirbel-vetdoc.de"
     },
     {
       "placeId": "ChIJGx1FOcbdsUcRq-NdYXtnVH0",
@@ -17394,7 +17628,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "tierarzt"
+      "category": "tierarzt",
+      "email": "info@luenevet.de"
     },
     {
       "placeId": "ChIJEZzk0ul_Y0ERsTk17PPuNCI",
@@ -17466,7 +17701,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "tierarzt"
+      "category": "tierarzt",
+      "email": "info@kleintierpraxis-reppenstedt.de"
     },
     {
       "placeId": "ChIJm5_uWAHdsUcRwXDNp12l1zQ",
@@ -17501,7 +17737,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "tierarzt"
+      "category": "tierarzt",
+      "email": "info@kleintierpraxis-reppenstedt.de"
     },
     {
       "placeId": "ChIJqZY4HWXbsUcRd4gotLIPLrg",
@@ -17538,7 +17775,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "tierarzt"
+      "category": "tierarzt",
+      "email": "anmeldung@tgz-oerzen.de"
     },
     {
       "placeId": "ChIJK8Z8U0XnsUcRMW2IJp3CGkM",
@@ -17573,7 +17811,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "tierarzt"
+      "category": "tierarzt",
+      "email": "mail@tierarztpraxis-adendorf.de"
     },
     {
       "placeId": "ChIJzw4I9gbdsUcRTXl64cPQ_7I",
@@ -17608,7 +17847,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "gartenbau"
+      "category": "gartenbau",
+      "email": "info@luene-gruen.de"
     },
     {
       "placeId": "ChIJ2btxre3dsUcRklKw-gEfKjY",
@@ -17676,7 +17916,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "dachdecker"
+      "category": "dachdecker",
+      "email": "kontakt@meisterdach.info"
     },
     {
       "placeId": "ChIJY934a87dsUcRC-EMPxDEmLA",
@@ -17710,7 +17951,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "info@hwk-bls.de"
     },
     {
       "placeId": "ChIJa24bb4vesUcRZ-1X2_eG6qE",
@@ -17736,7 +17978,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "team@elektrobau-nord.de"
     },
     {
       "placeId": "ChIJK19iCm_csUcRYzcnhbGa2Nc",
@@ -17762,7 +18005,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@widimedia.com"
     },
     {
       "placeId": "ChIJr66sjdvdsUcRzHXw2y7n05M",
@@ -17796,7 +18040,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@bergstaedt-elektro.de"
     },
     {
       "placeId": "ChIJH991nr3dsUcRf1ow769OvPg",
@@ -17830,7 +18075,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "mail@chyab.de"
     },
     {
       "placeId": "ChIJxxCQPfzdsUcRBP0XDXqOHYs",
@@ -17856,7 +18102,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@widimedia.com"
     },
     {
       "placeId": "ChIJNaQ_UZjbsUcRztr5Vqlr2sk",
@@ -17882,7 +18129,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "elektriker"
+      "category": "elektriker",
+      "email": "info@widimedia.com"
     },
     {
       "placeId": "ChIJqcHMwDHnsUcRZtQ3KLMERcw",
@@ -17908,7 +18156,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "dachdecker"
+      "category": "dachdecker",
+      "email": "info@tme-dach.de"
     },
     {
       "placeId": "ChIJRdtNUKrcsUcRhXyCpmz3S3k",
@@ -17934,7 +18183,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "dachdecker"
+      "category": "dachdecker",
+      "email": "meister.dirk@t-online.de"
     },
     {
       "placeId": "ChIJ_1tGspvdsUcRf1yrXz--t7o",
@@ -17960,7 +18210,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "info@maler-dieck.de"
     },
     {
       "placeId": "ChIJlTgXEbTdsUcRHxYJrod79Dg",
@@ -17986,7 +18237,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "info@ohlhagen-malereibetrieb.de"
     },
     {
       "placeId": "ChIJz6I67m7csUcRVmwdJi2zO_I",
@@ -18038,7 +18290,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "info@malereibetrieb-glander.de"
     },
     {
       "placeId": "ChIJ4RzdC4zdsUcRlPphUVaXM-w",
@@ -18072,7 +18325,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "info@campuslueneburg.de"
     },
     {
       "placeId": "ChIJhTK97ZvdsUcRKDFqKFOCz_E",
@@ -18098,7 +18352,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "maler"
+      "category": "maler",
+      "email": "kerstin.vosz@web.de"
     },
     {
       "placeId": "ChIJAe8fmBeCY0ERviBdCLyWadM",
@@ -18177,7 +18432,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "zimmerei"
+      "category": "zimmerei",
+      "email": "horst-salewski@arcor.de"
     },
     {
       "placeId": "ChIJvcKmYE3DsUcRIhX1x80IE88",
@@ -18203,7 +18459,8 @@
         "+10 Handwerker-Branche (hoher Bedarf)"
       ],
       "tier": "WARM",
-      "category": "zimmerei"
+      "category": "zimmerei",
+      "email": "zimmerei-schwabe@t-online.de"
     },
     {
       "placeId": "ChIJDYlMnZfhsUcR73mj5LUZg18",
@@ -18272,7 +18529,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "kfz@lhlh.org"
     },
     {
       "placeId": "ChIJAQAAtSTcsUcR41LjMVgkTko",
@@ -18306,7 +18564,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "info@maz-gruppe.de"
     },
     {
       "placeId": "ChIJNxkBp-LcsUcRlkmHo1MbUZ4",
@@ -18342,7 +18601,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "autowerkstatt-klepper@t-online.de"
     },
     {
       "placeId": "ChIJtZj8fgrfsUcRUGdseXJInpM",
@@ -18377,7 +18637,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "impressum+werkstaetten@devsc.de"
     },
     {
       "placeId": "ChIJ-1USyevnsUcRpWsZku9kejo",
@@ -18412,7 +18673,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kfz"
+      "category": "kfz",
+      "email": "kontakt@autoselbsthilfe-lueneburg.de"
     },
     {
       "placeId": "ChIJR-qpc8XdsUcRrWYyZ8ksBAE",
@@ -18448,7 +18710,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "mail@verbraucher-schlichter.de"
     },
     {
       "placeId": "ChIJgYWtV8_dsUcR4-V2z_JHoTs",
@@ -18483,7 +18746,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "info@klierhairgroup.de"
     },
     {
       "placeId": "ChIJo7xPfEfdsUcR22w5dbhb6jo",
@@ -18519,7 +18783,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "info@friseur-glaskasten.de"
     },
     {
       "placeId": "ChIJFy9WnSvdsUcRGr1dfKR5mgE",
@@ -18553,7 +18818,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kosmetik"
+      "category": "kosmetik",
+      "email": "lauryn.beautylounge@gmail.com"
     },
     {
       "placeId": "ChIJkZFxQR_dsUcRwJ40G4h6Rlk",
@@ -18589,7 +18855,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "friseur"
+      "category": "friseur",
+      "email": "ewacoubronne@gmail.com"
     },
     {
       "placeId": "ChIJF84wbs_dsUcRgm0Ba6pthEo",
@@ -18668,7 +18935,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kosmetik"
+      "category": "kosmetik",
+      "email": "k.kieninger@gmx.net"
     },
     {
       "placeId": "ChIJfVA4lLrdsUcR_hfkq9xxAKY",
@@ -18771,7 +19039,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kosmetik"
+      "category": "kosmetik",
+      "email": "info@sisman-kosmetik.de"
     },
     {
       "placeId": "ChIJr_S9HHDesUcR_8K2Z8_eYIY",
@@ -18806,7 +19075,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kosmetik"
+      "category": "kosmetik",
+      "email": "rosagehrmann@web.de"
     },
     {
       "placeId": "ChIJ764ssg7dsUcR6tTV74JrYXk",
@@ -18841,7 +19111,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kosmetik"
+      "category": "kosmetik",
+      "email": "kosmetikatelierkathrinwolter@gmail.com"
     },
     {
       "placeId": "ChIJdzxNuXh_Y0ERdi5L7t6Y17g",
@@ -18876,7 +19147,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kosmetik"
+      "category": "kosmetik",
+      "email": "marionbruhn@t-online.de"
     },
     {
       "placeId": "ChIJUbrMlmjcsUcRXgK5wsjEqMk",
@@ -18940,7 +19212,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kosmetik"
+      "category": "kosmetik",
+      "email": "info@kosmetikstehr.de"
     },
     {
       "placeId": "ChIJ6Xy9mx_dsUcRLgWQvWiNlDY",
@@ -18975,7 +19248,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kosmetik"
+      "category": "kosmetik",
+      "email": "fridastraum@gmail.com"
     },
     {
       "placeId": "ChIJd18FjsXdsUcRNlwNk8hfEjY",
@@ -19016,7 +19290,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kosmetik"
+      "category": "kosmetik",
+      "email": "lueneburg@parfuemerie-schuback.de"
     },
     {
       "placeId": "ChIJPYnnBbHCsUcRY9UrIovBJO0",
@@ -19088,7 +19363,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kosmetik"
+      "category": "kosmetik",
+      "email": "melissatrollmann@icloud.com"
     },
     {
       "placeId": "ChIJ03sLdxndsUcRWqhBQyRkjRM",
@@ -19124,7 +19400,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "kosmetik"
+      "category": "kosmetik",
+      "email": "info@madero-wellness.de"
     },
     {
       "placeId": "ChIJg5_Vj37nsUcRHxs2JGsdgdg",
@@ -19155,7 +19432,8 @@
         "+5 Telefon vorhanden"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@kosmetikstudio-esthetic.de"
     },
     {
       "placeId": "ChIJZ5GwFi7dsUcREFRirx0DPYs",
@@ -19181,7 +19459,8 @@
         "+5 Telefon vorhanden"
       ],
       "tier": "WARM",
-      "category": "kosmetik"
+      "category": "kosmetik",
+      "email": "info@studiob-lueneburg.de"
     },
     {
       "placeId": "ChIJZ9ROEs_dsUcRDVGC5pbOp_w",
@@ -19252,7 +19531,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@brauhaus-lueneburg.de"
     },
     {
       "placeId": "ChIJGwfwZ87dsUcRpVmX8T2gMPo",
@@ -19288,7 +19568,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@krone-lueneburg.de"
     },
     {
       "placeId": "ChIJ-zus5cjdsUcRu2tGMWnokfg",
@@ -19336,7 +19617,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@anno1900-lueneburg.de"
     },
     {
       "placeId": "ChIJ80V0EcXdsUcR-cfDrp6QRXk",
@@ -19413,7 +19695,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@capitol-lueneburg.de"
     },
     {
       "placeId": "ChIJ8VHuM8_dsUcRbVr0pBJpExM",
@@ -19448,7 +19731,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "quananviet.lueneburg@gmail.com"
     },
     {
       "placeId": "ChIJ7ee9k87dsUcRSJM7mu9dZzY",
@@ -19484,7 +19768,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "lueneburg@losteria.de"
     },
     {
       "placeId": "ChIJfWgAO8_dsUcRTymf7-ZMCBU",
@@ -19523,7 +19808,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@bar-barossa.net"
     },
     {
       "placeId": "ChIJj8E-QMXdsUcRjByKLqc8R3Y",
@@ -19558,7 +19844,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@trattoria-lueneburg.de"
     },
     {
       "placeId": "ChIJXw1BFsXdsUcRr1T-cLlU1yo",
@@ -19593,7 +19880,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "osteria.rustica@t-online.de"
     },
     {
       "placeId": "ChIJO3U5D8DdsUcRx1JvuJB2Ml0",
@@ -19635,7 +19923,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "lueneburg@peterpane.de"
     },
     {
       "placeId": "ChIJ_9uIv3nesUcRXx-Rl5ggNt4",
@@ -19670,7 +19959,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "temizbasramo10@gmail.com"
     },
     {
       "placeId": "ChIJw_VusE3dsUcR_r0kH322D1U",
@@ -19706,7 +19996,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "support@webador.de"
     },
     {
       "placeId": "ChIJK6PbbcXdsUcRaek5_ywDEv8",
@@ -19819,7 +20110,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "go5dccjo@kontakt-ordersmart.de"
     },
     {
       "placeId": "ChIJ--nqtK7dsUcR4lLJTzAUIrc",
@@ -19859,7 +20151,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "talha.butt@orderyoyo.com"
     },
     {
       "placeId": "ChIJH00HJZ_dsUcRN0uDaMmrqps",
@@ -19901,7 +20194,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@burgerme.de"
     },
     {
       "placeId": "ChIJq6zDX-_dsUcR7_Lg0nPzKDY",
@@ -19939,7 +20233,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "go4dycji@kontakt-ordersmart.de"
     },
     {
       "placeId": "ChIJJSLq9vrdsUcRIdJGyWiaCBU",
@@ -19979,7 +20274,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@diescharfmacher.de"
     },
     {
       "placeId": "ChIJR3ag2trdsUcRvQd-l-Il2OE",
@@ -20017,7 +20313,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "go5dqc31@kontakt-ordersmart.de"
     },
     {
       "placeId": "ChIJocb7T0DcsUcR6YJmpyNikNo",
@@ -20052,7 +20349,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@teamsportbedarf.de"
     },
     {
       "placeId": "ChIJyRAJ0TLdsUcRtpeGrGeqAYk",
@@ -20209,7 +20507,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@baeckerei-harms.de"
     },
     {
       "placeId": "ChIJI_1FAM_dsUcRfk2VYOKTZTA",
@@ -20284,7 +20583,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "benutzer@domain.com"
     },
     {
       "placeId": "ChIJBTARuCTcsUcRZYao6_76WM8",
@@ -20323,7 +20623,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "benutzer@domain.com"
     },
     {
       "placeId": "ChIJN0y23sjdsUcRJ0beoO7XBYw",
@@ -20361,7 +20662,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@salzbaecker.de"
     },
     {
       "placeId": "ChIJTU9C0DHcsUcR3Ykn-77ZsWU",
@@ -20548,7 +20850,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "benutzer@domain.com"
     },
     {
       "placeId": "ChIJOZCJFLfdsUcRYAnH0ntVTHE",
@@ -20584,7 +20887,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@heidbaecker.de"
     },
     {
       "placeId": "ChIJU3c7FMXdsUcR618uqkk7UGA",
@@ -20625,7 +20929,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@annas-cafe.de"
     },
     {
       "placeId": "ChIJP8PYFcndsUcRY4L9NhND85o",
@@ -20701,7 +21006,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "contact@bizsite.link"
     },
     {
       "placeId": "ChIJFwLfc8_dsUcRPZtfy3bPbrY",
@@ -20737,7 +21043,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "info@heidbaecker.de"
     },
     {
       "placeId": "ChIJ6T8jQcXdsUcRrY2qicMaO8Y",
@@ -20773,7 +21080,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "gastronomie"
+      "category": "gastronomie",
+      "email": "kontakt@bocraft.de"
     },
     {
       "placeId": "ChIJ6wgt64vesUcRMyLKxKQ4P5c",
@@ -20951,7 +21259,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "florist"
+      "category": "florist",
+      "email": "info@blumen-aus-holland.com"
     },
     {
       "placeId": "ChIJP3yKXj7dsUcRAZveP-bp-xU",
@@ -20986,7 +21295,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "florist"
+      "category": "florist",
+      "email": "service@blume2000.de"
     },
     {
       "placeId": "ChIJ31Yu6jXcsUcRfC3Bw8y-yYE",
@@ -21021,7 +21331,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "stadt@stadt.lueneburg.de"
     },
     {
       "placeId": "ChIJDQLuW87dsUcRcuZx29kKR1E",
@@ -21087,7 +21398,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "fahrschule"
+      "category": "fahrschule",
+      "email": "die2fahrschule.lg@gmail.com"
     },
     {
       "placeId": "ChIJd7GIytrdsUcRmIezRItGDHM",
@@ -21121,7 +21433,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "fahrschule"
+      "category": "fahrschule",
+      "email": "fahrschule.wriede@web.de"
     },
     {
       "placeId": "ChIJ_75NIMvdsUcRt-PeaBJECqw",
@@ -21154,7 +21467,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "fahrschule"
+      "category": "fahrschule",
+      "email": "info@fahrschulexxl.de"
     },
     {
       "placeId": "ChIJsd3lyR2CY0ERUTcDW6Lv8kQ",
@@ -21187,7 +21501,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "fahrschule"
+      "category": "fahrschule",
+      "email": "info@fahrschulexxl.de"
     },
     {
       "placeId": "ChIJ-9_-fGLesUcRfa5PrwXnyqI",
@@ -21220,7 +21535,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "fahrschule"
+      "category": "fahrschule",
+      "email": "fahrschuleaksoy-skrause@mail.de"
     },
     {
       "placeId": "ChIJrXNGUEzcsUcR2Nh9RQar2xk",
@@ -21255,7 +21571,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "ahrens@lueneburg-physiotherapie.de"
     },
     {
       "placeId": "ChIJJ3T3Vy_dsUcR9P3dp-da_-M",
@@ -21290,7 +21607,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "info@lg-physio.de"
     },
     {
       "placeId": "ChIJkRxE083dsUcRpuQIyhAPoRM",
@@ -21325,7 +21643,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "info@lueneburg-krankengymnastik.de"
     },
     {
       "placeId": "ChIJi-IIPXx_Y0ERZGm5jfU229I",
@@ -21360,7 +21679,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "praxis@luenephysio.de"
     },
     {
       "placeId": "ChIJ8UTov8_dsUcR-G6_xdthKK8",
@@ -21396,7 +21716,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "iris.prinke-gosch@t-online.de"
     },
     {
       "placeId": "ChIJF49jpiTcsUcRgcQJwJXeDcw",
@@ -21431,7 +21752,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "info@physio-am-campus.de"
     },
     {
       "placeId": "ChIJZ9yyvsjdsUcRKTeDD9y-TN0",
@@ -21501,7 +21823,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "mail@physiotherapie-team-lueneburg.de"
     },
     {
       "placeId": "ChIJkc2K6rrdsUcRoYBZcEYmoaE",
@@ -21540,7 +21863,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "kontakt@2k-physiotherapie.de"
     },
     {
       "placeId": "ChIJ99RaeDSPsUcRROWahGKcW6E",
@@ -21575,7 +21899,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "info@stella-arndt.de"
     },
     {
       "placeId": "ChIJRdZ6oszdsUcRK9XaRjfTsio",
@@ -21609,7 +21934,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "info@tagesklinik-am-kurpark.de"
     },
     {
       "placeId": "ChIJ5SGih_vdsUcRe0FJInCSF60",
@@ -21644,7 +21970,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "mail@marcokrohne-osteopathie.de"
     },
     {
       "placeId": "ChIJa-Hy7JDdsUcROjYGrONyYnQ",
@@ -21713,7 +22040,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "info@kersting-osteopathie-hamburg.de"
     },
     {
       "placeId": "ChIJOX8JXB3dsUcRBtyp58iMt1k",
@@ -21749,7 +22077,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "physiotherapie"
+      "category": "physiotherapie",
+      "email": "ptz@ptz-beyer.de"
     },
     {
       "placeId": "ChIJD1mU0PXhsUcRf-KE7x3Sq1M",
@@ -21784,7 +22113,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "hallo@manucora.de"
     },
     {
       "placeId": "ChIJV-zmp5PdsUcRE-ebg6qhcmE",
@@ -21821,7 +22151,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "kontakt@praxis-am-bockelsberg.de"
     },
     {
       "placeId": "ChIJ6RdO987dsUcRtoD7s-CP8Ow",
@@ -21855,7 +22186,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "info@luenedent.de"
     },
     {
       "placeId": "ChIJx4_u5EvdsUcR2xov7GI28xk",
@@ -21890,7 +22222,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "praxis@za-schoeneberg.de"
     },
     {
       "placeId": "ChIJieNerjPcsUcRZE7vJpnLDeo",
@@ -21925,7 +22258,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "info@lueneburg-zahnarztpraxis.de"
     },
     {
       "placeId": "ChIJf9fxrjLcsUcRxS5gkjMNbN8",
@@ -21960,7 +22294,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "info@praxis-reida.de"
     },
     {
       "placeId": "ChIJF9VNqs_dsUcRPcrEYr2hH_0",
@@ -21996,7 +22331,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "zahnarztpraxis.reithmayer@web.de"
     },
     {
       "placeId": "ChIJmbhkWMndsUcRc0D424Pi0w4",
@@ -22031,7 +22367,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "za-thomaskoch@arcor.de"
     },
     {
       "placeId": "ChIJv-FpZs7dsUcRcNLpmlCMJvk",
@@ -22066,7 +22403,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "info@mein-zahnarzt-lueneburg.de"
     },
     {
       "placeId": "ChIJwfHPr8_dsUcRieNGSeDeEXw",
@@ -22136,7 +22474,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "info@zahnaerzte-im-garberscenter.de"
     },
     {
       "placeId": "ChIJZ9yyvsjdsUcRuqjqvsPZ4RE",
@@ -22171,7 +22510,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "info@zahnarzt-zennecke.de"
     },
     {
       "placeId": "ChIJMz61-UDcsUcRhTH4hBZFn6M",
@@ -22206,7 +22546,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "info@zahnaerzte-im-garberscenter.de"
     },
     {
       "placeId": "ChIJr0y9exvcsUcRVD0s2UfzkSw",
@@ -22241,7 +22582,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "praxis@lueneburger-kinderzaehne.de"
     },
     {
       "placeId": "ChIJAUN7adDdsUcRkgT4V5ttRAA",
@@ -22276,7 +22618,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "info@z-arzt.com"
     },
     {
       "placeId": "ChIJrz3htcXdsUcRXW-WmIe_sZE",
@@ -22311,7 +22654,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "za-dombrowski@web.de"
     },
     {
       "placeId": "ChIJz-7HlovesUcRbR4zo7SNwjM",
@@ -22346,7 +22690,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "zahnarzt"
+      "category": "zahnarzt",
+      "email": "praxis@abdel-nabi.de"
     },
     {
       "placeId": "ChIJo8b1pM_dsUcR-c6Gkw_cIrw",
@@ -22383,7 +22728,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "info@fachanwaelte-lueneburg.de"
     },
     {
       "placeId": "ChIJNVWJLcXdsUcROsaZMIi5L3M",
@@ -22420,7 +22766,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "anwalt@kanzlei-lueneburg.de"
     },
     {
       "placeId": "ChIJCwwHo8_dsUcRmHPMwQOyXjg",
@@ -22455,7 +22802,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "info@rechtsanwaelte-lueneburg.de"
     },
     {
       "placeId": "ChIJjbH-PcXdsUcR7KLMapFDau4",
@@ -22491,7 +22839,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "anwalt@dr-mensching.de"
     },
     {
       "placeId": "ChIJz9DehMXdsUcRa1uXzOe46Gw",
@@ -22591,7 +22940,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "florist"
+      "category": "florist",
+      "email": "blume@kanzlei-bwk.de"
     },
     {
       "placeId": "ChIJQ-Beqc_dsUcRijKtLz9VtDw",
@@ -22627,7 +22977,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "info@rechtsanwaltwigger.de"
     },
     {
       "placeId": "ChIJM-GjdNDdsUcR9twKA8JutsQ",
@@ -22654,7 +23005,8 @@
         "+5 Telefon vorhanden"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "wk@wukam.de"
     },
     {
       "placeId": "ChIJYe2RddLdsUcR4_lbAXXQMEc",
@@ -22690,7 +23042,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "suzan@rechtsanwaeltin-baymak-winterseel.de"
     },
     {
       "placeId": "ChIJlTqXRcvdsUcRUO2C4se4jNY",
@@ -22726,7 +23079,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "info@hd-strafverteidigung.de"
     },
     {
       "placeId": "ChIJm1Oh9MbdsUcR5UAZMlz4J6A",
@@ -22760,7 +23114,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "info@rechtsanwaltskanzlei-lueneburg.de"
     },
     {
       "placeId": "ChIJgwGH987dsUcRHM0RwPYUpwE",
@@ -22796,7 +23151,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "kanzlei@rechtsanwaltlueneburg.com"
     },
     {
       "placeId": "ChIJxcH2yIR_Y0ERekY8UUQcHhQ",
@@ -22869,7 +23225,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "notar@ht-cc.de"
     },
     {
       "placeId": "ChIJK6dNcM_dsUcRsmS053bCyoE",
@@ -22940,7 +23297,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "kanzlei@rae-waechter.de"
     },
     {
       "placeId": "ChIJRySBiHfesUcRzri-TyG6xVs",
@@ -23049,7 +23407,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "klimanek@kanzlei-klimanek.de"
     },
     {
       "placeId": "ChIJKf1q1s3dsUcRJScek-SvkHg",
@@ -23076,7 +23435,8 @@
         "+5 Telefon vorhanden"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "kanzlei@ra-braucks.de"
     },
     {
       "placeId": "ChIJN3yuBdsT-UARo4LQr8UMdKE",
@@ -23112,7 +23472,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "info@arbeitsrecht-lueneburg.de"
     },
     {
       "placeId": "ChIJEUGRQcDdsUcRfwrVhhqvB-I",
@@ -23148,7 +23509,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "hueners@kanzlei-hueners.de"
     },
     {
       "placeId": "ChIJ0zLhOMPdsUcRC-fyqUs8YB0",
@@ -23184,7 +23546,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "anwalt"
+      "category": "anwalt",
+      "email": "info@anwalt-bebensee.de"
     },
     {
       "placeId": "ChIJwfHPr8_dsUcRrRkUOECbSwQ",
@@ -23219,7 +23582,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "immobilien"
+      "category": "immobilien",
+      "email": "kontakt@kettenhofen.net"
     },
     {
       "placeId": "ChIJIwjV2sjdsUcRotb3wJlEDwI",
@@ -23258,7 +23622,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "handel"
+      "category": "handel",
+      "email": "lueneburg@haus-fuer-sicherheit.de"
     },
     {
       "placeId": "ChIJw1TvjrfdsUcRzb-a7rggmms",
@@ -23295,7 +23660,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "handel"
+      "category": "handel",
+      "email": "info@rogge-schilder.de"
     },
     {
       "placeId": "ChIJQ4Bgs9-BY0ERTyHOQjxV50s",
@@ -23329,7 +23695,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "a.baerle@alfareinigung.de"
     },
     {
       "placeId": "ChIJ4WDfj2J_Y0ERbqVlBtIN-Pk",
@@ -23362,7 +23729,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "neburg@textilpflege-ebel.de"
     },
     {
       "placeId": "ChIJcSUx18jdsUcRWsTVj_4229E",
@@ -23396,7 +23764,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "info@carnehl-gmbh.de"
     },
     {
       "placeId": "ChIJhwU5PtNMW6sRp0xR_Q-b24Q",
@@ -23430,7 +23799,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "hotline@luenestern.de"
     },
     {
       "placeId": "ChIJE9byO0TesUcRUGNLlSCxtKU",
@@ -23463,7 +23833,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "info@henning-gruppe.de"
     },
     {
       "placeId": "ChIJ3V_JLxrfsUcRGgGWs_ZgmTY",
@@ -23497,7 +23868,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "kontakt@fresh-shine.de"
     },
     {
       "placeId": "ChIJIXkEqWznsUcR8FuvhjSMiMQ",
@@ -23531,7 +23903,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "info@pluempe-gmbh.de"
     },
     {
       "placeId": "ChIJ8b2iBG_dsUcRpIl4WhIXgDo",
@@ -23565,7 +23938,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "jp@pavleka-gebaeudereinigung.de"
     },
     {
       "placeId": "ChIJXy3QH8ndsUcRQBebe8tbFVE",
@@ -23598,7 +23972,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "info@picidoo.de"
     },
     {
       "placeId": "ChIJ5UqSIu3dsUcRg338kgf_VvM",
@@ -23632,7 +24007,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "info@brandontranphotography.de"
     },
     {
       "placeId": "ChIJkfHSC05Kt0ARZO-DPAoCHuE",
@@ -23666,7 +24042,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "johann@beyondportrait.de"
     },
     {
       "placeId": "ChIJ_y86As3dsUcRm-suNB7hylY",
@@ -23700,7 +24077,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "fotografie@martiem-fotografie.de"
     },
     {
       "placeId": "ChIJy2XRnpR_Y0ERJRCYZnnbTRg",
@@ -23734,7 +24112,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "info@digiart-lg.de"
     },
     {
       "placeId": "ChIJ3xhzC2_esUcRdDN-I3C8ifY",
@@ -23768,7 +24147,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "info@uteboesch.de"
     },
     {
       "placeId": "ChIJl4USDNjKti8RyeqqhIWnnrg",
@@ -23802,7 +24182,8 @@
         "+5 Öffnungszeiten eingetragen"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "kontakt@farbgrafie.de"
     },
     {
       "placeId": "ChIJD6WoMcPdsUcRmKt2ZMvl2Uc",
@@ -23827,7 +24208,8 @@
         "+5 Telefon vorhanden"
       ],
       "tier": "WARM",
-      "category": "dienstleistung"
+      "category": "dienstleistung",
+      "email": "post@fotografin.info"
     },
     {
       "placeId": "ChIJ-6aTNeHesUcR3HjmuTpENWw",
